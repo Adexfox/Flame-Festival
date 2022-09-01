@@ -1,27 +1,50 @@
 import React from 'react';
 import { navButton } from './menuItems'
 
+// interface func {
+//     (value:any): void
+// };
+// 
 
-
-
-interface func {
-    (value:number): void
-};
-
-const btns = document.querySelectorAll('.navButtonItem');
-
-const sliderNav:func = (manual) =>  {
-    btns.forEach((btn) => {
+/******************
+ * Query Selector *
+ ******************/
+const sections = document.querySelectorAll('section');
+const navBtns = document.querySelectorAll('.navButtonItem');
+/*******************
+ * Helper function *
+ *******************/
+const activeSectionHandler = (currentSectionId) => {
+    navBtns.forEach(btn => {
+        if(btn=== currentSectionId) {
+            btn.classList.add('active');
+            return;
+        }
         btn.classList.remove('active')
     })
-    btns[manual].classList.add('active');
+    
 }
-
-btns.forEach((btn, i) => {
-    btn.addEventListener('click', () => {
-       sliderNav(i) 
+/*************************
+ * Intersection Observer *
+ *************************/
+const selectionWatcherCallback =  (section, sectioWatcher) => {
+    section.forEach(section => {
+        if(!section.isIntersecting){return};
+        activeSectionHandler(section.target.name);
+        
+        
     })
-});
+    
+}
+const selectionWatcherOptions =  {
+    threshold: .6
+}
+const selectionWatcher = new IntersectionObserver (selectionWatcherCallback, selectionWatcherOptions)
+
+
+sections.forEach(section => {
+    selectionWatcher.observe(section);
+})
 
 
 const Navigation = () => {
@@ -30,13 +53,13 @@ const Navigation = () => {
         <div className='navButton sticky'>
             
                 {navButton.map( (props) => {
-                    const {id, text, url} = props;
+                    const {id, text, url, name} = props;
                     return(
-                                <a href={url} key={id} >
+                                <a href={url} key={id} data-section = {name}>
                                         <div className='navButtonItem'>
-                                            {/* <label htmlFor="">{ text }</label> */}
+                                           
                                             {text}
-                                            {/* <input type="radio" /> */}
+                                           
                                         </div>
                                     
                                 </a>
