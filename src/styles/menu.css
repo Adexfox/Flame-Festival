@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  left: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+}
+.menu-burger {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  height: 3px;
+  width: 28px;
+  background-color: #ffffff;
+}/*# sourceMappingURL=menu.css.map */

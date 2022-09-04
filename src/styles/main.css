@@ -103,4 +103,77 @@ html {
 
 .experience {
   background-color: aqua;
-}/*# sourceMappingURL=FullPageScroll.css.map */
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  left: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.menu-burger {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  height: 0.1875rem;
+  width: 1.75rem;
+  background-color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+.menu-burger::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  height: 0.1875rem;
+  width: 1.75rem;
+  background-color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+.menu-burger::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  width: 1.25rem;
+  left: 0;
+  height: 0.1875rem;
+  background-color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+.menu-burger.open {
+  background: transparent;
+}
+@-webkit-keyframes move {
+  0% {
+    transform: rotate(90deg) translate(1.5rem, 2px);
+    top: 5px;
+  }
+  100% {
+    transform: rotate(90deg) translate(-3px, 2px);
+    top: 2px;
+  }
+}
+@keyframes move {
+  0% {
+    transform: rotate(90deg) translate(1.5rem, 2px);
+    top: 5px;
+  }
+  100% {
+    transform: rotate(90deg) translate(-3px, 2px);
+    top: 2px;
+  }
+}
+.menu-burger.open::after {
+  top: 1.5rem;
+  transform: rotate(90deg) translate(0.5rem, 2px);
+  width: 2rem;
+  transition: all 0.2s ease-in-out;
+  -webkit-animation: move 1s linear 0.75s normal;
+          animation: move 1s linear 0.75s normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}/*# sourceMappingURL=main.css.map */
