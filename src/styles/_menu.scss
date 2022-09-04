@@ -1,0 +1,71 @@
+@import 'mixin';
+
+.menu{
+    position: absolute;
+    z-index: 1;
+    left: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+
+    &-burger {
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        height: 0.1875rem;
+        width: 1.75rem;
+        background-color: $primary-color;
+        @include transition-ease;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -0.5rem;
+            left: 0;
+            height: 0.1875rem;
+            width: 1.75rem;
+            background-color: $primary-color;
+            @include transition-ease;
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0.5rem;
+            width: 1.25rem;
+            left: 0;
+            height: 0.1875rem;
+            background-color: $primary-color;
+            @include transition-ease;
+        }
+
+        &.open{
+            background: transparent;
+            @keyframes move {
+                0%{
+                    transform: rotate(90deg) translate(1.5rem, 2px);
+                    top: 5px;
+
+                }
+                
+                100%{
+                    transform: rotate(90deg) translate(-3px, 2px);
+                    top: 2px;
+                }
+            }
+
+            &::after{
+                top: 1.5rem;
+                transform: rotate(90deg) translate(0.5rem, 2px);
+                width: 2rem;
+                @include transition-ease;
+                animation: move 1s linear 0.75s normal;
+                animation-fill-mode: forwards;
+            }
+        }
+
+
+    } 
+}

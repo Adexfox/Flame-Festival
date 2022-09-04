@@ -1,11 +1,8 @@
-interface Menu {
-    id: number;
-    text: string;
-    url: string;
-}
+import { Menu } from '../interfaces/menuItemsInterface';
 
-interface Menu_ extends Array<Menu>{}
-
+            /***********************
+             * HAMBUGER MENU ITEMS *
+             ***********************/       
 export const items: Menu[] = [
     {   
         id: 1,
@@ -58,16 +55,11 @@ export const items: Menu[] = [
    
 ]
 
-interface NavBall {
+            /***************************
+             * NAVIGATION BUTTON ITEMS *
+             ***************************/
 
-    id: number;
-    text: string;
-    url: string;
-    name: string;
-}
-interface NavBalls extends Array<NavBall>{}
-
-export const navButton:NavBall[] = [
+export const navButton:Menu[] = [
         {  
         id: 1,
         text: "", 
@@ -81,6 +73,13 @@ export const navButton:NavBall[] = [
         url: '#island',
          name: 'island'
         },
+        
+        {  
+        id: 4,
+        text: "", 
+        url: '#program',
+        name: 'program'
+        },
 
         {  
         id: 3,
@@ -89,12 +88,6 @@ export const navButton:NavBall[] = [
         name: 'hunt'
         },
 
-        {  
-        id: 4,
-        text: "", 
-        url: '#program',
-        name: 'program'
-        },
 
         {  
         id: 5,

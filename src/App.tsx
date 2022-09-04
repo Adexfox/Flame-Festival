@@ -1,9 +1,11 @@
 import FullPageScroll from "./components/FullPageScroll";
 
-function App() {
+const App = () => {
   return (
     <FullPageScroll />
   );
 }
 
 export default App;
+
+
