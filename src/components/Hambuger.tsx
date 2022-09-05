@@ -2,19 +2,21 @@ import React, { useState } from 'react'
 // import { Menu } from '../interfaces/menuItemsInterface'
 // import { items } from './menuItems';
 
-const menu = document.querySelector('.menu')as HTMLElement;
-const hambuger = document.querySelector('.menu-burger')as HTMLElement;
+const menu = document.querySelector('.menu') as HTMLElement;
+const buger = document.querySelector('.menu-burger') as HTMLElement;
 
 
 
 
 const ToggleMenu: () => void = () => {
+
   const [showMenu, setShowMenu] = useState(false);
   if (!showMenu) {
-    hambuger.classList.add('open');
+    buger.classList.add('open');
     setShowMenu( true);
-  } else {
-    hambuger.classList.remove('open');
+  }
+  else {
+    buger.classList.remove('open');
     setShowMenu(false);
   }
 }
