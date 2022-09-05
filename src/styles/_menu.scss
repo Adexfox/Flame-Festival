@@ -47,7 +47,6 @@
                 0%{
                     transform: rotate(90deg) translate(1.5rem, 2px);
                     top: 5px;
-
                 }
                 
                 100%{
@@ -56,6 +55,7 @@
                 }
             }
 
+            
             &::after{
                 top: 1.5rem;
                 transform: rotate(90deg) translate(0.5rem, 2px);
