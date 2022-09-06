@@ -59,7 +59,7 @@ export const items: Menu[] = [
              * NAVIGATION BUTTON ITEMS *
              ***************************/
 
-export const navButton:Menu[] = [
+export const navButton: Menu[] = [
         {  
         id: 1,
         text: "", 

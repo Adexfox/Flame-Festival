@@ -1,19 +1,22 @@
 @import 'mixin';
 
-.menu{
+.menua{
     position: absolute;
     z-index: 1;
     left: 1rem;
     top: 1rem;
-    height: 20px;
-    width: 28px;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
     @include transition-ease;
 
     &-burger {
-        position: absolute;
-        top: 0.5rem;
-        left: 0;
+        position: fixed;
+        top: 2rem;
+        left: 1rem;
+        margin: 0.2rem 0.7rem;
         height: 0.1875rem;
         width: 1.75rem;
         background-color: $primary-color;
@@ -50,22 +53,90 @@
                 }
                 
                 100%{
-                    transform: rotate(90deg) translate(-3px, 2px);
+                    transform: rotate(90deg) translate(-5px, 2px);
                     top: 2px;
                 }
             }
 
-            
+            &::before{
+                background-color: $accent-color;
+            }
             &::after{
                 top: 1.5rem;
                 transform: rotate(90deg) translate(0.5rem, 2px);
                 width: 2rem;
-                @include transition-ease;
-                animation: move 1s linear 0.75s normal;
+                transition: all 0.1s ease-in;
+                animation: move 1s linear 0.5s normal;
                 animation-fill-mode: forwards;
+                background-color: $accent-color;
             }
         }
 
 
     } 
 }
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+
+    &.open{
+        visibility: visible;
+    }
+    .menua-nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background-color: $primary-color;
+        list-style-type: none;
+        padding-right: 1rem;
+        transform: translateY(-100%);
+        transition: all 0.8s ease-in-out;
+        &.open {
+            transform: translateY(0);
+        }
+        
+        &__link {
+            display: inline-block;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1rem 0;
+            font-weight: 300;
+            color: $accent-color;
+            @include transition-ease;
+            
+            
+            &::after {
+                content: '';
+                width: 150px;
+                border-top: 2px solid $accent-color;
+                position: absolute;
+                left: 40%;
+                display: inline-block;
+                transform: scaleX(0);
+                transition: all 0.2s ease-in-out;
+                margin-top: 45px;
+                
+            }
+            
+            &:hover::after {
+                transform: scaleX(1);
+                opacity: 0.3;
+                 
+            }
+
+            
+            
+        }
+    }
+}
+
+
+

@@ -1,5 +1,4 @@
 import React from 'react';
-import Hambuger from './Hambuger';
 import Navigation from './Navigation';
 
 
@@ -12,12 +11,11 @@ const FullPageScroll = () => {
         <>
             <main id='home'>
 
-                <div>
-                    {/* <Navigation /> */}
-                </div>
-                <div>
-                    <Hambuger />
-                </div>
+                    
+
+                    <Navigation />
+                    
+                
                 {/* HOME */}
 
                 <section className='home' id='home'>
