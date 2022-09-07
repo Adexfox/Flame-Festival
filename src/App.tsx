@@ -1,11 +1,11 @@
-import FullPageScroll from "./components/FullPageScroll";
+import Home from './pages/home';
 
 const App = () => {
   return (
     <>
 
      
-      <FullPageScroll />
+      <Home />
      
     </>
   );
