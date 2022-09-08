@@ -51,6 +51,13 @@ export const items: Menu[] = [
         text: "THE EXPERIENCE", 
         url:' ./experience',
         
+    },
+
+    {
+        id: 8,
+        text: "FAQ", 
+        url:' ./faq',
+        
     }
    
 ]
