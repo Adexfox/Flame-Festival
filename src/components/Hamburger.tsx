@@ -15,11 +15,10 @@ const menuNav = document.querySelector('.menu-nav')as HTMLElement;
 const navItems:NodeListOf<HTMLElement> = document.querySelectorAll('.menu-nav__item');
 
 
-
 const Hamburger = () => {
 
   const [showMenu, setShowMenu] = useState<Boolean>(false);
-  
+
   const toggleMenu = () => {
     
     if(!showMenu) {
@@ -58,6 +57,7 @@ const Hamburger = () => {
         // console.log('cleanUp');
       }
     };
+
   })
   
 
@@ -74,14 +74,14 @@ const Hamburger = () => {
               const {id, text, url} = props;
               return(
 
-                <li className='menu-nav__item'>
+                <li className='menu-nav__item' key={id}>
                       {/* <a href={url} className='menu-nav__link'>{text}</a> */}
-                      <Link to={url} className='menu-nav__link' key={id}>{text} </Link>
+                      <Link to={url} className='menu-nav__link'>{text} </Link>
                
-               </li>
+                </li>
                
                   )
-                })}
+              })}
         </ul>
 
       </nav>
