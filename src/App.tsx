@@ -1,12 +1,10 @@
-import Home from './pages/home';
+import React from 'react';
+import ReactRouterSetup from './pages/index';
 
 const App = () => {
   return (
     <>
-
-     
-      <Home />
-     
+      <ReactRouterSetup />
     </>
   );
 }

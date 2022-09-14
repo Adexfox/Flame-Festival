@@ -1,19 +1,16 @@
 import React from 'react';
-import Hambuger from '../components/Hambuger';
+        
+        /************************
+         * HOME PAGE SETUP *
+         ************************/
 import FullPageScroll from '../components/FullPageScroll';
+import Hamburger from '../components/Hamburger';
 
 const  Home = () => {
     return (
         <>
-            <main>
-                <section className='home'>
                     <FullPageScroll />  
-                    <div>
-                        <Hambuger/>
-                    </div>
-                </section>
-            </main>
-            
+                    <Hamburger />  
         </>
     );
 };

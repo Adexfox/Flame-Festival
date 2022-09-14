@@ -11,10 +11,9 @@ const FullPageScroll = () => {
         <>
             <main id='home'>
 
-                    
-
+                <section>
                     <Navigation />
-                    
+                </section>
                 
                 {/* HOME */}
 

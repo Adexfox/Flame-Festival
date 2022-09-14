@@ -1,7 +1,7 @@
 @import 'mixin';
 
 .menu{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     left: 1rem;
     top: 1rem;
@@ -9,6 +9,7 @@
     width: 50px;
     display: flex;
     justify-content: center;
+    // background-color: #1c1c1c;
     cursor: pointer;
     @include transition-ease;
 
@@ -102,30 +103,30 @@
             transform: translateY(0);
 
             .menu-nav__item {
-    &:nth-child(1) {
-                animation: animate 1.5s ease-in-out;
-            }
-            &:nth-child(2) {
-                animation: animate 1.75s ease-in-out;
-            }
-            &:nth-child(3) {
-                animation: animate 2s ease-in-out;
-            }
-            &:nth-child(4) {
-                animation: animate 2.25s ease-in-out;
-            }
-            &:nth-child(5) {
-                animation: animate 2.5s ease-in-out;
-            }
-            &:nth-child(6) {
-                animation: animate 3s ease-in-out;
-            }
-            &:nth-child(7) {
-                animation: animate 3.25s ease-in-out;
-            }
-            &:nth-child(8) {
-                animation: animate 3.5s ease-in-out;
-            }
+                &:nth-child(1) {
+                    animation: animate 1.5s ease-in-out;
+                }
+                &:nth-child(2) {
+                    animation: animate 1.75s ease-in-out;
+                }
+                &:nth-child(3) {
+                    animation: animate 2s ease-in-out;
+                }
+                &:nth-child(4) {
+                    animation: animate 2.25s ease-in-out;
+                }
+                &:nth-child(5) {
+                    animation: animate 2.5s ease-in-out;
+                }
+                &:nth-child(6) {
+                    animation: animate 3s ease-in-out;
+                }
+                &:nth-child(7) {
+                    animation: animate 3.25s ease-in-out;
+                }
+                &:nth-child(8) {
+                    animation: animate 3.5s ease-in-out;
+                }
             @keyframes animate {
                 0%{
                     opacity: 0;
@@ -137,7 +138,7 @@
                 }
 
             }
-}
+            }
         }
         
         &__link {
