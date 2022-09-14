@@ -6,57 +6,57 @@ import { Menu } from '../interfaces/menuItemsInterface';
 export const items: Menu[] = [
     {   
         id: 1,
-        text: "HOME", 
-        url: './home'
+        text: 'HOME', 
+        url: '/'
        
     },
 
     {   
         id: 2, 
-        text: "THE ISLAND", 
-        url: './island'
+        text: 'THE ISLAND', 
+        url: '/island'
        
     },
 
     {   
         id: 3, 
-        text: "THE HUNT",
-         url: './hunt'
+        text: 'THE HUNT',
+         url: '/hunt'
          
     },
 
     {   
         id: 4,
-         text: "THE PROGRAM", 
-         url: './program'
+         text: 'THE PROGRAM', 
+         url: '/program'
          
     },
 
     {   
         id: 5, 
-        text: "THE JOURNEY", 
-        url: './journey'
+        text: 'THE JOURNEY', 
+        url: '/journey'
       
     },
 
     {
         id: 6, 
-        text: "THE PACKAGES",
-         url: './packages'
+        text: 'THE PACKAGES',
+         url: '/packages'
          
     },
 
     {
         id: 7,
-        text: "THE EXPERIENCE", 
-        url:' ./experience',
+        text: 'THE EXPERIENCE', 
+        url:'/experience'
         
     },
 
     {
         id: 8,
-        text: "FAQ", 
-        url:' ./faq',
+        text: 'FAQ', 
+        url:'/faq'
         
     }
    
@@ -69,28 +69,28 @@ export const items: Menu[] = [
 export const navButton: Menu[] = [
         {  
         id: 1,
-        text: "", 
+        text: '', 
         url: '#home',
         name: 'home'
         },
 
         {  
         id: 2,
-        text: "", 
+        text: '', 
         url: '#island',
          name: 'island'
         },
         
         {  
         id: 4,
-        text: "", 
+        text: '', 
         url: '#program',
         name: 'program'
         },
 
         {  
         id: 3,
-        text: "", 
+        text: '', 
         url: '#hunt',
         name: 'hunt'
         },
@@ -98,21 +98,21 @@ export const navButton: Menu[] = [
 
         {  
         id: 5,
-        text: "", 
+        text: '', 
         url: '#journey',
         name: 'journey'
         },
 
         {  
         id: 6,
-        text: "", 
+        text: '', 
         url: '#packages',
         name: 'packages'
         },
 
         {  
         id: 7,
-        text: "", 
+        text: '', 
         url: '#experience',
         name: 'experience'
         }
