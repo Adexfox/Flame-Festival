@@ -8,7 +8,7 @@ const FullPageScroll = () => {
     return (
         <>
             <main id='home'>
-
+            
                 {/* HOME */}
 
                 <section className='home' id='home'>

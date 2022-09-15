@@ -19,6 +19,7 @@ const Hamburger = () => {
 
   const [showMenu, setShowMenu] = useState<Boolean>(false);
 
+
   const toggleMenu = () => {
     
     if(!showMenu) {
@@ -57,7 +58,7 @@ const Hamburger = () => {
         // console.log('cleanUp');
       }
     };
-
+    
   })
   
 
@@ -82,6 +83,7 @@ const Hamburger = () => {
                
                   )
               })}
+
         </ul>
 
       </nav>
