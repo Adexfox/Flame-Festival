@@ -1,18 +1,19 @@
 import React from 'react';
 import { navButton } from './menuItems';
+import { Menu } from '../interfaces/menuItemsInterface';
+
 
 
 // interface func {
 //     (value:any): void
 // };
 // 
-
             /******************
-             * Query Selector *
+             * QUERY SELECTOR *
              ******************/
 
-const sections = document.querySelectorAll('section');
-const navBtns = document.querySelectorAll('.navButtonItem');
+const sections:NodeListOf<HTMLElement>  = document.querySelectorAll('section');
+const navBtns:NodeListOf<HTMLElement>  = document.querySelectorAll('.navButtonItem');
 
             /*******************
              * Helper function *
@@ -65,7 +66,7 @@ const Navigation = () => {
             
         <div className='navButton sticky'>
       
-                {navButton.map( (props) => {
+                {navButton.map( (props:Menu) => {
                     const {id, text, url, name} = props;
                     return(
                                 <a href={url} key={id} data-section = {name} >
