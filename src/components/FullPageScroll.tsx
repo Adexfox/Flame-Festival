@@ -1,20 +1,14 @@
 import React from 'react';
-import Navigation from './Navigation';
 
-
-/*****************
- * PAGE SECTIONS *
- *****************/
+            /*****************
+             * PAGE SECTIONS *
+             *****************/
 
 const FullPageScroll = () => {
     return (
         <>
             <main id='home'>
-
-                <section>
-                    <Navigation />
-                </section>
-                
+            
                 {/* HOME */}
 
                 <section className='home' id='home'>
