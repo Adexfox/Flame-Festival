@@ -1,4 +1,6 @@
 import React from 'react';
+import { images } from '../data/data';
+import BgVideo from './bgVideo';
 
             /*****************
              * PAGE SECTIONS *
@@ -12,7 +14,12 @@ const FullPageScroll = () => {
                 {/* HOME */}
 
                 <section className='home' id='home'>
+                    {/* <Hero /> */}
                     <h1>Home</h1>
+                    <img src={images[8].url} alt="" />
+                    <div>
+                        <BgVideo />
+                    </div>
                 </section>
 
                 {/* ISLAND */}
