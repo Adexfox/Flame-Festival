@@ -10,7 +10,8 @@ const Home = (props: Props) => {
               <div className='video-foreground'>
                 {/* <iframe src="https://www.youtube.com/embed/XKORnCuhQQ0?vq=hd720&controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=XKORnCuhQQ0" title="Bgvideo" frameBorder="0" allow="autoplay" allowFullScreen></iframe> */}
               </div>
-            </section> 
+            </section>
+            <section/> 
 
             <section className='bg-text'>
               <img src='images/flame.png' alt='flame' className='bg-text-flame'/><br />
@@ -22,7 +23,11 @@ const Home = (props: Props) => {
                 <p>MIAMI</p>
                 <div className='action'>
                   <button className='btn'>Play Video</button><br />
-                  <img src='images/arrow.png' alt='arrow' className='arrow'/>
+                  <a href="#island" >
+                    <div className='direction'>
+                      <img src='images/arrow.png' alt='arrow' className='arrow'/>
+                    </div>
+                  </a>
 
                 </div>
 
