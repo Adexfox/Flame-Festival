@@ -56,7 +56,6 @@
   position: fixed;
   top: 36vh;
   right: 0.5rem;
-  z-index: 1;
   grid-template-columns: 1fr;
   // background-color: rgba(0, 0, 0, 0.1);
   padding: 2rem;
@@ -76,16 +75,17 @@
   min-height: 80vh;
   text-align: center;
   font-size: 1.25rem;
-
+  font-family: $primary-font;
 
 }
 
 .home {
-  background: #bee5bf;
+  // background: #bee5bf;
+  min-height: 100vh;
 }
 
 .island {
-  background: #dff3e3;
+  background: #ffff;
 }
 
 .hunt {
