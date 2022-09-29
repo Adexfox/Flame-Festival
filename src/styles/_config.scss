@@ -1,15 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&display=swap');
 @import 'mixin';
 
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
 $primary-color: #ffffff;
 $accent-color: #017294;
+$primary-font: 'Cormorant Garamond', serif;
+$secondary-font: 'Krub', sans-serif;
+$primary-handwriting: 'Ms Madi', cursive;
+$secondary-handwriting: 'love light', cursive;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Flex', sans-serif;
-
 }
 
 html {

@@ -1,5 +1,6 @@
 {
     "images": [
+        
         {
             "id": 1,
             "title": "background-2",
@@ -75,6 +76,7 @@
             "title": "animated-island-2",
             "url": "images/animated-island-2.png"
         }
+        
         
     ],
     "videos": [
