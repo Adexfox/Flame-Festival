@@ -216,7 +216,7 @@ html {
   opacity: 0.98;
   visibility: hidden;
   font-family: "Cormorant Garamond", serif;
-  font-weight: 300;
+  font-weight: 700;
 }
 .nav.open {
   visibility: visible;
@@ -394,6 +394,20 @@ html {
   width: 250px;
   margin: 0 auto;
 }
+.bg-text-action .action .direction {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 3rem;
+}
+.bg-text-action .action .direction:hover {
+  transform: scale(1.1);
+  margin-top: 6rem;
+  transition: all 0.6s ease-in-out 0.2s;
+}
 .bg-text-action .action .arrow {
   position: relative;
   max-width: 100%;
@@ -401,7 +415,6 @@ html {
   height: auto;
   width: 50px;
   transform: rotate(180deg);
-  margin-top: 4rem;
 }
 .bg-text-action .action .btn {
   background-color: transparent;
@@ -414,6 +427,9 @@ html {
   text-align: center;
   cursor: pointer;
   border: 1px solid #ffffff;
+}
+.bg-text-action .action .btn:hover {
+  outline: 1px solid #ffffff;
 }
 
 .video-background {
