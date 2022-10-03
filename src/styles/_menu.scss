@@ -13,14 +13,22 @@
     // background-color: #1c1c1c;
     cursor: pointer;
     @include transition-ease;
+    &-text{
+        position: fixed;
+        left: 4.25rem;
+        top: 1.60rem;
+        margin: 0;
+        color: $primary-color;
+        font-family: $secondary-font;
+    }
 
     &-burger {
         position: fixed;
         top: 2rem;
         left: 1rem;
         margin: 0.2rem 0.7rem;
-        height: 0.1875rem;
-        width: 1.75rem;
+        height: 0.1575rem;
+        width: 1.6rem;
         background-color: $primary-color;
         @include transition-ease;
 
@@ -29,7 +37,7 @@
             position: absolute;
             top: -0.5rem;
             left: 0;
-            height: 0.1875rem;
+            height: 0.1575rem;
             width: 1.75rem;
             background-color: $primary-color;
             @include transition-ease;
@@ -41,7 +49,7 @@
             top: 0.5rem;
             width: 1.25rem;
             left: 0;
-            height: 0.1875rem;
+            height: 0.1575rem;
             background-color: $primary-color;
             @include transition-ease;
         }

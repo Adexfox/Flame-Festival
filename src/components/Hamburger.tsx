@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { items } from './menuItems';
 import { Link } from 'react-router-dom';
+import useColor from '../hooks/useColor';
 
 
 
@@ -13,9 +14,11 @@ const hamburger = document.querySelector('.menu-burger')as HTMLElement;
 const nav = document.querySelector('.nav')as HTMLElement;
 const menuNav = document.querySelector('.menu-nav')as HTMLElement;
 const navItems:NodeListOf<HTMLElement> = document.querySelectorAll('.menu-nav__item');
-
+const scrollPosition = 757;
 
 const Hamburger = () => {
+  const {elementColor} = useColor(757);
+  const {position} = useColor(scrollPosition);
 
   const [showMenu, setShowMenu] = useState<Boolean>(false);
 
@@ -68,6 +71,7 @@ const Hamburger = () => {
     <>
       <div className="menu">
         <span className="menu-burger"></span>
+        <p className='menu-text'>Menu</p>
       </div>
       <nav className='nav'>
         <ul className='menu-nav'>
