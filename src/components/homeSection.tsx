@@ -1,14 +1,8 @@
 import React from 'react';
-import useColor from '../hooks/useColor'
 
 type Props = {}
 
-const scrollPosition = 757;
 const Home = (props: Props) => {
-  const {elementColor} = useColor(757);
-  const {position} = useColor(scrollPosition);
-    
-  
   
   return (
     <>
@@ -21,9 +15,7 @@ const Home = (props: Props) => {
         </section>
 
         <section className='bg-text'>
-          <div className='ticket'>
-              <button className='ticket-btn' style={{color: elementColor, fontWeight: '600', border: `2px solid ${elementColor}`}} >Get Tickets</button>
-          </div>
+          
           {/* <img className='video-background' src='images/footer-2.jpg' alt="" /> */}
           <img src='images/flame.png' alt='flame' className='bg-text-flame'/><br />
           <img src='images/zigzag.png' alt='zigzag' className='bg-text-zigzag'/>
@@ -34,7 +26,7 @@ const Home = (props: Props) => {
             <p>2017</p>
             <p>MIAMI</p>
             <div className='action'>
-              <button className='btn'>Play Video</button><br />
+              <button className='btn' >Play Video</button><br />
               <a href="#island" >
                 <div className='direction'>
                   <img src='images/arrow.png' alt='arrow' className='arrow'/>
@@ -44,16 +36,19 @@ const Home = (props: Props) => {
             </div>
 
           </div>
-      </section>
+        </section>
 
-            <section className='home-text'>
-              <p>Once home to Blackbeard and Pablo Escobar...</p>
-              <p>Fyre Cay awaits you.</p>   
-              <p className='home-text-2'>From an immersive treasure hunt, to the greatest</p>
-              <p> minds in music, art and cuisine.</p>
-              <p> Join us.</p>  
-              {/* <hr className='home-text-rule'/> */}
-            </section>
+        <section className='bg-cut'>
+            <img className='cut' src="images/bottom-cut.png" alt="" />
+          <section className='home-text'>
+            <p>Once home to Blackbeard and Pablo Escobar...</p>
+            <p>Fyre Cay awaits you.</p>   
+            <p className='home-text-2'>From an immersive treasure hunt, to the greatest</p>
+            <p> minds in music, art and cuisine.</p>
+            <p> Join us.</p>  
+            {/* <hr className='home-text-rule'/> */}
+          </section>
+        </section>
       </section>
       
 

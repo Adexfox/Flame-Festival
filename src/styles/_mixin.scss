@@ -1,22 +1,7 @@
 @mixin  transition-ease {
       transition: all 0.5s ease-in-out;
 };
-// @function set-color($color) {
-//     @if (lightness($color) > 40%) {
-//       @return #000;
-//     }
-//     @else {
-//       @return #FFF;
-//     }
-// }
-// @function set-color($color) {
-//     $result: invert($color);
-//     $lightness: lightness($result);
-//     @if ($lightness < 50) {
-//         $result: black;
-//     }
-//     @return $result;
-// }
+
 @mixin btn{
       background-color: transparent;
       width: 168px;
@@ -48,11 +33,11 @@
       }
       &:hover::before{
             left: 0;
+            
       }
       &:hover{
       outline: 1px solid $primary-color;
       box-shadow: 0 0 5px $primary-color;
       background-color: $accent-color;
-
       }
 };

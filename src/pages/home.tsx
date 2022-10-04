@@ -11,8 +11,8 @@ const  Home = () => {
     return (
         <>
                     <FullPageScroll />  
-                    <Navigation />
                     <Hamburger />  
+                    <Navigation />
         </>
     );
 };
