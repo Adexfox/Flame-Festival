@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { items } from './menuItems';
 import { Link } from 'react-router-dom';
+import useColor from '../hooks/useColor';
 
 
 
@@ -13,9 +14,13 @@ const hamburger = document.querySelector('.menu-burger')as HTMLElement;
 const nav = document.querySelector('.nav')as HTMLElement;
 const menuNav = document.querySelector('.menu-nav')as HTMLElement;
 const navItems:NodeListOf<HTMLElement> = document.querySelectorAll('.menu-nav__item');
+// const scrollPosition = 857;
+const scrollSection = document.querySelector('.bg-text') as HTMLElement;
 
 
 const Hamburger = () => {
+  const {elementColor} = useColor(857);
+  const {section} = useColor(scrollSection);
 
   const [showMenu, setShowMenu] = useState<Boolean>(false);
 
@@ -48,7 +53,7 @@ const Hamburger = () => {
       // console.log('clicked');
     }
 
-      /********************
+    /********************
        * CLEANUP FUNCTION *
        ********************/
     return () => {
@@ -61,13 +66,33 @@ const Hamburger = () => {
     
   })
   
+  const [isHover, setIsHover] = useState(false);
 
-  
-  
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  }  
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  }  
+
+  const ticketStyle= {
+    color: isHover ? 'white' : elementColor,
+    fontWeight: '600', 
+    border: `2px solid ${elementColor}`
+    
+  }
+
   return (
     <>
       <div className="menu">
-        <span className="menu-burger"></span>
+        <div className="menu-burger">
+          <p className='menu-text' style={{color: elementColor, fontWeight: '600'}} >Menu</p>
+          <div className='ticket'>
+              <button className='ticket-btn' style={ticketStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Get Tickets</button>
+          </div>
+        </div>
+        
+        
       </div>
       <nav className='nav'>
         <ul className='menu-nav'>

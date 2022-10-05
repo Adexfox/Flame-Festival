@@ -57,6 +57,7 @@ sections.forEach(section => {
     sectionWatcher.observe(section);
 })
 
+
 const Navigation = () => {
     return (
 

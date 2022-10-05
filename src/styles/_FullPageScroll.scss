@@ -60,8 +60,7 @@
   // background-color: rgba(0, 0, 0, 0.1);
   padding: 2rem;
   padding-right: 0.5rem;
-
-
+  z-index: 1;
 }
 
 .home,
@@ -76,35 +75,39 @@
   text-align: center;
   font-size: 1.25rem;
   font-family: $primary-font;
-
 }
 
 .home {
-  // background: #bee5bf;
   min-height: 100vh;
 }
 
 .island {
   background: #ffff;
+  z-index: -99;
 }
 
 .hunt {
   background: #ff525e;
+  z-index: -99;
 }
 
 .program {
     background: #ce7da5;
+    z-index: -99;
 }
 
 .journey {
     background: #ffd1ba;
+    z-index: -99;
 }
 
 .packages {
     background: #ce7da5;
+    z-index: -99;
 }
 
 .experience {
     background-color: aqua;
+    z-index: -99;
 
 }

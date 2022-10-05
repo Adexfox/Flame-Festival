@@ -33,7 +33,7 @@ html {
   margin: 0.75rem;
   position: relative;
   pointer-events: all;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .navButtonItem:hover {
   transform: scale(1.2);
@@ -68,6 +68,7 @@ html {
   grid-template-columns: 1fr;
   padding: 2rem;
   padding-right: 0.5rem;
+  z-index: 1;
 }
 
 .home,
@@ -90,26 +91,32 @@ html {
 
 .island {
   background: white;
+  z-index: -99;
 }
 
 .hunt {
   background: #ff525e;
+  z-index: -99;
 }
 
 .program {
   background: #ce7da5;
+  z-index: -99;
 }
 
 .journey {
   background: #ffd1ba;
+  z-index: -99;
 }
 
 .packages {
   background: #ce7da5;
+  z-index: -99;
 }
 
 .experience {
   background-color: aqua;
+  z-index: -99;
 }
 
 /**
@@ -130,7 +137,7 @@ html {
 
 .menu {
   position: fixed;
-  left: 1rem;
+  left: 0.5rem;
   top: 1rem;
   height: 40px;
   width: 50px;
@@ -138,27 +145,35 @@ html {
   justify-content: center;
   z-index: 1;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.menu-text {
+  position: fixed;
+  left: 3.75rem;
+  top: 1.6rem;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Krub", sans-serif;
 }
 .menu-burger {
   position: fixed;
   top: 2rem;
-  left: 1rem;
+  left: 0.5rem;
   margin: 0.2rem 0.7rem;
-  height: 0.1875rem;
-  width: 1.75rem;
+  height: 0.1575rem;
+  width: 1.6rem;
   background-color: #ffffff;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .menu-burger::before {
   content: "";
   position: absolute;
   top: -0.5rem;
   left: 0;
-  height: 0.1875rem;
+  height: 0.1575rem;
   width: 1.75rem;
   background-color: #ffffff;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .menu-burger::after {
   content: "";
@@ -166,12 +181,18 @@ html {
   top: 0.5rem;
   width: 1.25rem;
   left: 0;
-  height: 0.1875rem;
+  height: 0.1575rem;
   background-color: #ffffff;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .menu-burger.open {
   background: transparent;
+}
+.menu-burger.open .ticket {
+  display: none;
+}
+.menu-burger.open .menu-text {
+  visibility: hidden;
 }
 @-webkit-keyframes move {
   0% {
@@ -233,7 +254,6 @@ html {
   padding-right: 1rem;
   transform: translateY(-100%);
   transition: all 0.8s ease-in-out;
-  z-index: 1;
 }
 .nav .menu-nav.open {
   transform: translateY(0);
@@ -298,7 +318,7 @@ html {
   padding: 1rem 0;
   font-weight: 300;
   color: #017294;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
   color: #1c1c1c;
@@ -319,6 +339,53 @@ html {
 .nav .menu-nav__link:hover::after {
   transform: scaleX(1);
   opacity: 0.3;
+}
+
+.ticket {
+  position: fixed;
+  right: 0.5rem;
+  top: 1rem;
+  height: 40px;
+  width: 150px;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.ticket-btn {
+  background-color: transparent;
+  width: 168px;
+  height: 40px;
+  color: #ffffff;
+  position: relative;
+  font-family: "Krub", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  width: 136px;
+  z-index: 1;
+}
+.ticket-btn::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #017294;
+  top: 0;
+  left: -100%;
+  z-index: -99;
+  transition: all 0.5s ease-in-out;
+}
+.ticket-btn:hover::before {
+  left: 0;
+}
+.ticket-btn:hover {
+  outline: 1px solid #ffffff;
+  box-shadow: 0 0 5px #ffffff;
+  background-color: #017294;
 }
 
 /**
@@ -344,12 +411,60 @@ html {
 .bg-text {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   margin: 0 auto;
   font-family: "Krub", sans-serif;
   font-weight: 500;
   letter-spacing: 0.25rem;
   color: #ffffff;
+}
+.bg-text .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 110vh;
+  margin: 0 auto;
+  z-index: -99;
+  -webkit-animation: bg 30s ease infinite;
+          animation: bg 30s ease infinite;
+}
+@-webkit-keyframes bg {
+  0%, 100% {
+    background-image: url("/public/images/slide.jpg");
+  }
+  20% {
+    background-image: url("/public/images/slide1.jpg");
+  }
+  40% {
+    background-image: url("/public/images/slide2.jpg");
+  }
+  60% {
+    background-image: url("/public/images/slide3.jpg");
+  }
+  80% {
+    background-image: url("/public/images/slide4.jpg");
+  }
+}
+@keyframes bg {
+  0%, 100% {
+    background-image: url("/public/images/slide.jpg");
+  }
+  20% {
+    background-image: url("/public/images/slide1.jpg");
+  }
+  40% {
+    background-image: url("/public/images/slide2.jpg");
+  }
+  60% {
+    background-image: url("/public/images/slide3.jpg");
+  }
+  80% {
+    background-image: url("/public/images/slide4.jpg");
+  }
 }
 .bg-text-flame, .bg-text-zigzag {
   max-width: 100%;
@@ -358,13 +473,13 @@ html {
   display: inline-block;
   position: relative;
   margin: 0;
-  z-index: -99;
-  top: 16%;
+  z-index: -1;
+  top: 22%;
   margin-bottom: 0;
 }
 .bg-text-zigzag {
   position: relative;
-  top: 18%;
+  top: 24%;
   width: 128px;
   height: 20px;
 }
@@ -373,7 +488,7 @@ html {
   width: 100%;
   height: 100vh;
   position: absolute;
-  top: 30%;
+  top: 36%;
 }
 .bg-text-action h1 {
   font-size: 2rem;
@@ -419,21 +534,39 @@ html {
 .bg-text-action .action .btn {
   background-color: transparent;
   width: 168px;
-  height: 48px;
+  height: 40px;
   color: #ffffff;
+  position: relative;
   font-family: "Krub", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
   border: 1px solid #ffffff;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.bg-text-action .action .btn::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #017294;
+  top: 0;
+  left: -100%;
+  z-index: -99;
+  transition: all 0.5s ease-in-out;
+}
+.bg-text-action .action .btn:hover::before {
+  left: 0;
 }
 .bg-text-action .action .btn:hover {
   outline: 1px solid #ffffff;
+  box-shadow: 0 0 5px #ffffff;
+  background-color: #017294;
 }
 
 .video-background {
-  background: rgb(255, 73, 73);
   position: absolute;
   top: 0;
   right: 0;
@@ -478,7 +611,7 @@ html {
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 1.2;
-  padding-bottom: 5.5rem;
+  padding: 0 2rem 5.5rem 2rem;
   border-bottom: 2px solid rgba(128, 128, 128, 0.5);
   margin-top: 4rem;
 }
@@ -490,4 +623,25 @@ html {
   width: 60%;
   margin: 0 auto;
   margin-top: 5.5rem;
+}
+
+.bg-cut {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  z-index: -99;
+}
+.bg-cut .cut {
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */

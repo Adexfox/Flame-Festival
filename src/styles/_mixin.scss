@@ -1,3 +1,43 @@
 @mixin  transition-ease {
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
+};
+
+@mixin btn{
+      background-color: transparent;
+      width: 168px;
+      height: 40px;
+      color: $primary-color;
+      position: relative;
+      font:{
+            family: $secondary-font;
+            weight: 500;
+            size: 1rem;
+      }
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid $primary-color;
+      overflow: hidden;
+      @include transition-ease();
+
+      &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: $accent-color;
+            top: 0;
+            left:-100%;
+            z-index: -99;
+            @include transition-ease();
+
+      }
+      &:hover::before{
+            left: 0;
+            
+      }
+      &:hover{
+      outline: 1px solid $primary-color;
+      box-shadow: 0 0 5px $primary-color;
+      background-color: $accent-color;
+      }
 };
