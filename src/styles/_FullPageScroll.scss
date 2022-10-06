@@ -19,12 +19,12 @@
   position: relative;
   pointer-events: all;
   @include transition-ease;
-  
+
   &:hover {
     transform: scale(1.2);
   }
   &:active {
-    background-color: rgb(0, 0, 0);  
+    background-color: rgb(0, 0, 0); 
   }
   &::after {
     content: '';
@@ -60,7 +60,7 @@
   // background-color: rgba(0, 0, 0, 0.1);
   padding: 2rem;
   padding-right: 0.5rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .home,
@@ -83,12 +83,11 @@
 
 .island {
   background: #ffff;
-  z-index: -99;
 }
 
 .hunt {
   background: #ff525e;
-  z-index: -99;
+  // z-index: 1;
 }
 
 .program {

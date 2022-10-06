@@ -6,16 +6,17 @@
       background-color: transparent;
       width: 168px;
       height: 40px;
-      color: $primary-color;
+      color: $accent-color;
       position: relative;
+      z-index: 1;
       font:{
             family: $secondary-font;
-            weight: 500;
+            weight: 600;
             size: 1rem;
       }
       text-align: center;
       cursor: pointer;
-      border: 1px solid $primary-color;
+      border: 2px solid $accent-color;
       overflow: hidden;
       @include transition-ease();
 
@@ -39,5 +40,14 @@
       outline: 1px solid $primary-color;
       box-shadow: 0 0 5px $primary-color;
       background-color: $accent-color;
+      color: $primary-color
+      
       }
+};
+
+@mixin bgCover {
+      background:{ 
+      size: cover;
+      position: center;
+      repeat: no-repeat;};
 };

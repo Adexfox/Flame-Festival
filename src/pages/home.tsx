@@ -10,9 +10,9 @@ import Navigation from '../components/Navigation';
 const  Home = () => {
     return (
         <>
-                    <FullPageScroll />  
-                    <Hamburger />  
                     <Navigation />
+                    <Hamburger />  
+                    <FullPageScroll />  
         </>
     );
 };
