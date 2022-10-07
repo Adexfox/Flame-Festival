@@ -52,8 +52,6 @@ const Home = (props: Props) => {
       </section>
       
 
-
-
     </>
   )
 }
