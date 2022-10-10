@@ -852,6 +852,9 @@ html {
   padding: 0;
   z-index: 1;
   top: 126px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hunt-cut {
@@ -889,6 +892,9 @@ html {
   padding: 0;
   z-index: 1;
   transform: rotate(180deg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .program-section .program-1 {
   position: relative;
@@ -972,6 +978,9 @@ html {
   margin: 0;
   padding: 0;
   z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .program-2 {
@@ -985,13 +994,12 @@ html {
 }
 .program-2-text {
   position: absolute;
-  top: 0;
+  top: 55%;
   height: 30%;
   width: 100%;
   margin: 0 auto;
   color: #ffffff;
   line-height: 1.4;
-  transform: translateY(100px);
   font-family: "Cormorant Garamond", serif;
   font-size: 2.5rem;
   font-weight: 400;
