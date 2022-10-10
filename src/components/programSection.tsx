@@ -17,11 +17,11 @@ const Program = (props: Props) => {
             <div className="third-cut">
                 <img src="images/top-cut.png" alt="" />
             </div>
-            <section className="program-1" data-aos='fade-up'    data-aos-delay="50" >
-                <h3>The <span><span>P</span>rogram</span></h3>
-                <h2>ENGAGE THE SENSES</h2>
-                <p>We've tapped the brightest mind in the music, cuisine, art and hospitality to mastermind experience designed to<br /> delight and seduce. From innovators and thinkers to multi-platinum artists, you will find yourself one-on-one<br /> with some of the greatest talent on the planet </p>
-                <button className='program-btn'>Get Tickets</button>
+            <section className="program-1">
+                <h3 data-aos='fade-up' data-aos-delay="50">The <span><span>P</span>rogram</span></h3>
+                <h2 data-aos='fade-up' data-aos-delay="50">ENGAGE THE SENSES</h2>
+                <p data-aos='fade-up' data-aos-delay="50">We've tapped the brightest mind in the music, cuisine, art and hospitality to mastermind experience designed to<br /><span data-aos='fade-up' > delight and seduce. From innovators and thinkers to multi-platinum artists, you will find yourself one-on-one</span><br /><span data-aos='fade-up' > with some of the greatest talent on the planet</span> </p>
+                <button className='program-btn' data-aos='fade-up'>Get Tickets</button>
             <div className="fourth-cut">
                   <img src="images/top-cut.png" alt="" />
             </div>
