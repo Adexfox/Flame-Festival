@@ -15,7 +15,7 @@ const Hunt = (props: Props) => {
           <div className='second-cut'>
 
               <img src="images/top-cut.png" alt="cut"/>
-            </div>
+          </div>
           <section className='hunt-section-text'>
 
             <h3 data-aos='fade-up'>The Hunt</h3>
