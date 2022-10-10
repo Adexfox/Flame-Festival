@@ -8,6 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -81,42 +82,33 @@ html {
 .packages,
 .experience {
   position: relative;
-  min-height: 80vh;
   text-align: center;
   font-size: 1.25rem;
   font-family: "Cormorant Garamond", serif;
 }
 
-.home {
-  min-height: 100vh;
-}
-
-.island {
-  background: white;
-}
-
 .hunt {
-  background: #ff525e;
+  height: 80vh;
 }
 
 .program {
-  background: #ce7da5;
-  z-index: -99;
+  background: white;
+  min-height: 80vh;
 }
 
 .journey {
   background: #ffd1ba;
-  z-index: -99;
+  min-height: 80vh;
 }
 
 .packages {
   background: #ce7da5;
-  z-index: -99;
+  min-height: 80vh;
 }
 
 .experience {
   background-color: aqua;
-  z-index: -99;
+  min-height: 80vh;
 }
 
 /**
@@ -648,16 +640,15 @@ html {
   background-color: white;
   z-index: -99;
 }
-.bg-cut .cut {
+.bg-cut .first-cut {
   position: absolute;
-  max-height: 100%;
+  top: -8px;
+  max-height: 50px;
   max-width: 100%;
-  height: 100%;
-  width: 100%;
-  top: -100%;
   left: 0;
   margin: 0;
   padding: 0;
+  transform: rotate(180deg);
 }
 
 /**
@@ -681,6 +672,7 @@ html {
   width: 100%;
   position: relative;
   margin: 0 auto;
+  height: 150vh;
 }
 .island-section-text {
   width: 100%;
@@ -700,7 +692,7 @@ html {
 }
 .island-section-text h1 {
   font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
@@ -714,7 +706,6 @@ html {
   position: relative;
   top: -150px;
   width: 100%;
-  height: 100%;
 }
 .island-section .island-image-plane {
   position: absolute;
@@ -755,6 +746,7 @@ html {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   top: -172px;
+  z-index: 2;
 }
 .island-section .island-btn::before {
   position: absolute;
@@ -775,4 +767,93 @@ html {
   box-shadow: 0 0 5px #ffffff;
   background-color: #017294;
   color: #ffffff;
+}
+
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.hunt-section {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background-image: url("/public/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hunt-section-text {
+  position: absolute;
+  top: 18%;
+  width: 100%;
+  height: 40%;
+  line-height: 1.5;
+  font-family: "Cormorant Garamond", serif;
+  color: #017294;
+}
+.hunt-section-text h3 {
+  font-family: "love light", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+  color: black;
+  padding: 3.5rem 0 1rem;
+}
+.hunt-section-text h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.hunt-section-text p {
+  color: black;
+  font-size: 1rem;
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+.hunt-section-text p + p {
+  font-size: 1.25rem;
+  color: #017294;
+  line-height: 1.6;
+  font-weight: 500;
+}
+.hunt-section-text p + p .pencil {
+  position: relative;
+}
+.hunt-section-text p + p .pencil img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 0.75rem;
+  width: 9rem;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  transform: rotate(180deg);
+}
+.hunt-section-text .second-cut {
+  position: absolute;
+  max-height: 50px;
+  max-width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  top: 126px;
+}
+
+.hunt-cut {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */

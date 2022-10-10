@@ -82,17 +82,17 @@ export const navButton: Menu[] = [
         },
         
         {  
-        id: 4,
-        text: '', 
-        url: '#program',
-        name: 'program'
-        },
-
-        {  
         id: 3,
         text: '', 
         url: '#hunt',
         name: 'hunt'
+        },
+
+        {  
+        id: 4,
+        text: '', 
+        url: '#program',
+        name: 'program'
         },
 
 

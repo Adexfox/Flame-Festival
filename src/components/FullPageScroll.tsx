@@ -1,6 +1,7 @@
 import React from 'react';
 // import { images } from '../data/data';
 import Home from './homeSection';
+import Hunt from './huntSection';
 import Island from './islandSection';
 
             /*****************
@@ -10,13 +11,13 @@ import Island from './islandSection';
 const FullPageScroll = () => {
     return (
         <>
-            <main id='home'>
+            {/* <main id='home'> */}
             
                 {/* HOME */}
 
                 <section className='home' id='home'>
                     {/* <img src={images[8].url} alt="" /> */}
-                        <Home key={1}/>
+                        <Home />
                 </section>
 
                 {/* ISLAND */}
@@ -25,16 +26,16 @@ const FullPageScroll = () => {
                     <Island />
                 </section>
 
-                {/* PROGRAM */}
-
-                <section className='program' id='program'>
-                    <h1>Program</h1>
-                </section>
-
-                {/* THE HUNT */}
+                {/* HUNT */}
 
                 <section className='hunt' id='hunt'>
-                    <h1>Hunt</h1>
+                    <Hunt />
+                </section>
+
+                {/* THE PROGRAM */}
+
+                <section className='program' id='program'>
+                    {/* <h1>Program</h1> */}
                 </section>
 
                 {/* JOURNEY */}
@@ -54,7 +55,7 @@ const FullPageScroll = () => {
                 <section className='experience' id='experience'>
                     <h1>Experience</h1>
                 </section>
-            </main>
+            {/* </main> */}
         </>
     );
 };

@@ -35,6 +35,12 @@ const Island = (props: Props) => {
 
             <button className='island-btn'>Get Tickets</button>
 
+            {/* <section className='island-cut'>
+
+              <img className='island-cut-img' src="images/top-cut.png" alt="" />
+
+            </section> */}
+
 
           </section>
 

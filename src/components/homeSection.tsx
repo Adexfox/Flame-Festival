@@ -39,7 +39,9 @@ const Home = (props: Props) => {
         </section>
 
         <section className='bg-cut'>
-            <img className='cut' src="images/bottom-cut.png" alt="" />
+          <div className="first-cut">
+            <img src="images/top-cut.png" alt="" />
+          </div>
           <section className='home-text'>
             <p>Once home to Blackbeard and Pablo Escobar...</p>
             <p>Fyre Cay awaits you.</p>   
