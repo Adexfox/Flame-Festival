@@ -77,7 +77,38 @@
             z-index: 1;
             @include bgCover;
         }
+        .flower-7{
+         width: 100%;
+        position: absolute;
+        left: -1%;
+        top: 17%;
+        max-width: 240px;
+        max-height: 240px;
+        width: 300px;
+        z-index: 2;
+        transform: rotate(180deg);
+        // background-color: yellow;
+        img{
+            width: 100%;
+        }
+        
     }
+    .flower-3{
+         width: 100%;
+        position: absolute;
+        right: -2%;
+        top: 57%;
+        max-width: 240px;
+        max-height: 240px;
+        width: 300px;
+        z-index: 2;
+        // background-color: yellow;
+        img{
+            width: 100%;
+        }
+    }
+    }
+    
 }
 .program-2{
     position: relative;

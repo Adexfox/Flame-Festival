@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 type Props = {}
 
 const Home = (props: Props) => {
-  
+  useEffect(() => {
+      AOS.init({duration: 3000});
+    }, [])
   return (
     <>
       <section className='home-section'>
@@ -43,11 +47,11 @@ const Home = (props: Props) => {
             <img src="images/top-cut.png" alt="" />
           </div>
           <section className='home-text'>
-            <p>Once home to Blackbeard and Pablo Escobar...</p>
-            <p>Fyre Cay awaits you.</p>   
-            <p className='home-text-2'>From an immersive treasure hunt, to the greatest</p>
-            <p> minds in music, art and cuisine.</p>
-            <p> Join us.</p>  
+            <p data-aos='fade-up'>Once home to Blackbeard and Pablo Escobar...</p>
+            <p data-aos='fade-up'>Fyre Cay awaits you.</p>   
+            <p className='home-text-2' data-aos='fade-up'>From an immersive treasure hunt, to the greatest</p>
+            <p data-aos='fade-up'> minds in music, art and cuisine.</p>
+            <p data-aos='fade-up'> Join us.</p>  
             {/* <hr className='home-text-rule'/> */}
           </section>
         </section>
