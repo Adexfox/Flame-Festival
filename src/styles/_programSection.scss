@@ -1,0 +1,104 @@
+@import  'config';
+@import 'mixin';
+
+.program-section{
+    position: relative;
+    width: 100%;
+    .third-cut{
+            position: absolute;
+            max-height: 50px;
+            max-width: 100%;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            z-index: 1;
+            transform: rotate(180deg);
+            @include bgCover;
+           
+    }
+    
+    .program-1{
+        position: relative;
+        // top: 5%;
+        width: 100%;
+        height: 90vh;
+        line-height: 1.5;
+        font-family: $primary-font;
+        color: black;
+        h3{
+            font: {
+                family: $secondary-handwriting;
+                weight: 500;
+                size: 2rem;
+            }
+            color: black;
+            padding: 7rem 0 1rem;
+            span{
+                font: {
+                 family: $handwriting;
+                 size: 1.65rem;
+                 weight: lighter;
+                }
+                span{
+                        font: {
+
+                            family: $handwriting-1;
+                            size: 2.25rem;
+                            weight: 500;
+                        }
+                }
+            }
+        }
+        h2{
+            font-size: 1.5rem;
+            margin: 1.25rem 0 2rem;
+            font-weight: 600;
+        }
+
+        p{
+            font-size: 1.05rem;//0.85
+            font-weight: 700;
+            line-height: 1.8;
+        }
+        .program-btn{
+            @include btn;
+            position: relative;
+            top: 35%;
+        }
+        .fourth-cut{
+             position: absolute;
+            max-height: 50px;
+            max-width: 100%;
+            left: 0;
+            top: 100%;
+            margin: 0;
+            padding: 0;
+            z-index: 1;
+            @include bgCover;
+        }
+    }
+}
+.program-2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/public/images/beach.png');
+    @include bgCover;
+    &-text{   
+        position: absolute;
+        top: 55%;
+        height: 30%;
+        width: 100%;
+        margin: 0 auto;
+        color: $primary-color;
+        line-height: 1.4;
+        font: {
+            family: $primary-font;
+            size: 2.5rem;
+            weight: 400;
+            style: italic;
+        }
+        
+    }
+}

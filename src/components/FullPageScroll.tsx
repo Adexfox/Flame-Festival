@@ -3,6 +3,7 @@ import React from 'react';
 import Home from './homeSection';
 import Hunt from './huntSection';
 import Island from './islandSection';
+import Program from './programSection';
 
             /*****************
              * PAGE SECTIONS *
@@ -35,7 +36,7 @@ const FullPageScroll = () => {
                 {/* THE PROGRAM */}
 
                 <section className='program' id='program'>
-                    {/* <h1>Program</h1> */}
+                    <Program />
                 </section>
 
                 {/* JOURNEY */}

@@ -103,7 +103,7 @@
     visibility: hidden;
     font-family: $primary-font;
     font-weight: 700;
-    z-index: 2;
+    z-index: 3;
     &.open{
         visibility: visible;
     }
