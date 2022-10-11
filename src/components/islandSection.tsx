@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 type Props = {}
 
-const Island = (props: Props) => {
+const IslandSection = (props: Props) => {
 
   useEffect(() => {
       AOS.init({duration: 3000});
@@ -52,4 +52,4 @@ const Island = (props: Props) => {
   )
 }
 
-export default Island
+export default IslandSection;

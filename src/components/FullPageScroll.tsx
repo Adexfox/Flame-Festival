@@ -1,9 +1,10 @@
 import React from 'react';
 // import { images } from '../data/data';
-import Home from './homeSection';
-import Hunt from './huntSection';
-import Island from './islandSection';
-import Program from './programSection';
+import HomeSection from './homeSection';
+import HuntSection from './huntSection';
+import IslandSection from './islandSection';
+import ProgramSection from './programSection';
+import JourneySection from './journeySection';
 
             /*****************
              * PAGE SECTIONS *
@@ -18,31 +19,30 @@ const FullPageScroll = () => {
 
                 <section className='home' id='home'>
                     {/* <img src={images[8].url} alt="" /> */}
-                        <Home />
+                        <HomeSection />
                 </section>
 
                 {/* ISLAND */}
 
                 <section className='island' id='island'>
-                    <Island />
+                    <IslandSection />
                 </section>
 
                 {/* HUNT */}
 
                 <section className='hunt' id='hunt'>
-                    <Hunt />
+                    <HuntSection />
                 </section>
 
                 {/* THE PROGRAM */}
 
                 <section className='program' id='program'>
-                    <Program />
+                    <ProgramSection />
                 </section>
-
                 {/* JOURNEY */}
 
                 <section className='journey' id='journey'>
-                    <h1>Journey</h1>
+                    <JourneySection />
                 </section>
 
                 {/* PACKAGE */}

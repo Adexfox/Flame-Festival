@@ -51,3 +51,28 @@
       position: center;
       repeat: no-repeat;};
 };
+
+@mixin handwriting{
+       font: {
+                family: $secondary-handwriting;
+                weight: 400;
+                size: 2rem;
+            }
+            color: black;
+            padding: 3.5rem 0 1rem;
+}
+
+@mixin section-header{
+       font: {
+                family: $primary-font;
+                weight: 500;
+                size: 1.75rem;
+            }
+            margin-bottom: 1rem;
+}
+@mixin section-text{
+      color: black;
+      font-size: 1rem;
+      line-height: 2;
+      margin-bottom: 2rem;
+}
