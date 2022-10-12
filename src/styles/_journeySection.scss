@@ -7,17 +7,7 @@
     height: 60vh;
     width: 100%;
     .fifth-cut{
-            position: absolute;
-            max-height: 50px;
-            max-width: 100%;
-            left: 0;
-            top: -4%;
-            margin: 0;
-            padding: 0;
-            z-index: 1;
-            transform: rotate(180deg);
-            @include bgCover;
-           
+           @include top-cut;
     }
     .journey-section-1-text{
         position: absolute;

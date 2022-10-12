@@ -5,7 +5,7 @@ const useColor  = (scrollPosition) => {
   // const [position, setPosition] = useState(scrollPosition);
   const[section,  setSection] = useState(scrollPosition)
   const listenScrollEvent = () => {
-    if(((window.scrollY > 3790 ) && (window.scrollY < 4530)) || ((window.scrollY > 5025 ) && (window.scrollY < 5765)) || (window.scrollY < section) ){
+    if(((window.scrollY > 3740 ) && (window.scrollY < 4530)) || ((window.scrollY > 5025 ) && (window.scrollY < 5765)) || (window.scrollY < section) ){
       setElementColor('white')
     }
     else{

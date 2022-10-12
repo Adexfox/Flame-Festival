@@ -1,19 +1,9 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 
 type Props = {}
 
 const JourneySection = (props: Props) => {
-    const [position, setposition] = useState(0);
-    const checkPosition = () =>{
-        setposition(Math.round(window.scrollY))
-    }
-    useEffect(() => {
-      window.addEventListener('scroll', checkPosition);
-      
-      return () => {
-          window.removeEventListener('scroll', checkPosition);
-    }
-    })
+  
   return (
     <>
       <section className='journey-section-1' >
