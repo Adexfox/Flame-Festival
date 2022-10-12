@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 
 type Props = {}
 
-const Home = (props: Props) => {
+const HomeSection = (props: Props) => {
   useEffect(() => {
       AOS.init({duration: 3000});
     }, [])
@@ -62,4 +62,4 @@ const Home = (props: Props) => {
   )
 }
 
-export default Home
+export default HomeSection;

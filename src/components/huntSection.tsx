@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 type Props = {}
 
-const Hunt = (props: Props) => {
+const HuntSection = (props: Props) => {
 
     useEffect(() => {
       AOS.init({duration: 3000});
@@ -33,4 +33,4 @@ const Hunt = (props: Props) => {
   )
 }
 
-export default Hunt
+export default HuntSection;
