@@ -9,7 +9,7 @@
       color: $accent-color;
       position: relative;
       z-index: 1;
-      font:{
+      font: {
             family: $secondary-font;
             weight: 600;
             size: 1rem;
@@ -46,10 +46,11 @@
 };
 
 @mixin bgCover {
-      background:{ 
+      background: { 
       size: cover;
       position: center;
-      repeat: no-repeat;};
+      repeat: no-repeat;
+      };
 };
 
 @mixin handwriting{
@@ -74,5 +75,28 @@
       color: black;
       font-size: 1rem;
       line-height: 2;
-      margin-bottom: 2rem;
+      // margin-bottom: 2rem;
+}
+@mixin top-cut {
+      position: absolute;
+      max-height: 50px;
+      max-width: 100%;
+      left: 0;
+      top: -4%;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+      transform: rotate(180deg);    
+      @include bgCover; 
+}
+@mixin flower {
+      width: 100%;
+      position: absolute;
+      max-width: 240px;
+      max-height: 240px;
+      width: 300px;
+      z-index: 1;
+      img{
+      width: 100%;
+      }
 }
