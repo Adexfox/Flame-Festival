@@ -26,8 +26,7 @@ const JourneySection = (props: Props) => {
         </div>
       </section>
       <section className='journey-section-2'>
-        <video src='videos/map.mp4' muted loop autoPlay>
-        </video>
+        <video src='videos/map.mp4' muted loop autoPlay />
       </section>
     </>
   )

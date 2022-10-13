@@ -31,6 +31,7 @@ const PackageSection = (props: Props) => {
                 <p data-aos='slide-down' data-aos-delay="50">General Admission is your key to the expirience, but VIP unlocks another level of possibilities. </p>
                 <p data-aos='slide-down' data-aos-delay="50"> From backstage partires to custom expriences. VIP offers uncompromising access to the best of the best</p>
                 <button className="package-btn" data-aos='slide-down' data-aos-delay="50">Get Tickets</button>
+                
             </div>
             <div className='eighth-cut'>
                 <img src="images/top-cut.png" alt="" />

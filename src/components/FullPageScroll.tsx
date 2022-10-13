@@ -6,6 +6,7 @@ import IslandSection from './islandSection';
 import ProgramSection from './programSection';
 import JourneySection from './journeySection';
 import PackageSection from './packageSection';
+import ExperienceSection from './experienceSection';
 
             /*****************
              * PAGE SECTIONS *
@@ -55,7 +56,7 @@ const FullPageScroll = () => {
                 {/* EXPERIENCE */}
 
                 <section className='experience' id='experience'>
-                    <h1>Experience</h1>
+                    <ExperienceSection />
                 </section>
             {/* </main> */}
         </>
