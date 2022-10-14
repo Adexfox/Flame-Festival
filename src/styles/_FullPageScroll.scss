@@ -14,7 +14,7 @@
   border-radius: 50%;
   border: 1px solid rgb(0, 0, 0, 0.4);
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.4);
   margin: 0.75rem;
   position: relative;
   pointer-events: all;
@@ -109,4 +109,7 @@
      min-height: 80vh;
     // z-index: -99;
 
+}
+.footer{
+  min-height: 10vh;
 }

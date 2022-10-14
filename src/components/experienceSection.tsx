@@ -43,13 +43,16 @@ const ExperienceSection = (props: Props) => {
                 </div>
             </section>
             <section className="experience-section-4">
-                
+                <div className="slide-animation">
+                    
+                </div>
+                <div className='cut-12'>
+                <img src="images/top-cut.png" alt="" />
+            </div>
             </section>
-            <footer>
-                
-            </footer>
+            
         </section>
-    
+        
     </>
   )
 }
