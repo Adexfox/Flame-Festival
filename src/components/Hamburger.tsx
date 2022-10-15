@@ -2,7 +2,7 @@ import React, {  useState } from 'react';
 import { items } from './menuItems';
 import { Link } from 'react-router-dom';
 import useColor from '../hooks/useColor';
-
+import { BiChat } from 'react-icons/bi';
 
           
 
@@ -46,6 +46,7 @@ import useColor from '../hooks/useColor';
           <div className='ticket'>
               <button className='ticket-btn' style={ticketStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Get Tickets</button>
           </div>
+           
         </div>
         
         

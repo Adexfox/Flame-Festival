@@ -1698,4 +1698,22 @@ html::-webkit-scrollbar {
 }
 .footer-box .subscribe .social {
   cursor: pointer;
+}
+
+.chat {
+  position: fixed;
+  left: 93%;
+  background-color: #017294;
+  width: 42px;
+  border-radius: 6px;
+  height: 42px;
+  z-index: 4;
+}
+.chat .chat-bubble {
+  margin: 10px 5px 5px 8px;
+}
+
+.sticky1 {
+  position: fixed;
+  top: 90vh;
 }/*# sourceMappingURL=main.css.map */

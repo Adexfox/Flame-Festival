@@ -4,6 +4,8 @@ import { FaTwitter } from 'react-icons/fa'
 import { FaFacebookF } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
 import { GrMail } from 'react-icons/gr'
+import { BiChat } from 'react-icons/bi'
+
 
 type Props = {
 
@@ -28,7 +30,11 @@ const Footer = (props: Props) => {
                 </div>
                 
             </div>
+           
         </div>
+            <div className='chat sticky1'>
+                <BiChat color='rgb(255, 255, 255, 0.9)' size='1.5rem' className='chat-bubble' />
+           </div>
     </IconContext.Provider>
   )
 }

@@ -62,6 +62,7 @@ const FullPageScroll = () => {
                 <section className="footer">
                     <Footer />
                 </section>
+                
             {/* </main> */}
         </>
     );
