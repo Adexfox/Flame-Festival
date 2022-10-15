@@ -19,7 +19,6 @@ const HomeSection = (props: Props) => {
         </section>
 
         <section className='bg-text'>
-          
           {/* <img className='video-background' src='images/footer-2.jpg' alt="" /> */}
           <img src='images/flame.png' alt='flame' className='bg-text-flame'/><br />
           <img src='images/zigzag.png' alt='zigzag' className='bg-text-zigzag'/>
@@ -36,7 +35,7 @@ const HomeSection = (props: Props) => {
                   <img src='images/arrow.png' alt='arrow' className='arrow'/>
                 </div>
               </a>
-
+             
             </div>
 
           </div>

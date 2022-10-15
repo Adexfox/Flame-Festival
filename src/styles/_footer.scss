@@ -21,7 +21,6 @@
         align-items: center;
         padding-bottom: 2rem;
         z-index: 1;
-        
         h3{
             font: {
                 size: 1.25rem;
@@ -38,7 +37,7 @@
         width: 70%;
         cursor: pointer;
         p{
-
+            
             font-size: 1rem;
             margin: 0.75rem 0 1.5rem;
         }
@@ -46,6 +45,25 @@
             cursor: pointer;
         }
     }
-
-
+    
+    
+}
+.chat{
+        position: fixed;
+        left: 93%;
+        background-color: $accent-color;
+        width: 42px;
+        border-radius: 6px;
+        height: 42px;
+        z-index: 4;
+        .chat-bubble{
+            margin: 10px 5px 5px 8px;
+            // margin: auto;
+            // width: 60%;
+            // padding: 10px;
+        }
+}
+.sticky1{
+    position: fixed;
+    top: 90vh;
 }
