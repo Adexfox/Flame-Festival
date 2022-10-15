@@ -55,6 +55,8 @@
             @include btn;
             position: relative;
             top: 35%;
+            transform: all ease-in-out;
+            z-index: 2;
         }
         .fourth-cut{
              position: absolute;

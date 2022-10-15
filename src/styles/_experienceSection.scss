@@ -23,6 +23,7 @@
     button{
             @include btn;
             margin-top: 2rem;
+            z-index: 2;
         }
     &-1{
         @include experience;
