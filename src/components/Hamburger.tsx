@@ -2,8 +2,6 @@ import React, {  useState } from 'react';
 import { items } from './menuItems';
 import { Link } from 'react-router-dom';
 import useColor from '../hooks/useColor';
-import { BiChat } from 'react-icons/bi';
-
           
 
 
@@ -56,18 +54,15 @@ import { BiChat } from 'react-icons/bi';
             {items.map( (props) => {
               const {id, text, url} = props;
               return(
-
-                <li className={`menu-nav__item ${showMenu ? "open" : ""}`} key={id}>
-                      {/* <a href={url} className='menu-nav__link'>{text}</a> */}
-                      <Link to={url} className='menu-nav__link'>{text} </Link>
-               
-                </li>
-               
+                  <li className={`menu-nav__item ${showMenu ? "open" : ""}`} key={id}>
+                        {/* <a href={url} className='menu-nav__link'>{text}</a> */}
+                        <Link to={url} className='menu-nav__link'>{text} </Link>
+                
+                  </li>
                   )
               })}
 
         </ul>
-
       </nav>
     </>
   )
