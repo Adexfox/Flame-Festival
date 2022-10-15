@@ -51,6 +51,7 @@
         .package-btn{
             @include btn;
             margin-top: 4rem;
+            z-index: 2;
         }
     }
     .eighth-cut{

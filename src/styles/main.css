@@ -986,6 +986,8 @@ html::-webkit-scrollbar {
   transition: all 0.5s ease-in-out;
   position: relative;
   top: 35%;
+  transform: all ease-in-out;
+  z-index: 2;
 }
 .program-section .program-1 .program-btn::before {
   position: absolute;
@@ -1162,6 +1164,7 @@ html::-webkit-scrollbar {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   margin-top: 2rem;
+  z-index: 2;
 }
 .journey-section-1 .journey-section-1-text .journey-btn::before {
   position: absolute;
@@ -1321,6 +1324,7 @@ html::-webkit-scrollbar {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   margin-top: 4rem;
+  z-index: 2;
 }
 .package-section-1-text .package-btn::before {
   position: absolute;
@@ -1451,6 +1455,7 @@ html::-webkit-scrollbar {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   margin-top: 2rem;
+  z-index: 2;
 }
 .experience-section button::before {
   position: absolute;
