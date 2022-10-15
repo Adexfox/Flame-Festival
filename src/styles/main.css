@@ -1702,7 +1702,7 @@ html::-webkit-scrollbar {
 
 .chat {
   position: fixed;
-  left: 93%;
+  right: 1%;
   background-color: #017294;
   width: 42px;
   border-radius: 6px;
