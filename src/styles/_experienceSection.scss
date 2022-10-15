@@ -47,6 +47,23 @@
             transform: rotate(0deg);
             top: 95%;
         }
+        .flower-1{
+            @include flower;
+            top: 10%;
+            
+        }
+        .flower-2{
+            @include flower;
+            top: 65%;
+            right: 0;
+            z-index: 2;
+            background-color: red;
+            img{
+                width: 60%;
+                position: absolute;
+                right: 0;
+            }
+        }
     }
     &-2{
         position: relative;
@@ -108,13 +125,13 @@
             width: 100%;
             height: 120vh;
             margin: 0 auto;
-            animation: textureSlide 20s step-end infinite;
+            animation: textureSlide 15s step-end infinite;
             @keyframes textureSlide {
                 0%,100%{
-                    background-image: url('/public/images/firstpaint.png');
+                    background-image: url('/public/images/first-paint.png');
                 }
                 50%{
-                    background-image: url('/public/images/second-paint1.png');
+                    background-image: url('/public/images/second-paint.png');
                 }
             }
             
