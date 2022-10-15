@@ -198,8 +198,11 @@ html::-webkit-scrollbar {
 .menu-burger.open {
   background: transparent;
 }
-.menu-burger.open .ticket {
-  display: none;
+.menu-burger.open .ticket-btn {
+  position: absolute;
+  width: 124px;
+  height: 36px;
+  right: 0;
 }
 .menu-burger.open .menu-text {
   visibility: hidden;
@@ -329,6 +332,7 @@ html::-webkit-scrollbar {
   padding: 1rem 0;
   font-weight: 300;
   color: #017294;
+  font-weight: 500;
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
@@ -1707,6 +1711,7 @@ html::-webkit-scrollbar {
   width: 42px;
   border-radius: 6px;
   height: 42px;
+  cursor: pointer;
   z-index: 4;
 }
 .chat .chat-bubble {

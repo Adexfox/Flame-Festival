@@ -57,7 +57,13 @@
         &.open{
             background: transparent;
             .ticket{
-                display: none;
+                // display: none;
+                &-btn{
+                    position: absolute;
+                    width: 124px;
+                    height: 36px;
+                    right: 0;
+                  }
             }
             .menu-text{
                 visibility: hidden;
@@ -170,6 +176,7 @@
             padding: 1rem 0;
             font-weight: 300;
             color: $accent-color;
+            font-weight: 500;
             @include transition-ease;
 
             &:hover{
