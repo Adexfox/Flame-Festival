@@ -82,7 +82,7 @@ html::-webkit-scrollbar {
   grid-template-columns: 1fr;
   padding: 2rem;
   padding-right: 0.5rem;
-  z-index: 2;
+  z-index: 3;
 }
 
 .home,
@@ -441,6 +441,7 @@ html::-webkit-scrollbar {
   font-weight: 500;
   letter-spacing: 0.25rem;
   color: #ffffff;
+  background-color: rgba(0, 113, 148, 0.2);
 }
 .bg-text .bg {
   position: absolute;
@@ -453,41 +454,71 @@ html::-webkit-scrollbar {
   height: 110vh;
   margin: 0 auto;
   z-index: -99;
-  -webkit-animation: bg 30s ease infinite;
-          animation: bg 30s ease infinite;
+  -webkit-animation: bg 90s ease infinite;
+          animation: bg 90s ease infinite;
 }
 @-webkit-keyframes bg {
   0%, 100% {
     background-image: url("/public/images/slide.jpg");
   }
-  20% {
+  10% {
     background-image: url("/public/images/slide1.jpg");
   }
-  40% {
+  20% {
     background-image: url("/public/images/slide2.jpg");
   }
-  60% {
+  30% {
     background-image: url("/public/images/slide3.jpg");
   }
-  80% {
+  40% {
     background-image: url("/public/images/slide4.jpg");
+  }
+  50% {
+    background-image: url("/public/images/slide5.jpg");
+  }
+  60% {
+    background-image: url("/public/images/slide6.jpg");
+  }
+  70% {
+    background-image: url("/public/images/slide7.jpg");
+  }
+  80% {
+    background-image: url("/public/images/slide8.jpg");
+  }
+  90% {
+    background-image: url("/public/images/slide9.jpg");
   }
 }
 @keyframes bg {
   0%, 100% {
     background-image: url("/public/images/slide.jpg");
   }
-  20% {
+  10% {
     background-image: url("/public/images/slide1.jpg");
   }
-  40% {
+  20% {
     background-image: url("/public/images/slide2.jpg");
   }
-  60% {
+  30% {
     background-image: url("/public/images/slide3.jpg");
   }
-  80% {
+  40% {
     background-image: url("/public/images/slide4.jpg");
+  }
+  50% {
+    background-image: url("/public/images/slide5.jpg");
+  }
+  60% {
+    background-image: url("/public/images/slide6.jpg");
+  }
+  70% {
+    background-image: url("/public/images/slide7.jpg");
+  }
+  80% {
+    background-image: url("/public/images/slide8.jpg");
+  }
+  90% {
+    background-image: url("/public/images/slide9.jpg");
   }
 }
 .bg-text-flame, .bg-text-zigzag {
@@ -497,7 +528,7 @@ html::-webkit-scrollbar {
   display: inline-block;
   position: relative;
   margin: 0;
-  z-index: -1;
+  z-index: 1;
   top: 22%;
   margin-bottom: 0;
 }
@@ -541,6 +572,7 @@ html::-webkit-scrollbar {
   margin: 0 auto;
   height: auto;
   margin-top: 3rem;
+  z-index: 2;
 }
 .bg-text-action .action .direction:hover {
   transform: scale(1.1);
@@ -573,6 +605,7 @@ html::-webkit-scrollbar {
   color: #ffffff;
   font-weight: 500;
   border-color: #ffffff;
+  z-index: 2;
 }
 .bg-text-action .action .btn::before {
   position: absolute;
@@ -665,7 +698,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   background-color: white;
-  z-index: -99;
+  z-index: 1;
 }
 .bg-cut .first-cut {
   position: absolute;
@@ -1030,7 +1063,7 @@ html::-webkit-scrollbar {
   width: 100%;
   position: absolute;
   left: -1%;
-  top: 14%;
+  top: 16%;
   max-width: 240px;
   max-height: 240px;
   width: 300px;
@@ -1075,6 +1108,12 @@ html::-webkit-scrollbar {
   font-size: 2.5rem;
   font-weight: 400;
   font-style: italic;
+}
+
+.overlay {
+  background-color: rgba(241, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
 }
 
 /**
@@ -1527,6 +1566,38 @@ html::-webkit-scrollbar {
   transform: rotate(0deg);
   top: 95%;
 }
+.experience-section-1 .flower-1 {
+  width: 100%;
+  position: absolute;
+  max-width: 240px;
+  max-height: 240px;
+  width: 300px;
+  z-index: 1;
+  top: 10%;
+}
+.experience-section-1 .flower-1 img {
+  width: 100%;
+}
+.experience-section-1 .flower-2 {
+  width: 100%;
+  position: absolute;
+  max-width: 240px;
+  max-height: 240px;
+  width: 300px;
+  z-index: 1;
+  top: 65%;
+  right: 0;
+  z-index: 2;
+  background-color: red;
+}
+.experience-section-1 .flower-2 img {
+  width: 100%;
+}
+.experience-section-1 .flower-2 img {
+  width: 60%;
+  position: absolute;
+  right: 0;
+}
 .experience-section-2 {
   position: relative;
   height: 75vh;
@@ -1601,23 +1672,23 @@ html::-webkit-scrollbar {
   width: 100%;
   height: 120vh;
   margin: 0 auto;
-  -webkit-animation: textureSlide 20s step-end infinite;
-          animation: textureSlide 20s step-end infinite;
+  -webkit-animation: textureSlide 15s step-end infinite;
+          animation: textureSlide 15s step-end infinite;
 }
 @-webkit-keyframes textureSlide {
   0%, 100% {
-    background-image: url("/public/images/firstpaint.png");
+    background-image: url("/public/images/first-paint.png");
   }
   50% {
-    background-image: url("/public/images/second-paint1.png");
+    background-image: url("/public/images/second-paint.png");
   }
 }
 @keyframes textureSlide {
   0%, 100% {
-    background-image: url("/public/images/firstpaint.png");
+    background-image: url("/public/images/first-paint.png");
   }
   50% {
-    background-image: url("/public/images/second-paint1.png");
+    background-image: url("/public/images/second-paint.png");
   }
 }
 .experience-section-4 .cut-12 {
@@ -1682,26 +1753,36 @@ html::-webkit-scrollbar {
   align-items: center;
   padding-bottom: 2rem;
   z-index: 1;
+  cursor: pointer;
 }
 .footer-box .logo h3 {
-  font-size: 1.25rem;
+  font-size: 0.95rem;
   font-weight: 700;
   padding-left: 0.125rem;
   font-family: open sans;
   font-weight: 700;
+  position: absolute;
+  margin-top: 0.75rem;
   cursor: pointer;
+}
+.footer-box .logo img {
+  width: 50px;
+  position: absolute;
+  top: -20%;
 }
 .footer-box .subscribe {
   height: 50%;
   width: 70%;
   cursor: pointer;
+  z-index: 1;
 }
 .footer-box .subscribe p {
   font-size: 1rem;
-  margin: 0.75rem 0 1.5rem;
+  margin: 0.75rem 0 0.75rem;
 }
 .footer-box .subscribe .social {
   cursor: pointer;
+  margin-left: 0.25rem;
 }
 
 .chat {
@@ -1711,7 +1792,6 @@ html::-webkit-scrollbar {
   width: 42px;
   border-radius: 6px;
   height: 42px;
-  cursor: pointer;
   z-index: 4;
 }
 .chat .chat-bubble {
@@ -1720,5 +1800,5 @@ html::-webkit-scrollbar {
 
 .sticky1 {
   position: fixed;
-  top: 90vh;
+  top: 92vh;
 }/*# sourceMappingURL=main.css.map */
