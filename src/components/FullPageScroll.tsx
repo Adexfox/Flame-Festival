@@ -7,6 +7,7 @@ import ProgramSection from './programSection';
 import JourneySection from './journeySection';
 import PackageSection from './packageSection';
 import ExperienceSection from './experienceSection';
+import Footer from './footer';
 
             /*****************
              * PAGE SECTIONS *
@@ -57,6 +58,9 @@ const FullPageScroll = () => {
 
                 <section className='experience' id='experience'>
                     <ExperienceSection />
+                </section>
+                <section className="footer">
+                    <Footer />
                 </section>
             {/* </main> */}
         </>
