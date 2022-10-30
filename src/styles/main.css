@@ -14,6 +14,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1801,4 +1802,151 @@ html::-webkit-scrollbar {
 .sticky1 {
   position: fixed;
   top: 92vh;
+}
+
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.journey-page {
+  height: 100vh;
+  width: 75%;
+  position: relative;
+  margin: 0 auto;
+  font-family: "Cormorant Garamond", serif;
+}
+.journey-page .header {
+  position: relative;
+  top: 8%;
+  left: 2%;
+  display: inline-block;
+}
+.journey-page .header h1 {
+  color: orange;
+  font-size: 3rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+.journey-page .journey-plane {
+  width: 100%;
+  position: relative;
+  max-width: 70%;
+  max-height: 70%;
+  margin: 0 auto;
+  top: 1%;
+  left: 2%;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.journey-page .journey-plane img {
+  width: 100%;
+}
+.journey-page .journey-plane:hover {
+  transform: scale(1.2);
+}
+.journey-page .journey-body {
+  text-align: left;
+  display: inline-block;
+}
+.journey-page .journey-body p {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.journey-page .journey-body .hashtag {
+  position: relative;
+  left: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  font-family: "Krub", sans-serif;
+}
+.journey-page .journey-map {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  left: calc(-50vw + 50%);
+  overflow: hidden;
+  z-index: -99;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.journey-page .journey-map:hover {
+  width: inherit;
+  height: 82vh;
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  left: calc(-50vw + 50%);
+  z-index: -99;
+}
+.journey-page footer {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.journey-page footer .social {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.journey-page footer .social:hover {
+  color: #017294;
+}
+.journey-page footer .zigzag {
+  width: 100%;
+  position: absolute;
+  max-width: 240px;
+  max-height: 240px;
+  width: 300px;
+  z-index: 1;
+  max-width: 44px;
+  max-height: 44px;
+  filter: invert(100%);
+  position: relative;
+}
+.journey-page footer .zigzag img {
+  width: 100%;
+}
+.journey-page footer .nav-cta {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+.journey-page footer .nav-cta a {
+  text-decoration: none;
+  color: black;
+  font-family: "Krub", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding-left: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.journey-page footer .nav-cta a:hover {
+  color: #017294;
 }/*# sourceMappingURL=main.css.map */
