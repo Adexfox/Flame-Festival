@@ -1827,6 +1827,14 @@ html::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+}
 .journey-page {
   height: 100vh;
   width: 75%;
@@ -1842,9 +1850,15 @@ html::-webkit-scrollbar {
 }
 .journey-page .header h1 {
   color: orange;
-  font-size: 3rem;
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
+  font-size: 3.25rem;
+  font-family: mySecondFont;
+  font-weight: 500;
+}
+.journey-page .header h1 .three {
+  font-family: myFirstFont;
+}
+.journey-page .header h1 .one {
+  font-family: myFirstFont;
 }
 .journey-page .journey-plane {
   width: 100%;
@@ -1914,9 +1928,10 @@ html::-webkit-scrollbar {
 .journey-page footer .social {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  color: black;
 }
 .journey-page footer .social:hover {
-  color: #017294;
+  color: orange;
 }
 .journey-page footer .zigzag {
   width: 100%;
@@ -1948,5 +1963,5 @@ html::-webkit-scrollbar {
   transition: all 0.5s ease-in-out;
 }
 .journey-page footer .nav-cta a:hover {
-  color: #017294;
+  color: orange;
 }/*# sourceMappingURL=main.css.map */

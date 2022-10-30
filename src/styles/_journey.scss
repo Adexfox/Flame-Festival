@@ -1,6 +1,17 @@
 @import 'config';
 @import 'mixin';
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+  
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+  
+}
+
 .journey-page{
     // background-color: red;
     height: 100vh;
@@ -18,10 +29,17 @@
         h1{
             color: orange;   
             font: {
-                size: 3rem;
-                family: $handwriting;
-                weight: 700;
+                size: 3.25rem;
+                family: mySecondFont;
+                weight: 500;
             };
+            .three{
+                font-family: myFirstFont;
+            }
+            .one{
+                font-family: myFirstFont;
+            }
+            
         }
     }
     .journey-plane{
@@ -100,9 +118,10 @@
         .social{
             cursor: pointer;
             @include transition-ease;
+            color: black;
 
             &:hover{
-                color: $accent-color;
+                color: orange;//$accent-color;
                 
             }
         }
@@ -126,7 +145,7 @@
                 padding-left: 1.5rem;
                 @include transition-ease;  
                 &:hover{
-                    color: $accent-color;
+                    color: orange;//$accent-color;
                 }
             }
         }

@@ -9,7 +9,6 @@ interface journeyProps {
 const Journey = ({}: journeyProps) => {
   return(
     <>
-        <Hamburger />
         <JourneyComp />
     </>
   ) 
