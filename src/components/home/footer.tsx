@@ -13,7 +13,7 @@ type Props = {
 
 const Footer = (props: Props) => {
     return (
-      <IconContext.Provider value={{ color: '#017294', style: {marginRight:  '2rem'}, className: 'social'}}>
+      <IconContext.Provider  value={{  style: {marginRight:  '2rem'}, className: 'social'}}>
         <div className='footer-box'>
             
             <div className="logo">
