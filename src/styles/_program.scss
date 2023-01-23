@@ -1,0 +1,42 @@
+@import 'config';
+@import 'mixin';
+
+.details{
+        position: relative;
+        width: 90%;
+        height: 100vh;
+        font-family: $primary-font;
+        margin: 0 auto;
+        p, h1{
+            position: relative;
+            text-align: center;
+            align-items: center;
+            top: 20%;
+            margin-top: 1.5rem;
+        }
+        p{
+            font: {
+                size: 1.05rem;
+            }
+
+        }
+        h1{
+            font: {
+                size: 4rem;
+                family: mySecondFont;
+
+            }
+            margin-bottom: 3.5rem;
+            word-spacing: 1.25rem;
+            letter-spacing: 0.25rem;
+        }
+        a{
+            color: $accent-color;
+            font: {
+                family: $secondary-font;
+                weight: 400;
+                size: 0.85rem;
+            } 
+            
+        }
+}

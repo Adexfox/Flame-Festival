@@ -34,4 +34,13 @@ html {
 html::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
-
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+  
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+  
+}

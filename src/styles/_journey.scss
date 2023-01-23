@@ -1,16 +1,7 @@
 @import 'config';
 @import 'mixin';
 
-@font-face {
-  font-family: myFirstFont;
-  src: url(/public/fonts/Better.ttf);
-  
-}
-@font-face {
-  font-family: mySecondFont;
-  src: url(/public/fonts/Darlington.ttf);
-  
-}
+
 
 .journey-page{
     // background-color: red;
@@ -79,6 +70,7 @@
             display: inline-block;
             margin: 0 auto;
             padding-bottom: 2rem;
+            
             font: {
                 weight: 700;
                 size: 0.85rem;

@@ -21,7 +21,7 @@
         align-items: center;
         padding-bottom: 2rem;
         z-index: 1;
-        cursor: pointer;
+        // cursor: pointer;
         h3{
             font: {
                 size: 0.95rem;
@@ -45,16 +45,26 @@
     .subscribe{
         height: 50%;
         width: 70%;
-        cursor: pointer;
         z-index: 1;
         p{
             
             font-size: 1rem;
-            margin: 0.75rem 0 0.75rem;
+            margin: 0.75rem 0 1.05rem;
+            display: inline-block;
+            cursor: pointer;
+            &:hover{
+                color: rgb(0, 0, 0, 0.7);
+                font-weight: 600;
+            }
         }
+        
         .social{
             cursor: pointer;
             margin-left: 0.25rem;
+            color: $accent-color;
+            &:hover{
+                color: black;
+            }
         }
     }
     
