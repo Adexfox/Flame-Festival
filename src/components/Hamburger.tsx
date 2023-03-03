@@ -39,7 +39,7 @@ import useColor from '../hooks/useColor';
   return (
     <>
       <div className={`menu ${showMenu ? "open" : ""}`} onClick={toggleMenu}>
-        <div className={`menu-burger ${showMenu ? "open" : ""}`}>
+        <div className={`menu-burger ${showMenu ? "open" : ""}`} style={{color: elementColor}}>
           <p className='menu-text' style={{color: elementColor, fontWeight: '600'}} >Menu</p>
           <div className='ticket'>
               <button className='ticket-btn' style={ticketStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Get Tickets</button>
@@ -63,7 +63,6 @@ import useColor from '../hooks/useColor';
               })}
 
         </ul>
-        div
       </nav>
     </>
   )

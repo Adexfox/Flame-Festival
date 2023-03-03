@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
-
 const useColor  = (scrollPosition) => {
   const [elementColor, setElementColor] = useState('white');
   // const [position, setPosition] = useState(scrollPosition);
   const[section,  setSection] = useState(scrollPosition)
   const listenScrollEvent = () => {
-    if(((window.scrollY > 3740 ) && (window.scrollY < 4530)) || ((window.scrollY > 5025 ) && (window.scrollY < 5765)) || ((window.scrollY > 7600 ) && (window.scrollY < 8209)) || ((window.scrollY > 6550 ) && (window.scrollY < 7120)) || (window.scrollY < section) ){
+    if(((window.scrollY > 3740 ) && (window.scrollY < 4530)) || ((window.scrollY > 5025 ) && (window.scrollY < 5765)) || ((window.scrollY > 6399 ) && (window.scrollY < 7009)) || ((window.scrollY > 7486 ) && (window.scrollY < 8060)) || (window.scrollY < section) ){
       setElementColor('white')
     }
     else{

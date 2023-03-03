@@ -1,17 +1,28 @@
 @import 'config';
 @import 'mixin';
-
+.ham{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    background-color: $accent-color;
+}
+.program-page{
+    overflow-y: hidden;
+    touch-action: none;
+}
 .details{
         position: relative;
+        top: 10vh;
         width: 90%;
-        height: 100vh;
+        height: 90vh;
         font-family: $primary-font;
         margin: 0 auto;
         p, h1{
             position: relative;
             text-align: center;
             align-items: center;
-            top: 20%;
+            top: 15%;
             margin-top: 1.5rem;
         }
         p{
@@ -37,6 +48,10 @@
                 weight: 400;
                 size: 0.85rem;
             } 
+            &:hover{
+                color: orange;
+            }
             
         }
+        
 }

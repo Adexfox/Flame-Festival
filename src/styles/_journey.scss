@@ -34,7 +34,6 @@
         }
     }
     .journey-plane{
-        // background-color: red;
         width: 100%;
         position: relative;
         max-width: 70%;
@@ -46,6 +45,7 @@
         @include transition-ease;
         img{
         width: 100%;
+        filter: drop-shadow(30px 10px 4px rgb(128, 128, 128, 25%))
         }
         &:hover{
             transform: scale(1.2);
@@ -55,18 +55,23 @@
     .journey-body{
         text-align: left;
         display: inline-block;
+        margin-top: 3%;
         // margin-top: 28px;
         p{
             width: 100%;
+            line-height: 1.8;
+            text-align: justify;
+            text-align-last: justify; 
             font: {
                 weight: 700;
                 size: 1rem;
                 family: $primary-font;
             }
+            
         }
         .hashtag{
             position: relative;
-            left: 50%;
+            left: 45%;
             display: inline-block;
             margin: 0 auto;
             padding-bottom: 2rem;
@@ -99,6 +104,7 @@
             left: calc(-50vw + 50%);
             // background: blue;
             z-index: -99;
+           
         }
     }
     footer{
