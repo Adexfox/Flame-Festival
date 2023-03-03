@@ -42,7 +42,6 @@ html::-webkit-scrollbar {
   src: url(/public/fonts/Darlington.ttf);
 }
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 36vh;
 }
@@ -225,16 +224,6 @@ html::-webkit-scrollbar {
 .menu-burger.open .menu-text {
   visibility: hidden;
 }
-@-webkit-keyframes move {
-  0% {
-    transform: rotate(90deg) translate(1.5rem, 2px);
-    top: 5px;
-  }
-  100% {
-    transform: rotate(90deg) translate(-5px, 2px);
-    top: 2px;
-  }
-}
 @keyframes move {
   0% {
     transform: rotate(90deg) translate(1.5rem, 2px);
@@ -253,10 +242,8 @@ html::-webkit-scrollbar {
   transform: rotate(90deg) translate(0.5rem, 2px);
   width: 2rem;
   transition: all 0.1s ease-in;
-  -webkit-animation: move 1s linear 0.5s normal;
-          animation: move 1s linear 0.5s normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: move 1s linear 0.5s normal;
+  animation-fill-mode: forwards;
   background-color: #017294;
 }
 
@@ -291,46 +278,28 @@ html::-webkit-scrollbar {
   transform: translateY(0);
 }
 .nav .menu-nav.open .menu-nav__item:nth-child(1) {
-  -webkit-animation: animate 1.5s ease-in-out;
-          animation: animate 1.5s ease-in-out;
+  animation: animate 1.5s ease-in-out;
 }
 .nav .menu-nav.open .menu-nav__item:nth-child(2) {
-  -webkit-animation: animate 1.75s ease-in-out;
-          animation: animate 1.75s ease-in-out;
+  animation: animate 1.75s ease-in-out;
 }
 .nav .menu-nav.open .menu-nav__item:nth-child(3) {
-  -webkit-animation: animate 2s ease-in-out;
-          animation: animate 2s ease-in-out;
+  animation: animate 2s ease-in-out;
 }
 .nav .menu-nav.open .menu-nav__item:nth-child(4) {
-  -webkit-animation: animate 2.25s ease-in-out;
-          animation: animate 2.25s ease-in-out;
+  animation: animate 2.25s ease-in-out;
 }
 .nav .menu-nav.open .menu-nav__item:nth-child(5) {
-  -webkit-animation: animate 2.5s ease-in-out;
-          animation: animate 2.5s ease-in-out;
+  animation: animate 2.5s ease-in-out;
 }
 .nav .menu-nav.open .menu-nav__item:nth-child(6) {
-  -webkit-animation: animate 3s ease-in-out;
-          animation: animate 3s ease-in-out;
+  animation: animate 3s ease-in-out;
 }
 .nav .menu-nav.open .menu-nav__item:nth-child(7) {
-  -webkit-animation: animate 3.25s ease-in-out;
-          animation: animate 3.25s ease-in-out;
+  animation: animate 3.25s ease-in-out;
 }
 .nav .menu-nav.open .menu-nav__item:nth-child(8) {
-  -webkit-animation: animate 3.5s ease-in-out;
-          animation: animate 3.5s ease-in-out;
-}
-@-webkit-keyframes animate {
-  0% {
-    opacity: 0;
-    transform: translateY(90px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  animation: animate 3.5s ease-in-out;
 }
 @keyframes animate {
   0% {
@@ -423,6 +392,17 @@ html::-webkit-scrollbar {
   color: #ffffff;
 }
 
+@media only screen and (min-width: 992px) {
+  .ticket {
+    right: 3.6rem;
+  }
+  .menu-burger {
+    left: 2rem;
+  }
+  .menu-text {
+    left: 5.65rem;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -480,40 +460,7 @@ html::-webkit-scrollbar {
   height: 110vh;
   margin: 0 auto;
   z-index: -99;
-  -webkit-animation: bg 90s ease infinite;
-          animation: bg 90s ease infinite;
-}
-@-webkit-keyframes bg {
-  0%, 100% {
-    background-image: url("/public/images/slide.jpg");
-  }
-  10% {
-    background-image: url("/public/images/slide1.jpg");
-  }
-  20% {
-    background-image: url("/public/images/slide2.jpg");
-  }
-  30% {
-    background-image: url("/public/images/slide3.jpg");
-  }
-  40% {
-    background-image: url("/public/images/slide4.jpg");
-  }
-  50% {
-    background-image: url("/public/images/slide5.jpg");
-  }
-  60% {
-    background-image: url("/public/images/slide6.jpg");
-  }
-  70% {
-    background-image: url("/public/images/slide7.jpg");
-  }
-  80% {
-    background-image: url("/public/images/slide8.jpg");
-  }
-  90% {
-    background-image: url("/public/images/slide9.jpg");
-  }
+  animation: bg 90s ease infinite;
 }
 @keyframes bg {
   0%, 100% {
@@ -1364,7 +1311,7 @@ html::-webkit-scrollbar {
 .package-section-1 {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: #ffffff;
 }
 .package-section-1 .seventh-cut {
@@ -1387,7 +1334,7 @@ html::-webkit-scrollbar {
   position: relative;
   display: inline-block;
   color: #017294;
-  top: 35%;
+  top: 15%;
 }
 .package-section-1-text h3 {
   font-family: "love light", cursive;
@@ -1746,16 +1693,7 @@ html::-webkit-scrollbar {
   width: 100%;
   height: 120vh;
   margin: 0 auto;
-  -webkit-animation: textureSlide 15s step-end infinite;
-          animation: textureSlide 15s step-end infinite;
-}
-@-webkit-keyframes textureSlide {
-  0%, 100% {
-    background-image: url("/public/images/first-paint.png");
-  }
-  50% {
-    background-image: url("/public/images/second-paint.png");
-  }
+  animation: textureSlide 15s step-end infinite;
 }
 @keyframes textureSlide {
   0%, 100% {
@@ -1962,6 +1900,7 @@ html::-webkit-scrollbar {
 }
 .journey-page .journey-plane img {
   width: 100%;
+  filter: drop-shadow(30px 10px 4px rgba(128, 128, 128, 0.25));
 }
 .journey-page .journey-plane:hover {
   transform: scale(1.2);
@@ -1969,16 +1908,21 @@ html::-webkit-scrollbar {
 .journey-page .journey-body {
   text-align: left;
   display: inline-block;
+  margin-top: 3%;
 }
 .journey-page .journey-body p {
   width: 100%;
+  line-height: 1.8;
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
   font-weight: 700;
   font-size: 1rem;
   font-family: "Cormorant Garamond", serif;
 }
 .journey-page .journey-body .hashtag {
   position: relative;
-  left: 50%;
+  left: 45%;
   display: inline-block;
   margin: 0 auto;
   padding-bottom: 2rem;
@@ -2086,10 +2030,24 @@ html::-webkit-scrollbar {
   font-family: mySecondFont;
   src: url(/public/fonts/Darlington.ttf);
 }
+.ham {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  top: 0;
+  background-color: #017294;
+}
+
+.program-page {
+  overflow-y: hidden;
+  touch-action: none;
+}
+
 .details {
   position: relative;
+  top: 10vh;
   width: 90%;
-  height: 100vh;
+  height: 90vh;
   font-family: "Cormorant Garamond", serif;
   margin: 0 auto;
 }
@@ -2097,7 +2055,7 @@ html::-webkit-scrollbar {
   position: relative;
   text-align: center;
   align-items: center;
-  top: 20%;
+  top: 15%;
   margin-top: 1.5rem;
 }
 .details p {
@@ -2115,4 +2073,41 @@ html::-webkit-scrollbar {
   font-family: "Krub", sans-serif;
   font-weight: 400;
   font-size: 0.85rem;
+}
+.details a:hover {
+  color: orange;
+}
+
+.breadcrumbs {
+  max-width: 120px;
+  margin: 20px auto;
+  position: absolute;
+  top: 12vh;
+  right: 6vw;
+}
+
+.breadcrumbs > * {
+  display: inline;
+  margin-right: 10px;
+}
+
+.breadcrumbs .crumb:after {
+  content: "|";
+  margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+
+.breadcrumbs .crumb a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.05rem;
+  font-family: "Krub", sans-serif;
+}
+.breadcrumbs .crumb a:hover {
+  color: orange;
 }/*# sourceMappingURL=main.css.map */

@@ -23,7 +23,7 @@ const ExperienceSection = (props: Props) => {
                     <p>invitation to unplug, connect with something bigger, and hunt for something bigger.</p>
                     <p>Join us. It's Lit.</p>
                     
-                    <button btn-1>Get Tickets</button>
+                    <button className='btn-1'>Get Tickets</button>
                     <div className="flower-1">
                         <img src="images/flower-1.png" alt="" data-aos='fade-down' data-aos-delay="50"/>
                     </div>
