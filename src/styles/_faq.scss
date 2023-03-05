@@ -1,0 +1,201 @@
+@import 'config';
+@import 'mixin';
+
+
+.faq-page{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    font-family: $primary-font;
+    a{
+
+        text-decoration: none;
+        color: #000;
+
+      }
+    .logo-container{
+      position: relative;
+      margin-top: 5rem;
+      max-width: 64px;
+      max-height: 48px;
+      margin-left: 10%; 
+      .flames, .zag{
+        filter: grayscale(1) invert(1);
+        max-width:100%;
+        height: 12px;
+        width: 58px;
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        z-index: 1;
+        top: 22%;
+        margin-bottom: 0;
+        color: $accent-color;
+        
+      }
+      .flames{
+        width: 28px;
+        height: 28px;
+        margin-left: 0.8rem;
+      }
+      
+      p{
+        letter-spacing: 0.28rem;
+        margin: 0.95rem 0 0 0.25rem;
+        
+        font: {
+          family: $secondary-font;
+          weight: 700;
+          size: 0.75rem;
+        }
+      }
+    }
+
+    .questions{
+      position: relative;
+      margin-top: 6rem;
+      margin-left: 10%; 
+      .header{
+        position: relative;
+        margin-bottom: 1.25rem;
+        color: $accent-color;
+        letter-spacing: -2px;
+
+        font: {
+          size: 4.25rem;
+          family: mySecondFont;
+          weight: 500;
+          style: italic;
+        }
+        span{
+          font: {
+            family: $handwriting-1;
+            stretch: condensed;
+            style: italic;
+          }
+          position: absolute;
+          top: 8%;
+          letter-spacing: -4px;
+          
+
+        }
+      }h3{
+        font: {
+          weight: 700;
+          size: 1.25rem;
+
+        }
+        margin: 1.25rem 0 1rem;
+        margin-right: 10%;
+
+      }
+      p{
+        font: {
+          size: 1.25rem;
+        }
+        line-height: 1.5;
+        padding-bottom: 0.26rem;
+        word-wrap: break-word;
+        margin-right: 10%;
+      }
+
+    }
+    
+    .footer-segment{
+      position: relative;
+      width: 100vw;
+      margin: 4rem 0 3.25rem;
+      height: 3rem;
+      background-color: #79F2E3;
+    }
+    .faq-footer{
+      position: relative;
+      margin-left: 10%; 
+      display: grid;
+      grid-auto-flow: column; 
+      grid-template-columns: (3, 1fr);
+      justify-content: space-between;
+      margin-bottom: 3rem;
+      font: {
+        size: 1.25rem;
+      }
+      .faq-navigation{
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        .nav-1, .nav-2{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin: -1rem 3.5rem -2rem 0;
+          a{
+            font: {
+              weight: 500;
+              family: $secondary-font;
+              size: 0.9rem;
+            }
+            &:hover{
+              color: orange;
+            }
+          }
+
+        }
+      }
+      .faq-social{
+        position: relative;
+        height: 20%;
+        top: 45%;//45
+        .socials{
+          margin-right: 4rem;
+          cursor: pointer;
+          @include transition-ease;
+          &:hover{
+            color: orange;
+          }
+        }
+      }
+      .customer-service{
+        position: relative;
+        margin-right: 4rem;
+        font: {
+          family: $secondary-font;
+          size: 0.8rem; 
+        }
+        h3{
+          margin-bottom: 1rem;
+          font-size: 0.85rem;
+          a{
+            font-weight: 600;
+            color: $accent-color;
+            &:hover{
+              color: orange;
+            }
+          }
+          p{
+            text-align: justify;
+            text-align-last: justify; 
+          }
+        }
+      }
+      
+
+    }
+    
+    
+    
+}
+@media only screen and (max-width: 768px) {
+    // .faq-navigation{
+    //   font-size: 1rem;
+    //   .nav-1, .nav-2{
+    //     margin: 0;
+    //     background-color: red;
+    //   }
+    // }
+    // 
+    // .socials{
+    //   margin-right: 0.5rem;
+    // }
+}

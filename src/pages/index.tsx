@@ -18,7 +18,7 @@ import Experience from './experience';
 import Faq from './faq';
 import Error from './error';
 import Contact from './contact';
-import Breadcrumbs from '../components/breadcrumbs';
+import Breadcrumbs from '../components/journey/breadcrumbs';
 
 
             /**********************
@@ -39,6 +39,8 @@ const ReactRouterSetup = () => {
                     <Route path='/packages' element={<Packages />} />
                     <Route path='/experience' element={<Experience />} />
                     <Route path='/faq' element={<Faq />} />
+                    <Route path='/faq/journey' element={<Journey />} />
+                    <Route path='/faq/packages' element={<Packages />} />
                     <Route path='/journey/faq' element={<Faq />} />
                     <Route path='/journey/contact' element={<Contact />} />
                     <Route path='*' element={<Error />} />

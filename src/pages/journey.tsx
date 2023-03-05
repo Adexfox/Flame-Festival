@@ -1,5 +1,5 @@
 import React from 'react'
-import JourneyComp from '../components/journeyComp';
+import JourneyComp from '../components/journey/journeyComp';
 
 interface journeyProps {
   

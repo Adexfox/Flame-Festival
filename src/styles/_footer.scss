@@ -3,7 +3,7 @@
 
 .footer-box{
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(2, 10%, 80%);
@@ -16,31 +16,43 @@
         width: 80%;
         height: 80%;
         display: grid;
-        margin: 2.5rem 1.75rem -1rem ;
+        margin: 1rem 1.75rem -1rem ;
         justify-content: center;
         align-items: center;
         padding-bottom: 2rem;
         z-index: 1;
-        // cursor: pointer;
         h3{
             font: {
-                size: 0.95rem;
+                size: 0.75rem;
                 weight: 700;
+                family: $secondary-font;
             }
-            padding-left: 0.125rem;
-            font-family: open sans;
-            font-weight: 700;
             position: absolute;
-            margin-top: 0.75rem;
-            cursor: pointer;
+            margin-left: 3.1rem;
+            letter-spacing: 0.28rem;
+            margin-top: 2.5rem;
         }
-        img{
-            width: 50px;
+        .zigi, .flare{
             position: absolute;
-            top: -20%;
-            // left: -140%
-            // background-color: red;
+            top: 0;
+            left: 0;
+            max-width:100%;
+            margin-left: 2.85rem;
+            height: 12px;
+            width: 58px;
+            z-index: 1;
+            top: 40%;
+            color: $accent-color;
+            filter: invert(80%) sepia(67%) saturate(3302%) hue-rotate(176deg) brightness(97%) contrast(101%);
         }
+        .flare{
+            position: absolute;
+            top: 0;
+            width: 28px;
+            height: 28px;
+            margin-left: 3.75rem;
+        }
+
     }
     .subscribe{
         height: 50%;
@@ -66,26 +78,40 @@
                 color: black;
             }
         }
+
+        
     }
     
     
 }
 .chat{
         position: fixed;
-        right: 1%;
+        right: 1.25rem;
         background-color: $accent-color;
         width: 42px;
         border-radius: 6px;
         height: 42px;
         z-index: 4;
+        cursor: pointer;
         .chat-bubble{
             margin: 10px 5px 5px 8px;
-            // margin: auto;
-            // width: 60%;
-            // padding: 10px;
+        }
+        &:hover{
+            background-color: #000;
         }
 }
 .sticky1{
     position: fixed;
     top: 92vh;
 }
+
+@media only screen and (min-width: 992px) {
+    
+        .logo{
+            left: 1rem;
+        }
+        .chat{
+            right: 4.6rem
+        }
+        
+    }

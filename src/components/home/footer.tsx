@@ -17,7 +17,9 @@ const Footer = (props: Props) => {
         <div className='footer-box'>
             
             <div className="logo">
-                <img src="images/logo.png" alt="" />
+                <img className='flare' src="images/flame.png" alt="" />
+                <img className='zigi' src="images/zigzag.png" alt="" />
+
                 <h3>FLAME</h3>
             </div>
             <div className="subscribe">

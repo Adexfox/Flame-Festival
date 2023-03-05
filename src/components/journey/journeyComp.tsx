@@ -21,7 +21,7 @@ const JourneyComp = (props: Props) => {
             <h1 data-aos='fade-in' data-aos-delay="50">G<span className='one'>e</span>ttin<span className='two'>g</span> H<span className='three'>ere</span></h1>
           </div>
           <div className='journey-plane'>
-              <img src="images/Journey_Plane.png" alt="Airplane" data-aos='slide-left' data-aos-delay="200"/>
+              <img src="/images/Journey_Plane.png" alt="Airplane" data-aos='slide-left' data-aos-delay="200"/>
           </div>
           <div className='journey-body'>
             <p>
@@ -30,7 +30,7 @@ const JourneyComp = (props: Props) => {
             </p>
           </div>
           <div className="journey-map" data-aos='fade-in' data-aos-delay="3000">
-            <img src="images/map.jpg" alt="" />
+            <img src="/images/map.jpg" alt="" />
           </div>
          
           <footer>
@@ -41,7 +41,7 @@ const JourneyComp = (props: Props) => {
               <GrMail />
             </div>
             <div className='zigzag'>
-              <img src="images/zigzag.png" alt="" />
+              <img src="/images/zigzag.png" alt="" />
             </div>
             <div className='nav-cta'>
                 <a href="/">Home</a>
