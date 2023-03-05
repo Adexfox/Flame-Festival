@@ -1,4 +1,4 @@
-import { Menu } from '../interfaces/menuItemsInterface';
+import { Menu } from '../../interfaces/menuItemsInterface';
 
             /***********************
              * HAMBUGER MENU ITEMS *

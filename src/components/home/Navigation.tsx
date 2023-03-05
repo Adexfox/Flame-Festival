@@ -1,5 +1,5 @@
 import React from 'react';
-import { navButton } from '../menuItems';
+import { navButton } from '../menu/menuItems';
 import { Menu } from '../../interfaces/menuItemsInterface';
 
 

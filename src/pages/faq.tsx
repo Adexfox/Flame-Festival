@@ -1,11 +1,18 @@
 import React from 'react'
+import FaqComp from '../components/faqComp'
 
 interface faqProps {
   
 }
 
 const Faq = ({}: faqProps) => {
-  return <h1>faq</h1>
+  return (
+    <>
+
+      <FaqComp />
+      
+    </>
+  )
 }
 
 export default Faq

@@ -16,6 +16,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -396,7 +397,7 @@ html::-webkit-scrollbar {
   .ticket {
     right: 3.6rem;
   }
-  .menu-burger {
+  .menu, .menu-burger {
     left: 2rem;
   }
   .menu-text {
@@ -1755,7 +1756,7 @@ html::-webkit-scrollbar {
 }
 .footer-box {
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(2, 10%, 80%);
@@ -1768,26 +1769,40 @@ html::-webkit-scrollbar {
   width: 80%;
   height: 80%;
   display: grid;
-  margin: 2.5rem 1.75rem -1rem;
+  margin: 1rem 1.75rem -1rem;
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
   z-index: 1;
 }
 .footer-box .logo h3 {
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  padding-left: 0.125rem;
-  font-family: open sans;
-  font-weight: 700;
+  font-family: "Krub", sans-serif;
   position: absolute;
-  margin-top: 0.75rem;
-  cursor: pointer;
+  margin-left: 3.1rem;
+  letter-spacing: 0.28rem;
+  margin-top: 2.5rem;
 }
-.footer-box .logo img {
-  width: 50px;
+.footer-box .logo .zigi, .footer-box .logo .flare {
   position: absolute;
-  top: -20%;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  margin-left: 2.85rem;
+  height: 12px;
+  width: 58px;
+  z-index: 1;
+  top: 40%;
+  color: #017294;
+  filter: invert(80%) sepia(67%) saturate(3302%) hue-rotate(176deg) brightness(97%) contrast(101%);
+}
+.footer-box .logo .flare {
+  position: absolute;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  margin-left: 3.75rem;
 }
 .footer-box .subscribe {
   height: 50%;
@@ -1815,15 +1830,19 @@ html::-webkit-scrollbar {
 
 .chat {
   position: fixed;
-  right: 1%;
+  right: 1.25rem;
   background-color: #017294;
   width: 42px;
   border-radius: 6px;
   height: 42px;
   z-index: 4;
+  cursor: pointer;
 }
 .chat .chat-bubble {
   margin: 10px 5px 5px 8px;
+}
+.chat:hover {
+  background-color: #000;
 }
 
 .sticky1 {
@@ -1831,6 +1850,14 @@ html::-webkit-scrollbar {
   top: 92vh;
 }
 
+@media only screen and (min-width: 992px) {
+  .logo {
+    left: 1rem;
+  }
+  .chat {
+    right: 4.6rem;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -2035,7 +2062,7 @@ html::-webkit-scrollbar {
   width: 100%;
   height: 10vh;
   top: 0;
-  background-color: #017294;
+  background-color: #79F2E3;
 }
 
 .program-page {
@@ -2110,4 +2137,187 @@ html::-webkit-scrollbar {
 }
 .breadcrumbs .crumb a:hover {
   color: orange;
+}
+
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+}
+.faq-page {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  font-family: "Cormorant Garamond", serif;
+}
+.faq-page a {
+  text-decoration: none;
+  color: #000;
+}
+.faq-page .logo-container {
+  position: relative;
+  margin-top: 5rem;
+  max-width: 64px;
+  max-height: 48px;
+  margin-left: 10%;
+}
+.faq-page .logo-container .flames, .faq-page .logo-container .zag {
+  filter: grayscale(1) invert(1);
+  max-width: 100%;
+  height: 12px;
+  width: 58px;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  z-index: 1;
+  top: 22%;
+  margin-bottom: 0;
+  color: #017294;
+}
+.faq-page .logo-container .flames {
+  width: 28px;
+  height: 28px;
+  margin-left: 0.8rem;
+}
+.faq-page .logo-container p {
+  letter-spacing: 0.28rem;
+  margin: 0.95rem 0 0 0.25rem;
+  font-family: "Krub", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+.faq-page .questions {
+  position: relative;
+  margin-top: 6rem;
+  margin-left: 10%;
+}
+.faq-page .questions .header {
+  position: relative;
+  margin-bottom: 1.25rem;
+  color: #017294;
+  letter-spacing: -2px;
+  font-size: 4.25rem;
+  font-family: mySecondFont;
+  font-weight: 500;
+  font-style: italic;
+}
+.faq-page .questions .header span {
+  font-family: "Passions Conflict", cursive;
+  font-stretch: condensed;
+  font-style: italic;
+  position: absolute;
+  top: 8%;
+  letter-spacing: -4px;
+}
+.faq-page .questions h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 1.25rem 0 1rem;
+  margin-right: 10%;
+}
+.faq-page .questions p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding-bottom: 0.26rem;
+  word-wrap: break-word;
+  margin-right: 10%;
+}
+.faq-page .footer-segment {
+  position: relative;
+  width: 100vw;
+  margin: 4rem 0 3.25rem;
+  height: 3rem;
+  background-color: #79F2E3;
+}
+.faq-page .faq-footer {
+  position: relative;
+  margin-left: 10%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 3, 1fr;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+}
+.faq-page .faq-footer .faq-navigation {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+}
+.faq-page .faq-footer .faq-navigation .nav-1, .faq-page .faq-footer .faq-navigation .nav-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: -1rem 3.5rem -2rem 0;
+}
+.faq-page .faq-footer .faq-navigation .nav-1 a, .faq-page .faq-footer .faq-navigation .nav-2 a {
+  font-weight: 500;
+  font-family: "Krub", sans-serif;
+  font-size: 0.9rem;
+}
+.faq-page .faq-footer .faq-navigation .nav-1 a:hover, .faq-page .faq-footer .faq-navigation .nav-2 a:hover {
+  color: orange;
+}
+.faq-page .faq-footer .faq-social {
+  position: relative;
+  height: 20%;
+  top: 45%;
+}
+.faq-page .faq-footer .faq-social .socials {
+  margin-right: 4rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.faq-page .faq-footer .faq-social .socials:hover {
+  color: orange;
+}
+.faq-page .faq-footer .customer-service {
+  position: relative;
+  margin-right: 4rem;
+  font-family: "Krub", sans-serif;
+  font-size: 0.8rem;
+}
+.faq-page .faq-footer .customer-service h3 {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+.faq-page .faq-footer .customer-service h3 a {
+  font-weight: 600;
+  color: #017294;
+}
+.faq-page .faq-footer .customer-service h3 a:hover {
+  color: orange;
+}
+.faq-page .faq-footer .customer-service h3 p {
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
 }/*# sourceMappingURL=main.css.map */
