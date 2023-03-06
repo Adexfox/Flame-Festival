@@ -1,5 +1,5 @@
 import React from 'react'
-import ProgramPage from '../components/programComp';
+import ProgramPage from '../components/progam/programComp';
 
 interface programProps {
   

@@ -1,0 +1,130 @@
+@import 'config';
+@import 'mixin';
+
+.experience-page{
+    background: rgb(255,147,74);
+    background: -moz-linear-gradient(120deg, rgba(255,147,74,1) 16%, rgba(253,103,112,1) 100%);
+    background: -webkit-linear-gradient(120deg, rgba(255,147,74,1) 16%, rgba(253,103,112,1) 100%);
+    background: linear-gradient(120deg, rgba(255,147,74,1) 16%, rgba(253,103,112,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff934a",endColorstr="#fd6770",GradientType=1);
+    position: relative;
+    width: 100vw;
+    min-height: 100%;
+    // padding: 10vh 5vw 15vh;
+    display: grid;
+    color: $primary-color;
+    font-family: $secondary-font;
+    line-height: 2;
+    
+    header{
+        height: 10%;
+        width: 100vw;
+        position: relative;
+        .header{
+            position: relative;
+            margin: 2.75rem 0 2rem;
+            // padding: 10vh 5vw 15vh;
+            width: 100vw;
+            height: 20vh;
+            color: #000;
+            display: flex;
+            align-items: center;
+            background-color: $primary-color;
+            h1{
+                position: relative;
+                display: inline-block;
+                margin-left: 5vw;
+                word-spacing: 10px;
+                font: {
+                family: mySecondFont;
+                size: 3rem;
+                weight: 500;
+                style: italic;
+                stretch: expanded;
+                
+                }
+                span {
+                    position: absolute;
+                    top: -8%;
+                    margin-left: 10px;
+                    font-family: myFirstFont;
+                    font-size: 4rem;
+                }
+            
+            }
+        }
+        .sub-header{
+            position: relative;
+            width: 90vw;
+            padding-left: 5vw;
+            font: {
+                family: $primary-font;
+                size: 1.25rem;
+            }
+
+        }
+    }
+    .body-content{
+        position: relative;
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        margin-top: 10vh;
+        padding-left: 5vw;
+        // padding: 10vh 5vw 15vh;
+        .media{
+            position: relative;
+            display: grid;
+            width: 50%;
+            height: 50%;
+            img{
+
+                max-width: 90%;
+                max-height: 90%;
+            }
+        }
+        .text{
+            position: relative;
+            width: 40%;
+            padding: 0;
+            margin: -10px 0 0 -2vw;
+            padding: 0;
+            h3{
+                width: 95%;
+                font-size: 1.25rem;
+            }
+            p{
+                width: 95%;
+                margin-bottom: 2rem;
+                font: {
+                    family: $primary-font;
+                    size: 1.25rem;
+                }
+            }
+            h3:nth-of-type(6){
+                font-size: 0.95rem;
+            }
+            // h3:nth-last-of-type(4){
+            //     background-color: red;
+            // }
+            // p:nth-child(4){
+            //     background-color: red;
+            // }
+            
+            // :nth-of-type(4){
+            //     background-color: red;
+            // }
+        }
+    }
+    footer{
+        height: 8vh;
+        width: 100vw;
+        padding: 1vh 5vw;
+        margin-top: 2rem;
+        background-color: $primary-color;
+        align-items: end;
+        align-items: start;
+        
+    }
+
+}

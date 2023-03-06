@@ -17,6 +17,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1978,53 +1980,6 @@ html::-webkit-scrollbar {
   left: calc(-50vw + 50%);
   z-index: -99;
 }
-.journey-page footer {
-  display: flex;
-  width: 100%;
-  height: 10vh;
-  align-items: center;
-  justify-content: space-between;
-}
-.journey-page footer .social {
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  color: black;
-}
-.journey-page footer .social:hover {
-  color: orange;
-}
-.journey-page footer .zigzag {
-  width: 100%;
-  position: absolute;
-  max-width: 240px;
-  max-height: 240px;
-  width: 300px;
-  z-index: 1;
-  max-width: 44px;
-  max-height: 44px;
-  filter: invert(100%);
-  position: relative;
-}
-.journey-page footer .zigzag img {
-  width: 100%;
-}
-.journey-page footer .nav-cta {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-}
-.journey-page footer .nav-cta a {
-  text-decoration: none;
-  color: black;
-  font-family: "Krub", sans-serif;
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding-left: 1.5rem;
-  transition: all 0.5s ease-in-out;
-}
-.journey-page footer .nav-cta a:hover {
-  color: orange;
-}
 
 /**
   * * The primary font is "Cormorant"
@@ -2320,4 +2275,214 @@ html::-webkit-scrollbar {
   text-align: justify;
   -moz-text-align-last: justify;
        text-align-last: justify;
+}
+
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+}
+.experience-page {
+  background: rgb(255, 147, 74);
+  background: linear-gradient(120deg, rgb(255, 147, 74) 16%, rgb(253, 103, 112) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff934a",endColorstr="#fd6770",GradientType=1);
+  position: relative;
+  width: 100vw;
+  min-height: 100%;
+  display: grid;
+  color: #ffffff;
+  font-family: "Krub", sans-serif;
+  line-height: 2;
+}
+.experience-page header {
+  height: 10%;
+  width: 100vw;
+  position: relative;
+}
+.experience-page header .header {
+  position: relative;
+  margin: 2.75rem 0 2rem;
+  width: 100vw;
+  height: 20vh;
+  color: #000;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+.experience-page header .header h1 {
+  position: relative;
+  display: inline-block;
+  margin-left: 5vw;
+  word-spacing: 10px;
+  font-family: mySecondFont;
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: expanded;
+}
+.experience-page header .header h1 span {
+  position: absolute;
+  top: -8%;
+  margin-left: 10px;
+  font-family: myFirstFont;
+  font-size: 4rem;
+}
+.experience-page header .sub-header {
+  position: relative;
+  width: 90vw;
+  padding-left: 5vw;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25rem;
+}
+.experience-page .body-content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 10vh;
+  padding-left: 5vw;
+}
+.experience-page .body-content .media {
+  position: relative;
+  display: grid;
+  width: 50%;
+  height: 50%;
+}
+.experience-page .body-content .media img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.experience-page .body-content .text {
+  position: relative;
+  width: 40%;
+  padding: 0;
+  margin: -10px 0 0 -2vw;
+  padding: 0;
+}
+.experience-page .body-content .text h3 {
+  width: 95%;
+  font-size: 1.25rem;
+}
+.experience-page .body-content .text p {
+  width: 95%;
+  margin-bottom: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25rem;
+}
+.experience-page .body-content .text h3:nth-of-type(6) {
+  font-size: 0.95rem;
+}
+.experience-page footer {
+  height: 8vh;
+  width: 100vw;
+  padding: 1vh 5vw;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  align-items: end;
+  align-items: start;
+}
+
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+}
+.footer-component {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-component .footer-social {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  color: black;
+}
+.footer-component .footer-social:hover {
+  color: orange;
+}
+.footer-component .zigzag {
+  width: 100%;
+  position: absolute;
+  max-width: 240px;
+  max-height: 240px;
+  width: 300px;
+  z-index: 1;
+  max-width: 44px;
+  max-height: 44px;
+  filter: invert(100%);
+  position: relative;
+}
+.footer-component .zigzag img {
+  width: 100%;
+}
+.footer-component .nav-cta {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+.footer-component .nav-cta a {
+  text-decoration: none;
+  color: black;
+  font-family: "Krub", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding-left: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.footer-component .nav-cta a:hover {
+  color: orange;
 }/*# sourceMappingURL=main.css.map */
