@@ -1,21 +1,19 @@
 import React, { useEffect } from 'react';
 import { IconContext } from 'react-icons/lib/esm/iconContext';
-import { FaTwitter } from 'react-icons/fa';
-import { FaFacebookF } from 'react-icons/fa';
-import { RiInstagramFill } from 'react-icons/ri';
-import { GrMail } from 'react-icons/gr';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import FooterComp from '../footerComp';
 
 type Props = {}
 
 const JourneyComp = (props: Props) => {
+   const faqLink = '/journey/faq'
+    const contactLink = '/journey/contact'
 
   useEffect(() => {
       AOS.init({duration: 3000});
     }, [])
  return(
-     <IconContext.Provider value={{  style: {marginRight:  '2rem'}, className: 'social'}}>
         <main className='journey-page'>
           <div className='header'>
             <h1 data-aos='fade-in' data-aos-delay="50">G<span className='one'>e</span>ttin<span className='two'>g</span> H<span className='three'>ere</span></h1>
@@ -34,25 +32,13 @@ const JourneyComp = (props: Props) => {
           </div>
          
           <footer>
-            <div className='journey-social'>
-              <FaFacebookF />
-              <FaTwitter />
-              <RiInstagramFill />
-              <GrMail />
-            </div>
-            <div className='zigzag'>
-              <img src="/images/zigzag.png" alt="" />
-            </div>
-            <div className='nav-cta'>
-                <a href="/">Home</a>
-                <a href="/journey/contact">Contact</a>
-                <a href="/journey/faq">FAQ</a>
-                
-            </div>
+            <FooterComp 
+            firstLink={contactLink}
+            secondLink={faqLink}
+            />
           </footer>
         </main>
         
-     </IconContext.Provider>
   ) 
 
 }

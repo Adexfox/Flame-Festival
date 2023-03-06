@@ -1,5 +1,5 @@
 import React from 'react'
-import FaqComp from '../components/faqComp'
+import FaqComp from '../components/faq/faqComp'
 
 interface faqProps {
   

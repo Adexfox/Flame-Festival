@@ -1,5 +1,5 @@
 import React from 'react';
-import Hamburger from './menu/Hamburger';
+import Hamburger from '../menu/Hamburger';
 
 type Props = {
   term?: string;

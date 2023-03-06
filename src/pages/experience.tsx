@@ -1,11 +1,14 @@
 import React from 'react'
+import ExperienceComp from '../components/ExperienceComp'
 
 interface experienceProps {
   
 }
 
 const Experience = ({}: experienceProps) => {
-  return <h1>experience</h1>
+  return (
+        <ExperienceComp /> 
+    )
 }
 
 export default Experience
