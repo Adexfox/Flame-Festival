@@ -1,11 +1,16 @@
 import React from 'react'
+import PackagesComp from '../components/packagesComp'
 
 interface packagesProps {
   
 }
 
 const Packages = ({}: packagesProps) => {
-  return <h1>packages</h1>
+  return (
+    <>
+      <PackagesComp />
+    </>
+  )
 }
 
 export default Packages
