@@ -1,22 +1,22 @@
 import React from 'react'
-import { IconContext } from 'react-icons/lib/esm/iconContext';
-import { FaTwitter } from 'react-icons/fa';
-import { FaFacebookF } from 'react-icons/fa';
-import { RiInstagramFill } from 'react-icons/ri';
-import { GrMail } from 'react-icons/gr';
+import LogoComp from '../logoComp';
+import SecondFooter from '../secondFooter';
 
 type Props = {}
 
 const FaqComp = (props: Props) => {
+  const linkTypes = {
+    firstName: 'Packages',
+    secondName: 'Island',
+    firstLink: '/faq/journey',
+    secondLink: '/faq/packages',
+    thirdLink: '/faq/island',
+    fourthLink: '/faq/experience'
+  }
   return (
-    <IconContext.Provider value={{  className: 'socials'}} >
     <main className='faq-page'>
-        <header className='logo-container'>
-                <a href="/">
-                    <img className='flames' src="/images/flame.png" alt="" />
-                    <img className='zag' src="/images/zigzag.png" alt="" />
-                    <p>FLAME</p>
-                </a>
+        <header >
+                <LogoComp />
         </header>
         <section className='questions'>
             <h1 className='header'>G<span>eneral</span></h1>
@@ -47,40 +47,18 @@ const FaqComp = (props: Props) => {
 
         </section>
         
-        <section className="footer-segment"></section>
         <footer>
-            <div className="faq-footer">
-                <div className="faq-navigation">
-                         <div className="nav-2">
-                            <a href="/">Home</a>
-                            <a href="/faq/journey">Journey</a>
-                            <a href="/faq/packages">Packages</a>
-                        </div>
-                        <div className="nav-1">
-                            <a href="/">Tickets</a>
-                            <a href="/faq">Upgrades</a>
-                            <a href="faq">Travel Info</a>
-                        </div>
-                       
-                </div>
-                
-                <div className="faq-social">
-                    <FaFacebookF />
-                    <FaTwitter />
-                    <RiInstagramFill />
-                    <GrMail />
-                </div>
-                <div className="customer-service">
-                    <h3>Customer Service: 
-                        <a href="tel: 401-753-FLAME (3973)"> 401-753-FLAME (3973)</a>
-                        
-                    </h3>
-                    <p>The images and renderings of the site are<br /> conceptual - the actual site layout may vary.<br /> We will continually be updating our site with <br /> up-to-date imagery.</p>
-                </div>
-            </div>
+            <SecondFooter 
+              firstName={linkTypes.firstName}
+              firstLink={linkTypes.firstLink}
+              secondName={linkTypes.secondName}
+              secondLink={linkTypes.secondLink}  
+              thirdLink={linkTypes.thirdLink}
+              fourthLink={linkTypes.fourthLink}
+
+            />
         </footer>
     </main>
-    </IconContext.Provider>
   )
 }
 
