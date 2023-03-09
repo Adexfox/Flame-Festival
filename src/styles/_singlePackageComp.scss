@@ -1,0 +1,67 @@
+
+.body {
+        position: relative;
+        width: 100%;
+        .bullet ul{
+            position: relative;
+            margin-left: 1rem;
+            
+        }
+        
+        
+        
+    }
+ @media only screen and (min-width: 992px) {
+    .body{
+        display: flex;
+        justify-content: space-between;
+        .bullet{
+            width: 76%;
+        }
+    }
+    .nest-den .body{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .villa .body{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .bullet{
+            width: 76%;
+        }
+    }
+    .nest-den {
+        display: flex;
+        flex-direction: row;
+        align-items: space-evenly;
+        width: 100vw;
+        right: 8vw;
+        .cta{
+            width: inherit;
+        }
+        .bullet{
+            width: inherit;
+        }
+        .nest{
+            width: 60vw;
+        }
+        .den{
+            width: 40vw;
+            display: grid;
+            margin: 0 8vw 0 0;
+            align-items: start;
+            left: 0;
+
+            .header{
+                padding-top: 1.06vh;
+                margin: 0;
+            }
+            .upgrade{
+                padding-bottom: 0.8rem;
+            }
+        }
+    }
+}

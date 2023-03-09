@@ -3,7 +3,7 @@
         width: 100vw;
         margin: 4rem 0 3.25rem;
         height: 3rem;
-        background-color: #79F2E3;
+        @include gradient-bg();
       }
 .comp-footer{
       position: relative;

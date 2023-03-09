@@ -1,7 +1,107 @@
 @import 'config';
 @import 'mixin';
 
-// section{
-//     position: relative;
-//     height: 20vh;
-// }
+.single-package{
+    position: relative;
+    height: auto;
+    margin: 1vh 8vw 4vh;
+    padding-bottom: 12vh;
+    // background-color: red;
+    line-height: 2.5;
+    font: {
+        family: $secondary-font;
+    }
+    .header{
+        display: inline;
+        margin-top: 1.75rem;
+        font-style: italic;
+        color: $accent-color;//#00516a;
+        // letter-spacing: 2px;
+        font: {
+        family: $handwriting-1;
+        size: 4rem;
+        weight: 500;
+        }
+        .one{
+            position: relative;
+            top: 3vh;
+            font: {
+                size: 5rem;
+                family: mySecondFont;
+            }
+        }
+        .two, .three{
+            font-family: myFirstFont;
+            font-weight: 500;
+            position: relative;
+            top: 0.7vh;
+        }
+        .four {
+            position: relative;
+            top: 1vh;
+            margin-right: -12px;
+            font-size: 4rem;
+            font-family: mySecondFont;
+        }
+        
+    }
+    
+}
+.villa {
+    @include gradient-bg();
+    width: 100%;
+    padding: 0 8vw 12vh;
+    margin: 1vh 0 4vh;
+    .header{
+        color: #000;
+        font: {
+            family: $handwriting-1;
+            weight: 500;
+            size: 3.5rem;
+        }
+        // background-color: #fff;
+        font-style: normal;
+        :nth-child(1){
+            font-family: myFirstFont;
+            font-size: 4.5rem;
+            position: relative;
+            top: 2vh;
+        }
+        :nth-child(2){
+            font-family: $secondary-handwriting;
+            font-size: 4rem
+
+        }
+
+    }
+    
+}
+.nest{
+    padding-bottom: 4vh;
+}
+.nest .header, .den .header{
+        color: $accent-color;
+        font: {
+            family: $handwriting-1;
+            weight: 500;
+            size: 3.5rem;
+        }
+        // background-color: #fff;
+        font-style: normal;
+        :nth-child(1){
+            font-family: myFirstFont;
+            font-size: 4.5rem;
+            position: relative;
+            top: 2vh;
+        }
+        :nth-child(2){
+            font-family: $handwriting-1;
+            font-size: 4rem
+
+        }
+
+    }
+footer{
+    position: relative;
+    
+}
