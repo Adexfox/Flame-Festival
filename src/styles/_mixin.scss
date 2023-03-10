@@ -106,3 +106,10 @@
     height: 60vh;
     background-color: $primary-color;
 }
+@mixin gradient-bg{
+    background: rgb(91,220,250);
+    background: -moz-linear-gradient(45deg, rgba(91,220,250,1) 33%, rgba(162,250,208,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(91,220,250,1) 33%, rgba(162,250,208,1) 100%);
+    background: linear-gradient(45deg, rgba(91,220,250,1) 33%, rgba(162,250,208,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5bdcfa",endColorstr="#a2fad0",GradientType=1);
+}

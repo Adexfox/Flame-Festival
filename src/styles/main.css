@@ -20,6 +20,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -2065,7 +2066,7 @@ html::-webkit-scrollbar {
   max-width: 120px;
   margin: 20px auto;
   position: absolute;
-  top: 12vh;
+  top: 9vh;
   right: 8vw;
 }
 
@@ -2228,7 +2229,7 @@ html::-webkit-scrollbar {
   position: relative;
   margin: 2.75rem 0 2rem;
   width: 100vw;
-  height: 20vh;
+  height: 15vh;
   color: #000;
   display: flex;
   align-items: center;
@@ -2388,10 +2389,10 @@ html::-webkit-scrollbar {
 
 .logo-container {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 6vh;
   max-width: 64px;
   max-height: 48px;
-  margin-left: 8%;
+  margin-left: 8vh;
 }
 .logo-container a {
   color: #000;
@@ -2428,7 +2429,9 @@ html::-webkit-scrollbar {
   width: 100vw;
   margin: 4rem 0 3.25rem;
   height: 3rem;
-  background-color: #79F2E3;
+  background: rgb(91, 220, 250);
+  background: linear-gradient(45deg, rgb(91, 220, 250) 33%, rgb(162, 250, 208) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5bdcfa",endColorstr="#a2fad0",GradientType=1);
 }
 
 .comp-footer {
@@ -2531,4 +2534,297 @@ html::-webkit-scrollbar {
 @font-face {
   font-family: mySecondFont;
   src: url(/public/fonts/Darlington.ttf);
+}
+.single-package {
+  position: relative;
+  height: auto;
+  margin: 1vh 8vw 4vh;
+  padding-bottom: 12vh;
+  line-height: 2.5;
+  font-family: "Krub", sans-serif;
+}
+.single-package .header {
+  display: inline;
+  margin-top: 1.75rem;
+  font-style: italic;
+  color: #017294;
+  font-family: "Passions Conflict", cursive;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.single-package .header .one {
+  position: relative;
+  top: 3vh;
+  font-size: 5rem;
+  font-family: mySecondFont;
+}
+.single-package .header .two, .single-package .header .three {
+  font-family: myFirstFont;
+  font-weight: 500;
+  position: relative;
+  top: 0.7vh;
+}
+.single-package .header .four {
+  position: relative;
+  top: 1vh;
+  margin-right: -12px;
+  font-size: 4rem;
+  font-family: mySecondFont;
+}
+
+.villa {
+  background: rgb(91, 220, 250);
+  background: linear-gradient(45deg, rgb(91, 220, 250) 33%, rgb(162, 250, 208) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5bdcfa",endColorstr="#a2fad0",GradientType=1);
+  width: 100%;
+  padding: 0 8vw 12vh;
+  margin: 1vh 0 4vh;
+}
+.villa .header {
+  color: #000;
+  font-family: "Passions Conflict", cursive;
+  font-weight: 500;
+  font-size: 3.5rem;
+  font-style: normal;
+}
+.villa .header :nth-child(1) {
+  font-family: myFirstFont;
+  font-size: 4.5rem;
+  position: relative;
+  top: 2vh;
+}
+.villa .header :nth-child(2) {
+  font-family: "love light", cursive;
+  font-size: 4rem;
+}
+
+.nest {
+  padding-bottom: 4vh;
+}
+
+.nest .header, .den .header {
+  color: #017294;
+  font-family: "Passions Conflict", cursive;
+  font-weight: 500;
+  font-size: 3.5rem;
+  font-style: normal;
+}
+.nest .header :nth-child(1), .den .header :nth-child(1) {
+  font-family: myFirstFont;
+  font-size: 4.5rem;
+  position: relative;
+  top: 2vh;
+}
+.nest .header :nth-child(2), .den .header :nth-child(2) {
+  font-family: "Passions Conflict", cursive;
+  font-size: 4rem;
+}
+
+footer {
+  position: relative;
+}
+
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+}
+.cta {
+  position: relative;
+  margin-top: 2rem;
+}
+.cta :nth-child(2) {
+  font-size: 18px;
+}
+.cta :nth-child(2) :nth-of-type(odd) {
+  font-weight: bolder;
+}
+.cta :nth-child(2) :nth-of-type(even) {
+  margin: 0 10px 0;
+}
+.cta p:nth-last-of-type(1) {
+  margin-bottom: 1rem;
+}
+.cta button {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #017294;
+  padding: 0.75rem;
+  width: 100%;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  z-index: 1;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.25rem;
+  font-family: "Cormorant Garamond", serif;
+  overflow: hidden;
+}
+.cta button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  top: 0;
+  left: -100%;
+  z-index: -99;
+  transition: all 0.5s ease-in-out;
+}
+.cta button:hover::before {
+  left: 0;
+}
+.cta button:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 5px #000;
+  transition: all 0.5s ease-in-out;
+}
+.cta .btn-1::after {
+  content: "PURCHASE WEEKEND ONE";
+  color: #017294;
+}
+.cta .btn-2::after {
+  content: "PURCHASE WEEKEND TWO";
+  color: #017294;
+}
+.cta .btn-1:hover::after, .cta .btn-2:hover::after {
+  display: none;
+}
+.cta .btn-1:hover::before {
+  content: "April 28-30";
+}
+.cta .btn-2:hover::before {
+  content: "May 5-7";
+}
+.cta .btn-1::before, .cta .btn-2::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.villa .cta button {
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 5px gray;
+  background-color: #000;
+}
+.villa .cta button::before {
+  background-color: gray;
+  color: #ffffff;
+}
+.villa .cta .btn-1::after {
+  color: #ffffff;
+}
+.villa .cta .btn-2::after {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 992px) {
+  .cta {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    right: 0;
+    width: 100vh;
+    margin-top: 0;
+  }
+  .villa .cta {
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .villa .cta {
+    width: 100vw;
+  }
+}
+.body {
+  position: relative;
+  width: 100%;
+}
+.body .bullet ul {
+  position: relative;
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .body {
+    display: flex;
+    justify-content: space-between;
+  }
+  .body .bullet {
+    width: 76%;
+  }
+  .nest-den .body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .villa .body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .villa .body .bullet {
+    width: 76%;
+  }
+  .nest-den {
+    display: flex;
+    flex-direction: row;
+    align-items: space-evenly;
+    width: 100vw;
+    right: 8vw;
+  }
+  .nest-den .cta {
+    width: inherit;
+  }
+  .nest-den .bullet {
+    width: inherit;
+  }
+  .nest-den .nest {
+    width: 60vw;
+  }
+  .nest-den .den {
+    width: 40vw;
+    display: grid;
+    margin: 0 8vw 0 0;
+    align-items: start;
+    left: 0;
+  }
+  .nest-den .den .header {
+    padding-top: 1.06vh;
+    margin: 0;
+  }
+  .nest-den .den .upgrade {
+    padding-bottom: 0.8rem;
+  }
 }/*# sourceMappingURL=main.css.map */

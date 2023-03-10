@@ -10,6 +10,12 @@ export interface Menu {
     // toggleMenu?: (name: string) => void;
 }
 
-
 export interface Menu_ extends Array<Menu>{}
 
+export interface Bullets {
+    id: number;
+    text: string; 
+    intro: string;
+}
+
+export interface Bullets_ extends Array<Bullets>{}
