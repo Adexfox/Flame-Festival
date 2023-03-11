@@ -1,5 +1,5 @@
 import React from 'react'
-import FooterComp from './footerComp'
+import FooterComp from '../universal/footerComp'
 type Props = {}
 
 const ExperienceComp = (props: Props) => {

@@ -76,10 +76,13 @@
     }
     
 }
+.retreat-duo{
+    @include gradient-bg();
+}
 .nest{
     padding-bottom: 4vh;
 }
-.nest .header, .den .header{
+.nest .header, .den .header, .retreat .header, .duo .header{
         color: $accent-color;
         font: {
             family: $handwriting-1;
@@ -101,6 +104,29 @@
         }
 
     }
+.request{
+    h1, p{
+        margin: 4vh 8vw;
+        font-family: $primary-font;
+        line-height: 2;
+    }
+    h1{
+        font-size: 2.5rem;
+        color: $accent-color;
+
+    }
+    p{
+        font-size: 1.5rem;
+        a{
+            color: $accent-color;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover{
+                color: orange;
+            }
+        }
+    }
+}
 footer{
     position: relative;
     

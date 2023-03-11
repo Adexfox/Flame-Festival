@@ -1,6 +1,6 @@
 import React from 'react'
-import LogoComp from '../logoComp';
-import SecondFooter from '../secondFooter';
+import LogoComp from '../universal/logoComp';
+import SecondFooter from '../universal/secondFooter';
 
 type Props = {}
 

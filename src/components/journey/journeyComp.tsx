@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { IconContext } from 'react-icons/lib/esm/iconContext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import FooterComp from '../footerComp';
+import FooterComp from '../universal/footerComp';
 
 type Props = {}
 

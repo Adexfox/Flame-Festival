@@ -19,7 +19,7 @@
             width: 76%;
         }
     }
-    .nest-den .body{
+    .nest-den .body, .retreat-duo .body{
         display: flex;
         flex-direction: column;
     }
@@ -33,7 +33,7 @@
             width: 76%;
         }
     }
-    .nest-den {
+    .nest-den, .retreat-duo {
         display: flex;
         flex-direction: row;
         align-items: space-evenly;
@@ -62,6 +62,12 @@
             .upgrade{
                 padding-bottom: 0.8rem;
             }
+        }
+    }
+    .duo {
+        margin-top: 0.3rem;
+        .upgrade{
+            padding-bottom: 0;
         }
     }
 }

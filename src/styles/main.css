@@ -2598,26 +2598,53 @@ html::-webkit-scrollbar {
   font-size: 4rem;
 }
 
+.retreat-duo {
+  background: rgb(91, 220, 250);
+  background: linear-gradient(45deg, rgb(91, 220, 250) 33%, rgb(162, 250, 208) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5bdcfa",endColorstr="#a2fad0",GradientType=1);
+}
+
 .nest {
   padding-bottom: 4vh;
 }
 
-.nest .header, .den .header {
+.nest .header, .den .header, .retreat .header, .duo .header {
   color: #017294;
   font-family: "Passions Conflict", cursive;
   font-weight: 500;
   font-size: 3.5rem;
   font-style: normal;
 }
-.nest .header :nth-child(1), .den .header :nth-child(1) {
+.nest .header :nth-child(1), .den .header :nth-child(1), .retreat .header :nth-child(1), .duo .header :nth-child(1) {
   font-family: myFirstFont;
   font-size: 4.5rem;
   position: relative;
   top: 2vh;
 }
-.nest .header :nth-child(2), .den .header :nth-child(2) {
+.nest .header :nth-child(2), .den .header :nth-child(2), .retreat .header :nth-child(2), .duo .header :nth-child(2) {
   font-family: "Passions Conflict", cursive;
   font-size: 4rem;
+}
+
+.request h1, .request p {
+  margin: 4vh 8vw;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 2;
+}
+.request h1 {
+  font-size: 2.5rem;
+  color: #017294;
+}
+.request p {
+  font-size: 1.5rem;
+}
+.request p a {
+  color: #017294;
+  font-weight: 600;
+  text-decoration: none;
+}
+.request p a:hover {
+  color: orange;
 }
 
 footer {
@@ -2732,19 +2759,19 @@ html::-webkit-scrollbar {
   justify-content: center;
 }
 
-.villa .cta button {
+.villa .cta button, .duo .cta button, .retreat .cta button {
   border: 1px solid #ffffff;
   box-shadow: 0 0 5px gray;
   background-color: #000;
 }
-.villa .cta button::before {
+.villa .cta button::before, .duo .cta button::before, .retreat .cta button::before {
   background-color: gray;
   color: #ffffff;
 }
-.villa .cta .btn-1::after {
+.villa .cta .btn-1::after, .duo .cta .btn-1::after, .retreat .cta .btn-1::after {
   color: #ffffff;
 }
-.villa .cta .btn-2::after {
+.villa .cta .btn-2::after, .duo .cta .btn-2::after, .retreat .cta .btn-2::after {
   color: #ffffff;
 }
 
@@ -2783,7 +2810,7 @@ html::-webkit-scrollbar {
   .body .bullet {
     width: 76%;
   }
-  .nest-den .body {
+  .nest-den .body, .retreat-duo .body {
     display: flex;
     flex-direction: column;
   }
@@ -2797,34 +2824,40 @@ html::-webkit-scrollbar {
   .villa .body .bullet {
     width: 76%;
   }
-  .nest-den {
+  .nest-den, .retreat-duo {
     display: flex;
     flex-direction: row;
     align-items: space-evenly;
     width: 100vw;
     right: 8vw;
   }
-  .nest-den .cta {
+  .nest-den .cta, .retreat-duo .cta {
     width: inherit;
   }
-  .nest-den .bullet {
+  .nest-den .bullet, .retreat-duo .bullet {
     width: inherit;
   }
-  .nest-den .nest {
+  .nest-den .nest, .retreat-duo .nest {
     width: 60vw;
   }
-  .nest-den .den {
+  .nest-den .den, .retreat-duo .den {
     width: 40vw;
     display: grid;
     margin: 0 8vw 0 0;
     align-items: start;
     left: 0;
   }
-  .nest-den .den .header {
+  .nest-den .den .header, .retreat-duo .den .header {
     padding-top: 1.06vh;
     margin: 0;
   }
-  .nest-den .den .upgrade {
+  .nest-den .den .upgrade, .retreat-duo .den .upgrade {
     padding-bottom: 0.8rem;
+  }
+  .duo {
+    margin-top: 0.3rem;
+  }
+  .duo .upgrade {
+    padding-bottom: 0;
   }
 }/*# sourceMappingURL=main.css.map */
