@@ -1,4 +1,4 @@
-import { Bullets } from '../interfaces/menuItemsInterface';
+import { Bullets } from '../../interfaces/menuItemsInterface';
 
 export const artistsBullets:Bullets[] = [
        { 
@@ -153,6 +153,59 @@ export const denBullets = [
     intro: '',
     upgradeHeader: 'Upgrades Available',
     upgrade: 'Enhance your festival experience with a VIP ticket. Gain access to VIP areas exclusive eventsk upgraded meal options, and more'
+    
+    }
+]
+export const retreatBullets = [
+    {
+    id: 1,
+    text: 'Complimentary flights between Miami and Great Exuma',
+    intro: 'The Retreat is a cozy accommodation meant for solo travelers to share. Each Retreat is a  rustic, tented structure that sleeps two (same sex, individual twin  beds). Each tent is furnished with the curated necessities for island life.',
+    upgradeHeader: '',
+    upgrade: ''
+    
+    },
+    {
+    id: 2,
+    text: '1 Flame Festival tickets',
+    intro: '',
+    upgradeHeader: '',
+    upgrade: ''
+    
+    },
+    {
+    id: 3,
+    text: '1 Twin Bed',
+    intro: '',
+    upgradeHeader: 'Upgrades Available',
+    upgrade: 'Enhance your festival experince with a VIP tikcet. Gain access to VIP areas, exclusive events, upgraded meal options, and more.'
+    
+    }
+
+]
+export const duoBullets = [
+    {
+    id: 1,
+    text: 'Complimentary lughts between Miami and Great Exuma',
+    intro: 'The Duo is our boutique options for pairs to experience the festival together. Each Duo is a tented structure with two twin beds and two complimentary tickets to the festival. Each Duo is furnished with the curated necessities for island life.',
+    upgradeHeader: '',
+    upgrade: ''
+    
+    },
+    {
+    id: 2,
+    text: '2 Flame Festival tickets',
+    intro: '',
+    upgradeHeader: '',
+    upgrade: ''
+    
+    },
+    {
+    id: 3,
+    text: '2 Twin Beds',
+    intro: '',
+    upgradeHeader: 'Upgrades Available',
+    upgrade: 'Enhance your festival experince with a VIP tikcet. Gain access to VIP areas, exclusive events, upgraded meal options, and more.'
     
     }
 ]

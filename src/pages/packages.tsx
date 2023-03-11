@@ -1,5 +1,5 @@
 import React from 'react'
-import PackagesComp from '../components/packagesComp'
+import PackagesComp from '../components/packages/packagesComp'
 
 interface packagesProps {
   

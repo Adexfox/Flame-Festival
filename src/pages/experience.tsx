@@ -1,5 +1,5 @@
 import React from 'react'
-import ExperienceComp from '../components/ExperienceComp'
+import ExperienceComp from '../components/experience/ExperienceComp'
 
 interface experienceProps {
   
