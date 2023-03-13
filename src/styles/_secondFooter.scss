@@ -1,18 +1,23 @@
 .border-segment{
         position: relative;
         width: 100vw;
-        margin: 4rem 0 3.25rem;
+        margin: 4rem 0 0;
         height: 3rem;
+        border-top: 1px solid rgb(0, 0, 0, 0.5);
+        box-shadow: 0 0 5px rgb(204, 204, 204);
         @include gradient-bg();
       }
 .comp-footer{
       position: relative;
-      margin-left: 8%; 
+      padding-left: 8%; 
       display: grid;
       grid-auto-flow: column; 
       grid-template-columns: (3, 1fr);
       justify-content: space-between;
-      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      padding-top: 3.25rem;
+      border-top: 1px solid rgb(0, 0, 0, 0.5);
+        box-shadow: 0 0 5px rgb(204, 204, 204);
       a{
         text-decoration: none;
         color: #000;

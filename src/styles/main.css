@@ -21,6 +21,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1927,6 +1928,7 @@ html::-webkit-scrollbar {
   top: 1%;
   left: 2%;
   z-index: 1;
+  transform: scale(1.2);
   transition: all 0.5s ease-in-out;
 }
 .journey-page .journey-plane img {
@@ -1934,7 +1936,7 @@ html::-webkit-scrollbar {
   filter: drop-shadow(30px 10px 4px rgba(128, 128, 128, 0.25));
 }
 .journey-page .journey-plane:hover {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 .journey-page .journey-body {
   text-align: left;
@@ -1968,6 +1970,8 @@ html::-webkit-scrollbar {
   left: calc(-50vw + 50%);
   overflow: hidden;
   z-index: -99;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgb(204, 204, 204);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1981,6 +1985,11 @@ html::-webkit-scrollbar {
   height: 80vh;
   left: calc(-50vw + 50%);
   z-index: -99;
+}
+
+.journey-footer {
+  width: 100vw;
+  left: calc(-50vw + 50%);
 }
 
 /**
@@ -2234,6 +2243,8 @@ html::-webkit-scrollbar {
   display: flex;
   align-items: center;
   background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgb(204, 204, 204);
 }
 .experience-page header .header h1 {
   position: relative;
@@ -2277,6 +2288,8 @@ html::-webkit-scrollbar {
 .experience-page .body-content .media img {
   max-width: 90%;
   max-height: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgb(204, 204, 204);
 }
 .experience-page .body-content .text {
   position: relative;
@@ -2298,11 +2311,10 @@ html::-webkit-scrollbar {
 .experience-page .body-content .text h3:nth-of-type(6) {
   font-size: 0.95rem;
 }
-.experience-page footer {
-  height: 8vh;
+.experience-page .experience-footer {
+  height: 10vh;
+  margin-top: 5vh;
   width: 100vw;
-  padding: 1vh 5vw;
-  margin-top: 2rem;
   background-color: #ffffff;
   align-items: end;
   align-items: start;
@@ -2345,6 +2357,9 @@ html::-webkit-scrollbar {
   height: 10vh;
   align-items: center;
   justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgb(204, 204, 204);
+  padding: 0 5rem;
 }
 .footer-component .footer-social {
   cursor: pointer;
@@ -2427,8 +2442,10 @@ html::-webkit-scrollbar {
 .border-segment {
   position: relative;
   width: 100vw;
-  margin: 4rem 0 3.25rem;
+  margin: 4rem 0 0;
   height: 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgb(204, 204, 204);
   background: rgb(91, 220, 250);
   background: linear-gradient(45deg, rgb(91, 220, 250) 33%, rgb(162, 250, 208) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5bdcfa",endColorstr="#a2fad0",GradientType=1);
@@ -2436,12 +2453,15 @@ html::-webkit-scrollbar {
 
 .comp-footer {
   position: relative;
-  margin-left: 8%;
+  padding-left: 8%;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 3, 1fr;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 3.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgb(204, 204, 204);
   font-size: 1.25rem;
 }
 .comp-footer a {
@@ -2630,9 +2650,10 @@ html::-webkit-scrollbar {
   margin: 4vh 8vw;
   font-family: "Cormorant Garamond", serif;
   line-height: 2;
+  font-weight: 500;
 }
 .request h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #017294;
 }
 .request p {
@@ -2860,4 +2881,94 @@ html::-webkit-scrollbar {
   .duo .upgrade {
     padding-bottom: 0;
   }
+}
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+}
+.island-reusable {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10vh 0 5vh;
+  padding-bottom: 15vh;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 2;
+}
+.island-reusable .ink-img {
+  position: relative;
+  width: 40%;
+  width: 50%;
+  height: 80%;
+  margin-top: -2vh;
+}
+.island-reusable .ink-img img {
+  width: 100%;
+  height: 100%;
+}
+.island-reusable .text-content {
+  position: relative;
+  width: 40%;
+  margin-right: 5vw;
+  font-size: 1.25rem;
+}
+.island-reusable .text-content h1 {
+  color: #017294;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.island-reusable .text-content li {
+  list-style-type: none;
+}
+.island-reusable .text-content p, .island-reusable .text-content ul, .island-reusable .text-content h4 {
+  margin-bottom: 1rem;
+}
+.island-reusable .text-content a, .island-reusable .text-content h4 {
+  color: #017294;
+}
+.island-reusable .text-content a:hover {
+  color: orange;
+}
+.island-reusable .text-content .island-icon {
+  color: #017294;
+  position: relative;
+  top: 0.2rem;
+}
+.island-reusable .text-content .bed {
+  top: 0.75rem;
+}
+
+.island-footer {
+  position: relative;
+  width: 100vw;
 }/*# sourceMappingURL=main.css.map */

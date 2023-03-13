@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { IconContext } from 'react-icons/lib/esm/iconContext';
 import { FaTwitter } from 'react-icons/fa';
 import { FaFacebookF } from 'react-icons/fa';
@@ -8,11 +8,11 @@ import { GrMail } from 'react-icons/gr';
 type Props = {}
 
 const FooterComp = (props) => {
-  const { firstLink, secondLink } = props;
+  const { firstLink, secondLink, style } = props;
   return ( 
     <>
         <IconContext.Provider value={{  style: {marginRight:  '2rem'}, className: 'footer-social'}}>
-            <main className='footer-component'>
+            <main className='footer-component' style={style}>
                 
                 <div className='footer-social'>
                 <FaFacebookF />

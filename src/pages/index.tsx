@@ -47,6 +47,8 @@ const ReactRouterSetup = () => {
                     <Route path='/packages/experience' element={<Experience />} />
                     <Route path='/experience/faq' element={<Faq />} />
                     <Route path='/faq' element={<Faq />} />
+                    <Route path='/island/faq' element={<Faq />} />
+                    <Route path='island/contact' element={<Contact />} />
                     <Route path='/faq/journey' element={<Journey />} />
                     <Route path='/faq/packages' element={<Packages />} />
                     <Route path='/faq/journey' element={<Journey />} />
