@@ -16,7 +16,7 @@ const ExperienceComp = (props: Props) => {
             </header>
             <section className='body-content'>
                 <div className="media">
-                    <img src="/images/girls.jpg" alt="" className="girls" />
+                        <img src="/images/girls.jpg" alt="" className="girls" />
                     <img src="/images/copter.jpg" alt="" className="copter" />
                 </div>
                 <div className="text">
@@ -38,11 +38,13 @@ const ExperienceComp = (props: Props) => {
                     <h3>Check back soon on how to add these experience (purchased at an additional cost) to your Flame Festival itinerary.</h3>
                 </div>
             </section>
-            <footer>
+            <footer className='experience-footer'>
+                <div>
                     <FooterComp 
                     firstLink={contactLink}
                     secondLink={faqLink}
                     />
+                    </div>
             </footer>
             
         </main>

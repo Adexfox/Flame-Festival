@@ -42,13 +42,14 @@
         top: 1%;
         left: 2%;
         z-index: 1;
+        transform: scale(1.2);
         @include transition-ease;
         img{
         width: 100%;
         filter: drop-shadow(30px 10px 4px rgb(128, 128, 128, 25%))
         }
         &:hover{
-            transform: scale(1.2);
+            transform: scale(1);
         }
 
     }
@@ -89,9 +90,10 @@
         width: 100vw;
         height: 60vh;
         left: calc(-50vw + 50%);
-        // background: blue;
         overflow: hidden;
         z-index: -99;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+        box-shadow: 0 0 5px rgb(204, 204, 204); 
         @include bgCover;
         @include transition-ease;
         
@@ -108,4 +110,8 @@
         }
     }
    
+}
+.journey-footer{
+    width: 100vw;
+    left: calc(-50vw + 50%);
 }

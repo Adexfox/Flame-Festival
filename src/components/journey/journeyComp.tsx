@@ -9,6 +9,9 @@ type Props = {}
 const JourneyComp = (props: Props) => {
    const faqLink = '/journey/faq'
     const contactLink = '/journey/contact'
+    const additiionalStyle ={
+      padding: '0 12% 0'
+    }
 
   useEffect(() => {
       AOS.init({duration: 3000});
@@ -31,10 +34,11 @@ const JourneyComp = (props: Props) => {
             <img src="/images/map.jpg" alt="" />
           </div>
          
-          <footer>
+          <footer className='journey-footer'>
             <FooterComp 
             firstLink={contactLink}
             secondLink={faqLink}
+            style={additiionalStyle}
             />
           </footer>
         </main>

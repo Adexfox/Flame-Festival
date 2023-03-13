@@ -18,43 +18,37 @@ export const items: Menu[] = [
        
     },
 
+   
     {   
-        id: 3, 
-        text: 'THE HUNT',
-         url: '/hunt'
-         
-    },
-
-    {   
-        id: 4,
+        id: 3,
          text: 'THE PROGRAM', 
          url: '/program'
          
     },
 
     {   
-        id: 5, 
+        id: 4, 
         text: 'THE JOURNEY', 
         url: '/journey'
       
     },
 
     {
-        id: 6, 
+        id: 5, 
         text: 'THE PACKAGES',
          url: '/packages'
          
     },
 
     {
-        id: 7,
+        id: 6,
         text: 'THE EXPERIENCE', 
         url:'/experience'
         
     },
 
     {
-        id: 8,
+        id: 7,
         text: 'FAQ', 
         url:'/faq'
         

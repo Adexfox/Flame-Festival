@@ -30,6 +30,8 @@
             display: flex;
             align-items: center;
             background-color: $primary-color;
+            border: 1px solid rgb(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px rgb(204, 204, 204);
             h1{
                 position: relative;
                 display: inline-block;
@@ -81,6 +83,8 @@
 
                 max-width: 90%;
                 max-height: 90%;
+                border: 1px solid rgb(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px rgb(204, 204, 204);
             }
         }
         .text{
@@ -106,11 +110,10 @@
             }
         }
     }
-    footer{
-        height: 8vh;
+    .experience-footer{
+        height: 10vh;
+        margin-top: 5vh;
         width: 100vw;
-        padding: 1vh 5vw;
-        margin-top: 2rem;
         background-color: $primary-color;
         align-items: end;
         align-items: start;
