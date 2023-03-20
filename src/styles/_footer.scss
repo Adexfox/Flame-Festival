@@ -16,30 +16,23 @@
         width: 80%;
         height: 80%;
         display: grid;
-        margin: 1rem 1.75rem -1rem ;
         justify-content: center;
         align-items: center;
         padding-bottom: 2rem;
         z-index: 1;
         h3{
             font: {
-                size: 0.75rem;
                 weight: 700;
                 family: $secondary-font;
             }
             position: absolute;
-            margin-left: 3.1rem;
             letter-spacing: 0.28rem;
-            margin-top: 2.5rem;
         }
         .zigi, .flare{
             position: absolute;
             top: 0;
             left: 0;
-            max-width:100%;
-            margin-left: 2.85rem;
-            height: 12px;
-            width: 58px;
+            max-width: 100%;
             z-index: 1;
             top: 40%;
             color: $accent-color;
@@ -48,9 +41,6 @@
         .flare{
             position: absolute;
             top: 0;
-            width: 28px;
-            height: 28px;
-            margin-left: 3.75rem;
         }
 
     }
@@ -102,16 +92,66 @@
 }
 .sticky1{
     position: fixed;
-    top: 92vh;
+    bottom: 2.75rem;
 }
-
-@media only screen and (min-width: 992px) {
+              /****************
+               *  * PHONE * *
+               ****************/
+@media only screen and (max-width: 768px) {
+    .logo{
+        left: 0;
+        top: 0.45rem;
+        margin: 4rem -2rem;
+        h3{
+            font-size: 0.5rem;
+            margin-left: 2.95rem;
+            margin-top: 2rem;
+            }
+    }
+    .flare{
+         width: 18px;
+         height: 18px;
+         margin: 1.25rem 0 0 3.5rem;
+    }
+    .zigi{
+        height: 12px;
+        width: 38px;
+        margin-left: 3rem;
+    }
+    .footer-box .subscribe{
+        margin-left: 2rem;
+    }
+    
+}
+             /*************************
+              * * TABLET AND LAPTOP * *
+              *************************/
+@media only screen and (min-width: 769px) {
     
         .logo{
             left: 1rem;
-        }
+            margin: 4.25rem 1.75rem -1rem ;
+            h3{
+                font-size: 0.75rem;
+                margin-left: 3.1rem;
+                margin-top: 2.5rem;
+            }
+                }
         .chat{
             right: 4.6rem
         }
-        
-    }
+        .zigi, .flare{
+            margin-left: 2.85rem;
+
+        }
+         .flare{
+         width: 28px;
+         height: 28px;
+         margin-left: 3.75rem;
+
+        }
+        .zigi{
+            height: 12px;
+            width: 58px;
+        }
+}

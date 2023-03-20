@@ -3,7 +3,6 @@
       margin-top: 6vh;
       max-width: 64px;
       max-height: 48px;
-      margin-left: 8vh; 
       a{
         color: #000;
         text-decoration: none;
@@ -39,3 +38,15 @@
         }
       }
     }
+@media only screen and (max-width: 992px) {
+  .logo-container{
+      margin-left: 4vh; 
+
+  }
+}
+@media only screen and (min-width: 992px) {
+  .logo-container{
+      margin-left: 16vh; 
+
+  }
+}

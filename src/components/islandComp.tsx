@@ -16,22 +16,26 @@ const IslandComp = (props: Props) => {
   return (
     
     <>
-      <header className="logo">
-        <LogoComp />
-      </header>
-      <section className="island-content">
-        <IslandReusable 
-          contents={islandContent}
-        />
-      </section>
-      
-      <footer className='island-footer'>
-        <FooterComp 
-        firstLink={link.contact}
-        secondLink={link.faq}
-        style={additional}
-        />
-      </footer>
+      <main className="island-page">
+
+        <header className="logo">
+          <LogoComp />
+        </header>
+        <section className="island-content">
+          <IslandReusable 
+            contents={islandContent}
+          />
+        </section>
+        
+        <footer className='island-footer'>
+          <FooterComp 
+          firstLink={link.contact}
+          secondLink={link.faq}
+          style={additional}
+          />
+        </footer>
+      </main>
+
     </>
   )
 }

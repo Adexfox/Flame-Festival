@@ -34,12 +34,10 @@
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          margin: -1rem 3.5rem -2rem 0;
           a{
             font: {
-              weight: 500;
               family: $secondary-font;
-              size: 0.9rem;
+              
             }
             &:hover{
               color: orange;
@@ -50,10 +48,10 @@
       }
       .comp-social{
         position: relative;
-        height: 20%;
-        top: 45%;//45
+        // top: 12%;
+        // height: 20%;
         .socials{
-          margin-right: 4rem;
+          // margin-right: 4rem;
           cursor: pointer;
           @include transition-ease;
           &:hover{
@@ -88,20 +86,64 @@
 
  }
  @media only screen and (max-width: 768px) {
-    // .faq-navigation{
-    //   font-size: 1rem;
-    //   .nav-1, .nav-2{
-    //     margin: 0;
-    //     background-color: red;
-    //   }
-    // }
-    // 
-    // .socials{
-    //   margin-right: 0.5rem;
-    // }
+    .customer-service{
+      display: none;
+    }
+    .nav-1, .nav-2{
+        a{
+            font-size: 1.15rem;
+            font-weight: 600;
+          }
+    }
+  .nav-1{
+    margin-left: 17vw;
+  }
+  .comp-social{
+    margin-right: 15vw;
+    top: 8%;
+    .socials{
+      display: flex;
+      margin-bottom: 2.75rem;
+      position: relative;
+    }
+  } 
 }
 
+@media only screen and  (min-width: 769px) {
+  .comp-social{
+    margin-top: 2.75rem;
+     .socials{
+      margin-right: 2rem;
+    }
+  }
+  .nav-1, .nav-2{
+          margin: -1rem 3.5rem -2rem 0;
+          a{
+            font-size: 0.9rem;
+            font-weight: 500;
+          }
+  }
+  .nav-1{
+    margin-right: 0.25rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .comp-social{
+        .socials{
+      margin-right: 4rem;
+      
+    }
+  }
+    
+  .nav-1, .nav-2{
+          margin: -1rem 3.5rem -2rem 0;
+          a{
+            font-size: 0.9rem;
+            font-weight: 500;
 
+          }
+  }
+}
 
 
 

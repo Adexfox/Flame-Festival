@@ -80,3 +80,8 @@
     @include bgCover;
     transform: rotate(180deg);
 }
+@media only screen and (max-width: 768px) {
+    .package-section-1-text{
+        padding: 0 1rem;
+    }
+}

@@ -19,7 +19,7 @@ export const islandContent = [
     },
     {
         id: 3,
-        header: 'The Duo',
+        header: '   THE DUO',
         intro: 'A boutique housing option for travelling in pairs that inludes a two twin beds and elevated amennities. The Double comes with two tickets per reservation.',
         img: '/images/island-3.jpg',
         one: '2 Tickets to Flame Festival',

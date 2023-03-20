@@ -10,8 +10,6 @@ import useColor from '../../hooks/useColor';
   const {elementColor} = useColor(857);
   // const {section} = useColor(2663);
   
-  // console.log('Wale');
-
   const [showMenu, setShowMenu] = useState<Boolean>(false);
   
   const toggleMenu = () => {
