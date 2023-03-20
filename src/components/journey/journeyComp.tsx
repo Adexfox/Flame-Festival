@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { IconContext } from 'react-icons/lib/esm/iconContext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import FooterComp from '../universal/footerComp';
@@ -15,6 +14,12 @@ const JourneyComp = (props: Props) => {
 
   useEffect(() => {
       AOS.init({duration: 3000});
+      AOS.init({
+        disable: function() {
+          let maxWidth = 992;
+          return window.innerWidth < maxWidth;
+        }
+      });
     }, [])
  return(
         <main className='journey-page'>

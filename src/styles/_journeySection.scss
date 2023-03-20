@@ -54,9 +54,9 @@
          width: 100%;
         position: absolute;
         right: -1%; 
-        top: 35%;
-        max-width: 240px;
-        max-height: 240px;
+        // bottom: 4.5rem;
+        // max-width: 240px;
+        // max-height: 240px;
         width: 300px;
         z-index: 1;
         img {
@@ -66,7 +66,7 @@
 }
 .journey-section-2{
     position: relative;
-    height: 95vh;
+    // height: 95vh;
     width: 100%;
     background-color: rgb(0, 212, 255, 0.4); //rgb(38, 150, 233, 0.4);// rgb(158, 224, 190, 0.4)
     video{
@@ -76,5 +76,29 @@
         min-width: 100%;
         min-height: 100%;
         z-index: -1;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .model{
+        bottom: 3.75rem;
+        opacity: 0.3;
+        max-width: 220px;
+        max-height: 220px;
+    }
+    .journey-section-2{
+        height: 65vh;
+    }
+    .journey-section-1-text{
+        padding: 0 1rem;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .model{
+        bottom: 4.5rem;
+        max-width: 240px;
+        max-height: 240px;
+    }
+    .journey-section-2{
+        height: 95vh;
     }
 }

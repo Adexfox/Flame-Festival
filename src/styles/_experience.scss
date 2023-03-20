@@ -10,7 +10,6 @@
     position: relative;
     width: 100vw;
     min-height: 100%;
-    // padding: 10vh 5vw 15vh;
     display: grid;
     color: $primary-color;
     font-family: $secondary-font;
@@ -23,7 +22,6 @@
         .header{
             position: relative;
             margin: 2.75rem 0 2rem;
-            // padding: 10vh 5vw 15vh;
             width: 100vw;
             height: 15vh;
             color: #000;
@@ -39,7 +37,7 @@
                 word-spacing: 10px;
                 font: {
                 family: mySecondFont;
-                size: 3rem;
+                // size: 3rem;
                 weight: 500;
                 style: italic;
                 stretch: expanded;
@@ -48,17 +46,17 @@
                 span {
                     position: absolute;
                     top: -8%;
-                    margin-left: 10px;
+                    // margin-left: 10px;
                     font-family: myFirstFont;
-                    font-size: 4rem;
+                    // font-size: 4rem;
                 }
             
             }
         }
         .sub-header{
             position: relative;
-            width: 90vw;
             padding-left: 5vw;
+            text-align: justify;
             font: {
                 family: $primary-font;
                 size: 1.25rem;
@@ -72,24 +70,20 @@
         width: 100%;
         min-height: 100vh;
         margin-top: 10vh;
-        padding-left: 5vw;
-        // padding: 10vh 5vw 15vh;
         .media{
             position: relative;
             display: grid;
-            width: 50%;
-            height: 50%;
             img{
 
                 max-width: 90%;
                 max-height: 90%;
                 border: 1px solid rgb(0, 0, 0, 0.5);
-            box-shadow: 0 0 5px rgb(204, 204, 204);
+                box-shadow: 0 0 5px rgb(204, 204, 204);
             }
         }
         .text{
             position: relative;
-            width: 40%;
+            // width: 40%;
             padding: 0;
             margin: -10px 0 0 -2vw;
             padding: 0;
@@ -100,6 +94,7 @@
             p{
                 width: 95%;
                 margin-bottom: 2rem;
+                text-align: justify;
                 font: {
                     family: $primary-font;
                     size: 1.25rem;
@@ -111,13 +106,85 @@
         }
     }
     .experience-footer{
-        height: 10vh;
+        height: auto;
         margin-top: 5vh;
         width: 100vw;
         background-color: $primary-color;
         align-items: end;
         align-items: start;
         
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .header h1{
+        font-size: 2rem;
+        span{
+            font-size: 2.65rem;
+            margin-left: 2px;
+        }
+    }
+    .body-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 4vw 0 8vw;
+        .media{
+            height: 50%;
+            width: 125%;
+            padding-right: 10vw;
+            margin-bottom: 12vh;
+        }
+        .text{
+            width: 100%;
+        }
+    } 
+    .sub-header{
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .header h1{
+        font-size: 3rem;
+        span{
+            font-size: 4rem;
+            margin-left: 10px;
+        }
+    }
+    .body-content{
+        padding-left: 5vw;
+        .media{
+            height: 80%;
+            width: 50%;
+        }
+        .text{
+        width: 48%;
+        }
+    } 
+    .sub-header{
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .header h1{
+        font-size: 3rem;
+        span{
+            font-size: 4rem;
+            margin-left: 10px;
+        }
+    }
+    .body-content{
+        padding-left: 5vw;
+        .media{
+            height: 50%;
+            width: 50%;
+        }
+        .text{
+        width: 40%;
+        }
+    } 
+    .sub-header{
+        width: 90%;
     }
 
 }

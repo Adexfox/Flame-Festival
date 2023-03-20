@@ -212,24 +212,43 @@
 }
   .ticket{
     position: fixed;
-    right: 0.5rem;
     top: 1rem;
     height: 40px;
-    width: 150px;
+    // width: 150px;
     z-index: 1;
     cursor: pointer;
     @include transition-ease;
     
     &-btn{
       @include btn;
-      width: 136px;
       z-index: 1;
       
     }
   }
-@media only screen and (min-width: 992px) {
+
+@media only screen and (max-width: 768px) {
+    .ticket{
+        right: 1.25rem;
+        &-btn{
+            width: 94px;
+            font-size: 0.75rem;
+            height: 2rem;
+        }
+    }
+    .menu, .menu-burger{
+        left: 0.15rem;
+    }
+    .menu-text {
+        left: 2.95rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
     .ticket{
         right: 3.6rem;
+        &-btn{
+            width: 136px;
+        }
     }
     .menu, .menu-burger{
         left: 2rem;
@@ -239,5 +258,6 @@
     }
     
 }
+
 
 

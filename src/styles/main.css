@@ -130,7 +130,7 @@ html::-webkit-scrollbar {
 }
 
 .experience {
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .footer {
@@ -351,10 +351,8 @@ html::-webkit-scrollbar {
 
 .ticket {
   position: fixed;
-  right: 0.5rem;
   top: 1rem;
   height: 40px;
-  width: 150px;
   z-index: 1;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -374,7 +372,6 @@ html::-webkit-scrollbar {
   border: 2px solid #017294;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  width: 136px;
   z-index: 1;
 }
 .ticket-btn::before {
@@ -398,9 +395,28 @@ html::-webkit-scrollbar {
   color: #ffffff;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 768px) {
+  .ticket {
+    right: 1.25rem;
+  }
+  .ticket-btn {
+    width: 94px;
+    font-size: 0.75rem;
+    height: 2rem;
+  }
+  .menu, .menu-burger {
+    left: 0.15rem;
+  }
+  .menu-text {
+    left: 2.95rem;
+  }
+}
+@media only screen and (min-width: 769px) {
   .ticket {
     right: 3.6rem;
+  }
+  .ticket-btn {
+    width: 136px;
   }
   .menu, .menu-burger {
     left: 2rem;
@@ -725,7 +741,7 @@ html::-webkit-scrollbar {
   width: 100%;
   position: relative;
   margin: 0 auto;
-  height: 150vh;
+  height: auto;
 }
 .island-section-text {
   width: 100%;
@@ -798,7 +814,7 @@ html::-webkit-scrollbar {
   border: 2px solid #017294;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  top: -172px;
+  bottom: 6rem;
   z-index: 2;
 }
 .island-section .island-btn::before {
@@ -822,6 +838,11 @@ html::-webkit-scrollbar {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 768px) {
+  .island-section-text {
+    padding: 0 1rem;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -924,6 +945,11 @@ html::-webkit-scrollbar {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 768px) {
+  .hunt-section-text {
+    padding: 0 1rem;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -1079,8 +1105,8 @@ html::-webkit-scrollbar {
 .program-section .program-1 .flower-3 {
   width: 100%;
   position: absolute;
-  right: -1.5%;
-  top: 51.5%;
+  right: -1.5rem;
+  bottom: 6.75rem;
   max-width: 240px;
   max-height: 240px;
   width: 300px;
@@ -1119,6 +1145,11 @@ html::-webkit-scrollbar {
   height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .program-1 {
+    padding: 0 1rem;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -1258,9 +1289,6 @@ html::-webkit-scrollbar {
   width: 100%;
   position: absolute;
   right: -1%;
-  top: 35%;
-  max-width: 240px;
-  max-height: 240px;
   width: 300px;
   z-index: 1;
 }
@@ -1270,7 +1298,6 @@ html::-webkit-scrollbar {
 
 .journey-section-2 {
   position: relative;
-  height: 95vh;
   width: 100%;
   background-color: rgba(0, 212, 255, 0.4);
 }
@@ -1283,6 +1310,30 @@ html::-webkit-scrollbar {
   z-index: -1;
 }
 
+@media only screen and (max-width: 768px) {
+  .model {
+    bottom: 3.75rem;
+    opacity: 0.3;
+    max-width: 220px;
+    max-height: 220px;
+  }
+  .journey-section-2 {
+    height: 65vh;
+  }
+  .journey-section-1-text {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .model {
+    bottom: 4.5rem;
+    max-width: 240px;
+    max-height: 240px;
+  }
+  .journey-section-2 {
+    height: 95vh;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -1452,6 +1503,11 @@ html::-webkit-scrollbar {
   transform: rotate(180deg);
 }
 
+@media only screen and (max-width: 768px) {
+  .package-section-1-text {
+    padding: 0 1rem;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -1524,7 +1580,7 @@ html::-webkit-scrollbar {
   border: 2px solid #017294;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  margin-top: 2rem;
+  margin-top: 4rem;
   z-index: 2;
 }
 .experience-section button::before {
@@ -1612,10 +1668,9 @@ html::-webkit-scrollbar {
   max-height: 240px;
   width: 300px;
   z-index: 1;
-  top: 65%;
+  bottom: 11.75rem;
   right: 0;
   z-index: 2;
-  background-color: red;
 }
 .experience-section-1 .flower-2 img {
   width: 100%;
@@ -1728,6 +1783,17 @@ html::-webkit-scrollbar {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .experience-section-1 {
+    height: 80vh;
+  }
+  .experience-section-1 .flower-2 {
+    bottom: 1.75rem;
+  }
+  .text-1, .text-2 {
+    padding: 0 1rem;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -1774,29 +1840,22 @@ html::-webkit-scrollbar {
   width: 80%;
   height: 80%;
   display: grid;
-  margin: 1rem 1.75rem -1rem;
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
   z-index: 1;
 }
 .footer-box .logo h3 {
-  font-size: 0.75rem;
   font-weight: 700;
   font-family: "Krub", sans-serif;
   position: absolute;
-  margin-left: 3.1rem;
   letter-spacing: 0.28rem;
-  margin-top: 2.5rem;
 }
 .footer-box .logo .zigi, .footer-box .logo .flare {
   position: absolute;
   top: 0;
   left: 0;
   max-width: 100%;
-  margin-left: 2.85rem;
-  height: 12px;
-  width: 58px;
   z-index: 1;
   top: 40%;
   color: #017294;
@@ -1805,9 +1864,6 @@ html::-webkit-scrollbar {
 .footer-box .logo .flare {
   position: absolute;
   top: 0;
-  width: 28px;
-  height: 28px;
-  margin-left: 3.75rem;
 }
 .footer-box .subscribe {
   height: 50%;
@@ -1852,15 +1908,64 @@ html::-webkit-scrollbar {
 
 .sticky1 {
   position: fixed;
-  top: 92vh;
+  bottom: 2.75rem;
 }
 
-@media only screen and (min-width: 992px) {
+/****************
+ *  * PHONE * *
+ ****************/
+@media only screen and (max-width: 768px) {
+  .logo {
+    left: 0;
+    top: 0.45rem;
+    margin: 4rem -2rem;
+  }
+  .logo h3 {
+    font-size: 0.5rem;
+    margin-left: 2.95rem;
+    margin-top: 2rem;
+  }
+  .flare {
+    width: 18px;
+    height: 18px;
+    margin: 1.25rem 0 0 3.5rem;
+  }
+  .zigi {
+    height: 12px;
+    width: 38px;
+    margin-left: 3rem;
+  }
+  .footer-box .subscribe {
+    margin-left: 2rem;
+  }
+}
+/*************************
+ * * TABLET AND LAPTOP * *
+ *************************/
+@media only screen and (min-width: 769px) {
   .logo {
     left: 1rem;
+    margin: 4.25rem 1.75rem -1rem;
+  }
+  .logo h3 {
+    font-size: 0.75rem;
+    margin-left: 3.1rem;
+    margin-top: 2.5rem;
   }
   .chat {
     right: 4.6rem;
+  }
+  .zigi, .flare {
+    margin-left: 2.85rem;
+  }
+  .flare {
+    width: 28px;
+    height: 28px;
+    margin-left: 3.75rem;
+  }
+  .zigi {
+    height: 12px;
+    width: 58px;
   }
 }
 /**
@@ -1896,7 +2001,6 @@ html::-webkit-scrollbar {
 }
 .journey-page {
   height: 100vh;
-  width: 75%;
   position: relative;
   margin: 0 auto;
   font-family: "Cormorant Garamond", serif;
@@ -1904,7 +2008,6 @@ html::-webkit-scrollbar {
 .journey-page .header {
   position: relative;
   top: 8%;
-  left: 2%;
   display: inline-block;
 }
 .journey-page .header h1 {
@@ -1922,8 +2025,6 @@ html::-webkit-scrollbar {
 .journey-page .journey-plane {
   width: 100%;
   position: relative;
-  max-width: 70%;
-  max-height: 70%;
   margin: 0 auto;
   top: 1%;
   left: 2%;
@@ -1935,9 +2036,6 @@ html::-webkit-scrollbar {
   width: 100%;
   filter: drop-shadow(30px 10px 4px rgba(128, 128, 128, 0.25));
 }
-.journey-page .journey-plane:hover {
-  transform: scale(1);
-}
 .journey-page .journey-body {
   text-align: left;
   display: inline-block;
@@ -1945,7 +2043,6 @@ html::-webkit-scrollbar {
 }
 .journey-page .journey-body p {
   width: 100%;
-  line-height: 1.8;
   text-align: justify;
   -moz-text-align-last: justify;
        text-align-last: justify;
@@ -1977,21 +2074,63 @@ html::-webkit-scrollbar {
   background-repeat: no-repeat;
   transition: all 0.5s ease-in-out;
 }
-.journey-page .journey-map:hover {
-  width: inherit;
-  height: 82vh;
-  position: relative;
-  width: 100vw;
-  height: 80vh;
-  left: calc(-50vw + 50%);
-  z-index: -99;
-}
 
 .journey-footer {
   width: 100vw;
   left: calc(-50vw + 50%);
 }
 
+/*************************************  *
+  * *  PHONE AND TABLET MEDIA QUERY * *  
+*  *************************************/
+@media only screen and (max-width: 992px) {
+  .journey-page {
+    width: 85%;
+  }
+  .journey-page .header {
+    margin-bottom: 8vh;
+  }
+  .journey-page .journey-body {
+    padding-top: 6vh;
+  }
+  .journey-page .journey-body p {
+    line-height: 2;
+  }
+  .journey-page .journey-plane {
+    margin-right: 4rem;
+    margin-top: 2vh;
+    max-width: 90%;
+    max-height: 100%;
+    padding-left: 0.5em;
+  }
+}
+/**********************  *
+*  * LAPTOP MEDIA QUERY *  *
+*  **********************/
+@media only screen and (min-width: 992px) {
+  .journey-page {
+    width: 75%;
+  }
+  .journey-page .journey-body {
+    line-height: 1.8;
+  }
+  .journey-page .journey-plane {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  .journey-page .journey-plane:hover {
+    transform: scale(1);
+  }
+  .journey-page .journey-map:hover {
+    width: inherit;
+    height: 82vh;
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    left: calc(-50vw + 50%);
+    z-index: -99;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -2032,15 +2171,12 @@ html::-webkit-scrollbar {
 }
 
 .program-page {
-  overflow-y: hidden;
   touch-action: none;
 }
 
 .details {
   position: relative;
-  top: 10vh;
-  width: 90%;
-  height: 90vh;
+  height: auto;
   font-family: "Cormorant Garamond", serif;
   margin: 0 auto;
 }
@@ -2071,22 +2207,23 @@ html::-webkit-scrollbar {
   color: orange;
 }
 
+@media only screen and (max-width: 768px) {
+  .details {
+    top: 15vh;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .details {
+    top: 24vh;
+    width: 80%;
+  }
+}
 .breadcrumbs {
   max-width: 120px;
   margin: 20px auto;
   position: absolute;
   top: 9vh;
-  right: 8vw;
-}
-
-.breadcrumbs > * {
-  display: inline;
-  margin-right: 10px;
-}
-
-.breadcrumbs .crumb:after {
-  content: "|";
-  margin-left: 10px;
 }
 
 .breadcrumbs .crumb:last-child:after {
@@ -2105,6 +2242,42 @@ html::-webkit-scrollbar {
   color: orange;
 }
 
+@media only screen and (max-width: 992px) {
+  .breadcrumbs {
+    right: 8vw;
+  }
+  .breadcrumbs .crumb a {
+    font-weight: 500;
+    font-size: 0.85rem;
+    font-family: "Krub", sans-serif;
+  }
+  .breadcrumbs .crumb:after {
+    content: "|";
+    margin-left: 5px;
+  }
+  .breadcrumbs > * {
+    display: inline;
+    margin-right: 5px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .breadcrumbs {
+    right: 8vw;
+  }
+  .breadcrumbs .crumb a {
+    font-weight: 500;
+    font-size: 1.05rem;
+    font-family: "Krub", sans-serif;
+  }
+  .breadcrumbs .crumb:after {
+    content: "|";
+    margin-left: 10px;
+  }
+  .breadcrumbs > * {
+    display: inline;
+    margin-right: 10px;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -2252,7 +2425,6 @@ html::-webkit-scrollbar {
   margin-left: 5vw;
   word-spacing: 10px;
   font-family: mySecondFont;
-  font-size: 3rem;
   font-weight: 500;
   font-style: italic;
   font-stretch: expanded;
@@ -2260,14 +2432,12 @@ html::-webkit-scrollbar {
 .experience-page header .header h1 span {
   position: absolute;
   top: -8%;
-  margin-left: 10px;
   font-family: myFirstFont;
-  font-size: 4rem;
 }
 .experience-page header .sub-header {
   position: relative;
-  width: 90vw;
   padding-left: 5vw;
+  text-align: justify;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.25rem;
 }
@@ -2277,13 +2447,10 @@ html::-webkit-scrollbar {
   width: 100%;
   min-height: 100vh;
   margin-top: 10vh;
-  padding-left: 5vw;
 }
 .experience-page .body-content .media {
   position: relative;
   display: grid;
-  width: 50%;
-  height: 50%;
 }
 .experience-page .body-content .media img {
   max-width: 90%;
@@ -2293,7 +2460,6 @@ html::-webkit-scrollbar {
 }
 .experience-page .body-content .text {
   position: relative;
-  width: 40%;
   padding: 0;
   margin: -10px 0 0 -2vw;
   padding: 0;
@@ -2305,6 +2471,7 @@ html::-webkit-scrollbar {
 .experience-page .body-content .text p {
   width: 95%;
   margin-bottom: 2rem;
+  text-align: justify;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.25rem;
 }
@@ -2312,7 +2479,7 @@ html::-webkit-scrollbar {
   font-size: 0.95rem;
 }
 .experience-page .experience-footer {
-  height: 10vh;
+  height: auto;
   margin-top: 5vh;
   width: 100vw;
   background-color: #ffffff;
@@ -2320,6 +2487,77 @@ html::-webkit-scrollbar {
   align-items: start;
 }
 
+@media only screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header h1 span {
+    font-size: 2.65rem;
+    margin-left: 2px;
+  }
+  .body-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4vw 0 8vw;
+  }
+  .body-content .media {
+    height: 50%;
+    width: 125%;
+    padding-right: 10vw;
+    margin-bottom: 12vh;
+  }
+  .body-content .text {
+    width: 100%;
+  }
+  .sub-header {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  .header h1 span {
+    font-size: 4rem;
+    margin-left: 10px;
+  }
+  .body-content {
+    padding-left: 5vw;
+  }
+  .body-content .media {
+    height: 80%;
+    width: 50%;
+  }
+  .body-content .text {
+    width: 48%;
+  }
+  .sub-header {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  .header h1 span {
+    font-size: 4rem;
+    margin-left: 10px;
+  }
+  .body-content {
+    padding-left: 5vw;
+  }
+  .body-content .media {
+    height: 50%;
+    width: 50%;
+  }
+  .body-content .text {
+    width: 40%;
+  }
+  .sub-header {
+    width: 90%;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -2365,6 +2603,7 @@ html::-webkit-scrollbar {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   color: black;
+  size: 4;
 }
 .footer-component .footer-social:hover {
   color: orange;
@@ -2394,7 +2633,6 @@ html::-webkit-scrollbar {
   color: black;
   font-family: "Krub", sans-serif;
   font-weight: 700;
-  font-size: 0.85rem;
   padding-left: 1.5rem;
   transition: all 0.5s ease-in-out;
 }
@@ -2402,12 +2640,49 @@ html::-webkit-scrollbar {
   color: orange;
 }
 
+@media only screen and (min-width: 648px) {
+  .nav-cta {
+    font-size: 0.85rem;
+    padding-left: 1.5rem;
+  }
+}
+@media only screen and (max-width: 648px) {
+  .footer-component {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-column-gap: 4rem;
+    justify-content: center;
+  }
+  .footer-component .footer-social {
+    justify-self: center;
+    display: grid;
+    grid-row-gap: 1.5rem;
+    order: 3;
+    margin-left: 2rem;
+  }
+  .footer-component .zigzag {
+    margin-left: 30%;
+    order: 2;
+  }
+  .footer-component .nav-cta {
+    margin: 2rem;
+    display: grid;
+    grid-row-gap: 2rem;
+    justify-self: center;
+    justify-items: start;
+    order: 1;
+    margin-right: 4rem;
+  }
+}
+/**************************************
+ * TWO DIFFERENT FOOTER DESIGNS *
+ **************************************/
 .logo-container {
   position: relative;
   margin-top: 6vh;
   max-width: 64px;
   max-height: 48px;
-  margin-left: 8vh;
 }
 .logo-container a {
   color: #000;
@@ -2439,6 +2714,16 @@ html::-webkit-scrollbar {
   font-size: 0.75rem;
 }
 
+@media only screen and (max-width: 992px) {
+  .logo-container {
+    margin-left: 4vh;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .logo-container {
+    margin-left: 16vh;
+  }
+}
 .border-segment {
   position: relative;
   width: 100vw;
@@ -2478,23 +2763,17 @@ html::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: -1rem 3.5rem -2rem 0;
 }
 .comp-footer .comp-navigation .nav-1 a, .comp-footer .comp-navigation .nav-2 a {
-  font-weight: 500;
   font-family: "Krub", sans-serif;
-  font-size: 0.9rem;
 }
 .comp-footer .comp-navigation .nav-1 a:hover, .comp-footer .comp-navigation .nav-2 a:hover {
   color: orange;
 }
 .comp-footer .comp-social {
   position: relative;
-  height: 20%;
-  top: 45%;
 }
 .comp-footer .comp-social .socials {
-  margin-right: 4rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -2524,6 +2803,57 @@ html::-webkit-scrollbar {
        text-align-last: justify;
 }
 
+@media only screen and (max-width: 768px) {
+  .customer-service {
+    display: none;
+  }
+  .nav-1 a, .nav-2 a {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+  .nav-1 {
+    margin-left: 17vw;
+  }
+  .comp-social {
+    margin-right: 15vw;
+    top: 8%;
+  }
+  .comp-social .socials {
+    display: flex;
+    margin-bottom: 2.75rem;
+    position: relative;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .comp-social {
+    margin-top: 2.75rem;
+  }
+  .comp-social .socials {
+    margin-right: 2rem;
+  }
+  .nav-1, .nav-2 {
+    margin: -1rem 3.5rem -2rem 0;
+  }
+  .nav-1 a, .nav-2 a {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .nav-1 {
+    margin-right: 0.25rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .comp-social .socials {
+    margin-right: 4rem;
+  }
+  .nav-1, .nav-2 {
+    margin: -1rem 3.5rem -2rem 0;
+  }
+  .nav-1 a, .nav-2 a {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -2639,7 +2969,7 @@ html::-webkit-scrollbar {
   font-family: myFirstFont;
   font-size: 4.5rem;
   position: relative;
-  top: 2vh;
+  top: 0.9rem;
 }
 .nest .header :nth-child(2), .den .header :nth-child(2), .retreat .header :nth-child(2), .duo .header :nth-child(2) {
   font-family: "Passions Conflict", cursive;
@@ -2913,62 +3243,90 @@ html::-webkit-scrollbar {
   font-family: mySecondFont;
   src: url(/public/fonts/Darlington.ttf);
 }
-.island-reusable {
-  width: 100vw;
-  height: 80vh;
+.island-page {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 10vh 0 5vh;
-  padding-bottom: 15vh;
+  width: 100vw;
+  height: auto;
+}
+.island-page .logo {
+  position: relative;
+}
+.island-page .island-reusable {
+  height: auto;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  margin: 4vh 8vw 0;
   font-family: "Cormorant Garamond", serif;
   line-height: 2;
 }
-.island-reusable .ink-img {
+.island-page .island-reusable .ink-img {
   position: relative;
-  width: 40%;
-  width: 50%;
-  height: 80%;
-  margin-top: -2vh;
+  margin-right: 5rem;
 }
-.island-reusable .ink-img img {
+.island-page .island-reusable .ink-img img {
   width: 100%;
   height: 100%;
 }
-.island-reusable .text-content {
+.island-page .island-reusable .text-content {
   position: relative;
-  width: 40%;
-  margin-right: 5vw;
   font-size: 1.25rem;
 }
-.island-reusable .text-content h1 {
+.island-page .island-reusable .text-content h1 {
   color: #017294;
   font-size: 2.25rem;
   font-weight: 400;
 }
-.island-reusable .text-content li {
+.island-page .island-reusable .text-content li {
   list-style-type: none;
 }
-.island-reusable .text-content p, .island-reusable .text-content ul, .island-reusable .text-content h4 {
+.island-page .island-reusable .text-content p, .island-page .island-reusable .text-content ul, .island-page .island-reusable .text-content h4 {
   margin-bottom: 1rem;
 }
-.island-reusable .text-content a, .island-reusable .text-content h4 {
+.island-page .island-reusable .text-content a, .island-page .island-reusable .text-content h4 {
   color: #017294;
 }
-.island-reusable .text-content a:hover {
+.island-page .island-reusable .text-content a:hover {
   color: orange;
 }
-.island-reusable .text-content .island-icon {
+.island-page .island-reusable .text-content .island-icon {
   color: #017294;
   position: relative;
   top: 0.2rem;
 }
-.island-reusable .text-content .bed {
+.island-page .island-reusable .text-content .bed {
   top: 0.75rem;
 }
-
-.island-footer {
+.island-page .island-footer {
   position: relative;
   width: 100vw;
+  height: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .logo {
+    margin-bottom: 12vh;
+  }
+  .island-reusable {
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    justify-content: start;
+    padding-bottom: 15vh;
+  }
+  .island-reusable .ink-img {
+    height: 80%;
+    width: 100%;
+  }
+  .island-reusable .text-content {
+    position: relative;
+    width: 45vw;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo {
+    margin-bottom: 6vh;
+  }
+  .island-reusable {
+    padding-bottom: 10vh;
+  }
 }/*# sourceMappingURL=main.css.map */
