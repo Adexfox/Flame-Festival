@@ -21,6 +21,7 @@
         color: $primary-color;
         font-family: $secondary-font;
     }
+    
 
     &-burger {
         position: fixed;
@@ -166,7 +167,39 @@
 
             }
             }
+            .menu-nav-media{
+            
+            :nth-child(1) {
+                animation: replica 3.75s ease-in-out;
+                
+            }
+            :nth-child(2) {
+                animation: replica 4s ease-in-out;
+                @include transition-ease;
+                &:hover{
+                color: #1c1c1c;
+                transform: translateY(-10px)
+                }
+            }
+            :nth-child(3) {
+                animation: replica 4.5s ease-in-out;
+                
+            }
+            @keyframes replica {
+                0%{
+                    opacity: 0;
+                    transform: translateY(90px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+            }
+            
+            }
         }
+        
         
         &__link {
             display: inline-block;
@@ -208,6 +241,18 @@
             
             
         }
+        &-media{
+            position: relative;
+            display: grid;
+            justify-content: center;
+        }
+        
+        &-newsletter{
+            text-align: center;
+            color: $accent-color;
+            justify-items: center;
+            font-size: 1rem;
+        }
     }
 }
   .ticket{
@@ -221,11 +266,17 @@
     
     &-btn{
       @include btn;
-      z-index: 1;
+      z-index: 3;
       
     }
   }
-
+.general-social{
+    @include transition-ease;
+    &:hover{
+                color: #1c1c1c;
+                transform: translateY(-10px)
+            }
+}
 @media only screen and (max-width: 768px) {
     .ticket{
         right: 1.25rem;
@@ -240,6 +291,14 @@
     }
     .menu-text {
         left: 2.95rem;
+    }
+    .menu-nav{
+        &-logo{
+                margin-left: 5rem;
+            }
+        &-newsletter{
+            margin: 2rem 0;
+        }
     }
 }
 
@@ -256,7 +315,23 @@
     .menu-text {
         left: 5.65rem;
     }
+    .menu-nav{
+        &-logo{
+                margin-left: 2.25rem;
+            }
+        &-newsletter{
+            margin: 4rem 0 2rem;
+        }
+    }
     
+}
+
+@media only screen and (min-width: 993px) {
+    .menu-nav{
+        &-logo{
+            margin-left: 0.65rem;
+        }
+    }
 }
 
 

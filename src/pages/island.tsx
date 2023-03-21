@@ -1,5 +1,5 @@
 import React from 'react'
-import IslandComp from '../components/islandComp'
+import IslandComp from '../components/island/islandComp'
 
 interface islandProps {
   

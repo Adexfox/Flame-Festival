@@ -48,14 +48,12 @@
       }
       .comp-social{
         position: relative;
-        // top: 12%;
-        // height: 20%;
         .socials{
-          // margin-right: 4rem;
           cursor: pointer;
           @include transition-ease;
           &:hover{
             color: orange;
+            transform: translateY(-10px)
           }
         }
       }

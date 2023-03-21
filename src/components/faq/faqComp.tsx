@@ -4,7 +4,12 @@ import SecondFooter from '../universal/secondFooter';
 
 type Props = {}
 
-const FaqComp = (props: Props) => {
+const FaqComp = () => {
+  const logoProps = {
+    color: '#000',
+    top: '6vh',
+    filter:'grayscale(1) invert(1)'
+  }
   const linkTypes = {
     firstName: 'Packages',
     secondName: 'Island',
@@ -16,7 +21,7 @@ const FaqComp = (props: Props) => {
   return (
     <main className='faq-page'>
         <header >
-                <LogoComp />
+                <LogoComp filter={logoProps.filter} color={logoProps.color} top={logoProps.top}/>
         </header>
         <section className='questions'>
             <h1 className='header'>G<span>eneral</span></h1>

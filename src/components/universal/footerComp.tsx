@@ -14,7 +14,7 @@ const FooterComp = (props) => {
         <IconContext.Provider value={{  style: {marginRight:  '2rem'}, className: 'footer-social'}}>
             <main className='footer-component' style={style}>
                 
-                <div className='footer-social'>
+                <div>
                 <FaFacebookF />
                 <FaTwitter />
                 <RiInstagramFill />

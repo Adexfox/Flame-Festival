@@ -83,7 +83,6 @@
         
         @include experience;
         height: 70vh;
-
         .cut-11{
             @include top-cut;
         }
@@ -104,6 +103,11 @@
             top: 18%;
             z-index: 2;
                 
+        }
+        .arrow-icons{
+            opacity: 0.6;
+            position: relative;
+            top: 0.65rem;
         }
     }
     &-4{
@@ -154,7 +158,9 @@
         }
     }
     .text-1, .text-2{
-
             padding: 0 1rem
-        }
+    }
+    .experience-section-3 .arrow-icons{
+        display: none;
+    }
 }

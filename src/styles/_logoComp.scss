@@ -1,14 +1,13 @@
 .logo-container{
       position: relative;
-      margin-top: 6vh;
       max-width: 64px;
       max-height: 48px;
       a{
-        color: #000;
+        // color: #000;
         text-decoration: none;
       }
       .flames, .zag{
-        filter: grayscale(1) invert(1);
+        // filter: grayscale(1) invert(1);
         max-width:100%;
         height: 12px;
         width: 58px;
@@ -24,29 +23,59 @@
       .flames{
         width: 28px;
         height: 28px;
-        margin-left: 0.95rem;
       }
       
       p{
         letter-spacing: 0.28rem;
-        margin: 0.8rem 0 0 0.1rem;//0.95rem 0 0 0.25rem;
         
         font: {
           family: $secondary-font;
           weight: 700;
-          size: 0.75rem;
         }
       }
     }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .logo-container{
       margin-left: 4vh; 
+    .flames{
+      width: 18px;
+      height: 18px;
+      margin-left: 0.55rem;
+      margin-top: 1.25rem;
+    }
+    .zag{
+      width: 38px;
+    }
+    p{
+      font-size: 0.5rem;
+      margin: 0.4rem 0 0 0;//0.95rem 0 0 0.25rem;
 
+    }
+  }
+}
+@media only screen and (min-width: 769px) {
+  .logo-container{
+      margin-left: 4rem; 
+      .flames{
+        margin-left: 0.95rem;
+      }
+      p{
+         font-size: 0.75rem;
+         margin: 0.8rem 0 0 0.1rem;//0.95rem 0 0 0.25rem;
+
+      }
   }
 }
 @media only screen and (min-width: 992px) {
   .logo-container{
-      margin-left: 16vh; 
+      margin-left: 6rem; 
+    .flames{
+        margin-left: 0.95rem;
+      }
+      p{
+         font-size: 0.75rem;
+         margin: 0.8rem 0 0 0.1rem;//0.95rem 0 0 0.25rem;
 
+      }
   }
 }
