@@ -6,7 +6,12 @@ import { SinglePackageComponent } from './singlePackageComp'
 import { artistsBullets, villaBullets, nestBullets, denBullets, retreatBullets, duoBullets } from './bullets'
 type Props = {}
 
-const PackagesComp = (props: Props) => {
+const PackagesComp = () => {
+  const logoProps = {
+    color: '#000',
+    top: '6vh',
+    filter:'grayscale(1) invert(1)'
+  }
           /*************
            * CTA PROPS *
            *************/
@@ -20,7 +25,7 @@ const PackagesComp = (props: Props) => {
       total: '$49,999',
     },
     nest: {
-      person: '$3,995',
+      person: '$3,995', 
       total: '$7,990',
     },
     den: {
@@ -51,7 +56,7 @@ const PackagesComp = (props: Props) => {
     <>
       <main>
         <header>
-          <LogoComp />
+          <LogoComp filter={logoProps.filter} color={logoProps.color} top={logoProps.top}/>
         </header>
         <section className='single-package'>
           <h1 className='header'>

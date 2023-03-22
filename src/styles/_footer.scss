@@ -127,7 +127,8 @@
               * * TABLET AND LAPTOP * *
               *************************/
 @media only screen and (min-width: 769px) {
-    
+    .footer-box{
+        
         .logo{
             left: 1rem;
             margin: 4.25rem 1.75rem -1rem ;
@@ -154,4 +155,5 @@
             height: 12px;
             width: 58px;
         }
+    }
 }

@@ -2,6 +2,8 @@ import React, {  useState } from 'react';
 import { items } from './menuItems';
 import { Link } from 'react-router-dom';
 import useColor from '../../hooks/useColor';
+import LogoComp from '../universal/logoComp';
+import SocialComp from '../universal/socialComp';
           
 
 
@@ -33,6 +35,11 @@ import useColor from '../../hooks/useColor';
     border: `2px solid ${elementColor}`
     
   }
+  const logoProps = {
+    color: '#017294',
+    top: '0',
+    filter:'invert(80%) sepia(67%) saturate(3302%) hue-rotate(176deg) brightness(97%) contrast(101%)'
+  }
 
   return (
     <>
@@ -59,7 +66,15 @@ import useColor from '../../hooks/useColor';
                   </li>
                   )
               })}
+              <div className='menu-nav-media'>
+                <div className='menu-nav-logo'>
+                  <LogoComp filter={logoProps.filter} color={logoProps.color} top={logoProps.top}/>
+                </div>
 
+              <a href="/contact" className='menu-nav-newsletter'>Subscribe to newsletter</a>
+              <SocialComp />  
+              </div>
+              
         </ul>
       </nav>
     </>
