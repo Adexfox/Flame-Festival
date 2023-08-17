@@ -26,6 +26,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -147,6 +148,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -495,6 +497,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -776,6 +779,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -913,6 +917,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1020,6 +1025,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1220,6 +1226,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1404,6 +1411,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1578,6 +1586,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1872,6 +1881,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2046,6 +2056,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2207,6 +2218,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2362,6 +2374,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2443,6 +2456,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2642,6 +2656,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2735,6 +2750,7 @@ html::-webkit-scrollbar {
     grid-row-gap: 1.5rem;
     order: 3;
     margin-left: 2rem;
+    background-color: red;
   }
   .footer-component .zigzag {
     margin-left: 30%;
@@ -2966,6 +2982,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -3114,6 +3131,7 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -3324,6 +3342,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
