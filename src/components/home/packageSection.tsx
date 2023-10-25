@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 
 type Props = {}
@@ -30,7 +31,9 @@ const PackageSection = (props: Props) => {
                 <p data-aos='slide-down' data-aos-delay="50">Your Flame ticket encompasses all flights, culinary delights and accomodations.</p>
                 <p data-aos='slide-down' data-aos-delay="50">General Admission is your key to the expirience, but VIP unlocks another level of possibilities. </p>
                 <p data-aos='slide-down' data-aos-delay="50"> From backstage partires to custom expriences. VIP offers uncompromising access to the best of the best</p>
-                <button className="package-btn" data-aos='slide-down' data-aos-delay="50">Get Tickets</button>
+                <Link to="/packages">
+                    <button className="package-btn" data-aos='slide-down'data-aos-delay="50">Get Tickets</button>
+                </Link>
                 
             </div>
             <div className='eighth-cut'>

@@ -44,11 +44,14 @@ const FaqComp = () => {
             <h3>How many people will be one the island, is there a limit?</h3>
             <p>Thousand of like-minded festival-goers will be on the island, however, due to security we <br /> cannot release exact numbers.</p>
 
-            <h3>Do i need to have housing or is it possibe to secure mu own lodging?</h3>
+            <h3>Do i need to have housing or is it possibe to secure my own lodging?</h3>
             <p>You must purchase housing (tents / villas ) unless you plan on chartering a yatch  (dockage <br /> fees + day pass apply). If you are chartering a yacht, there is a day pass available by special <br /> request only. We can also help you to arranage a yacht charter.</p>
 
             <h3>How will I pay for things on the island?</h3>
             <p>Flame Festival is a casheless festival. However, we suggest coming to the island with some <br /> cash on hand as there are no ATMs. That being said, every vendor will accept credit cards.</p>
+            <section className="bg-animation sticky-faq">
+
+            </section>
 
         </section>
         

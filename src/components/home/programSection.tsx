@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
  
@@ -21,7 +22,10 @@ const Program = (props: Props) => {
                 <h3 data-aos='fade-up' data-aos-delay="50">The <span><span>P</span>rogram</span></h3>
                 <h2 data-aos='fade-up' data-aos-delay="50">ENGAGE THE SENSES</h2>
                 <p data-aos='fade-up' data-aos-delay="50">We've tapped the brightest mind in the music, cuisine, art and hospitality to mastermind experience designed to<br /><span data-aos='fade-up' > delight and seduce. From innovators and thinkers to multi-platinum artists, you will find yourself one-on-one</span><br /><span data-aos='fade-up' > with some of the greatest talent on the planet</span> </p>
-                <button className='program-btn' data-aos='fade-up'>Get Tickets</button>
+                <Link to="/packages" className='program-btn-container'>
+
+                  <button className='program-btn' data-aos='fade-up'>Get Tickets</button>
+                </Link>
                 <div className="fourth-cut">
                       <img src="images/top-cut.png" alt="" />
                 </div>

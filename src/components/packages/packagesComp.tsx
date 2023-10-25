@@ -4,6 +4,8 @@ import PackageCta from './singlePackageCta'
 import SecondFooter from '../universal/secondFooter'
 import { SinglePackageComponent } from './singlePackageComp'
 import { artistsBullets, villaBullets, nestBullets, denBullets, retreatBullets, duoBullets } from './bullets'
+import Loader from '../universal/loader'
+import useSpinner from '../../hooks/useSpinner'
 type Props = {}
 
 const PackagesComp = () => {
@@ -52,110 +54,115 @@ const PackagesComp = () => {
     thirdLink: '/packages/faq',
     fourthLink: '/packages/experience',
   }
+  const { loading } = useSpinner(true);
+    
   return (
     <>
-      <main>
-        <header>
-          <LogoComp filter={logoProps.filter} color={logoProps.color} top={logoProps.top}/>
-        </header>
-        <section className='single-package'>
-          <h1 className='header'>
-            <span className='one'>A</span>r<span className='two'>t</span>is
-            <span className='three'>t</span>s <span className='four'>P</span>
-            alace
-          </h1>
-          <div className='body-text'>
-            <div className='body'>
-              <SinglePackageComponent list={artistsBullets} />
-              <PackageCta
-                person={cta.artists.person}
-                total={cta.artists.total}
+        {
+          loading ? <Loader /> :
+          <main>
+            <header>
+              <LogoComp filter={logoProps.filter} color={logoProps.color} top={logoProps.top}/>
+            </header>
+            <section className='single-package'>
+              <h1 className='header'>
+                <span className='one'>A</span>r<span className='two'>t</span>is
+                <span className='three'>t</span>s <span className='four'>P</span>
+                alace
+              </h1>
+              <div className='body-text'>
+                <div className='body'>
+                  <SinglePackageComponent list={artistsBullets} />
+                  <PackageCta
+                    person={cta.artists.person}
+                    total={cta.artists.total}
+                  />
+                </div>
+              </div>
+            </section>
+            <section className='single-package villa'>
+              <h1 className='header'><span>The</span> <span>V</span>illa</h1>
+              <div className='body-text'>
+                <div className='body'>
+                  <SinglePackageComponent list={villaBullets} />
+                  <PackageCta
+                    person={cta.villa.person}
+                    total={cta.villa.total}
+                  />
+                </div>
+              </div>
+            </section>
+            <section className='nest-den'>
+              <div className='single-package nest'>
+                <h1 className='header'><span>The</span> <span>N</span>est</h1>
+                <div className='body-text'>
+                    <div className='body'>
+                      <SinglePackageComponent list={nestBullets} />
+                      <PackageCta
+                        person={cta.nest.person}
+                        total={cta.nest.total}
+                      />
+                    </div>
+                </div>
+              </div>
+              <div className='den'>
+                <div className='single-package den'>
+                <h1 className='header'><span>The</span> <span>D</span>en</h1>
+                <div className='body-text'>
+                    <div className='body'>
+                      <SinglePackageComponent list={denBullets} />
+                      <PackageCta
+                        person={cta.den.person}
+                        total={cta.den.total}
+                      />
+                    </div>
+                </div>
+              </div>
+              </div>
+            </section>
+            <section className='retreat-duo'>
+              <div className='single-package retreat'>
+                <h1 className='header'><span>The</span> <span>R</span>etreat</h1>
+                <div className='body-text'>
+                    <div className='body'>
+                      <SinglePackageComponent list={retreatBullets} />
+                      <PackageCta
+                        person={cta.retreat.person}
+                        total={cta.retreat.total}
+                      />
+                    </div>
+                </div>
+              </div>
+              <div className='single-package duo'>
+                <h1 className='header'><span>The</span> <span>D</span>uo</h1>
+                <div className='body-text'>
+                    <div className='body'>
+                      <SinglePackageComponent list={duoBullets} />
+                      <PackageCta
+                        person={cta.duo.person}
+                        total={cta.duo.total}
+                      />
+                    </div>
+                </div>
+              </div>
+            </section>
+            <section className='request'>
+              <h1>Special Requests</h1>
+              <p>We're here to enhance your festival experience. Let us know what we can do for you, or if you have specific or special requests at <a href='email:conciere@flameapp.com' >conciere@flameapp.com.</a> We'll do everything we can to serve you.</p>
+              <div className='borderline'></div>
+            </section>
+            <footer>
+              <SecondFooter
+                firstName={linkTypes.firstName}
+                firstLink={linkTypes.firstLink}
+                secondName={linkTypes.secondName}
+                secondLink={linkTypes.secondLink}
+                thirdLink={linkTypes.thirdLink}
+                fourthLink={linkTypes.fourthLink}
               />
-            </div>
-          </div>
-        </section>
-        <section className='single-package villa'>
-          <h1 className='header'><span>The</span> <span>V</span>illa</h1>
-          <div className='body-text'>
-            <div className='body'>
-              <SinglePackageComponent list={villaBullets} />
-              <PackageCta
-                person={cta.villa.person}
-                total={cta.villa.total}
-              />
-            </div>
-          </div>
-        </section>
-        <section className='nest-den'>
-          <div className='single-package nest'>
-             <h1 className='header'><span>The</span> <span>N</span>est</h1>
-             <div className='body-text'>
-                <div className='body'>
-                  <SinglePackageComponent list={nestBullets} />
-                  <PackageCta
-                    person={cta.nest.person}
-                    total={cta.nest.total}
-                  />
-                </div>
-             </div>
-          </div>
-          <div className='den'>
-            <div className='single-package den'>
-             <h1 className='header'><span>The</span> <span>D</span>en</h1>
-             <div className='body-text'>
-                <div className='body'>
-                  <SinglePackageComponent list={denBullets} />
-                  <PackageCta
-                    person={cta.den.person}
-                    total={cta.den.total}
-                  />
-                </div>
-             </div>
-          </div>
-          </div>
-        </section>
-        <section className='retreat-duo'>
-          <div className='single-package retreat'>
-            <h1 className='header'><span>The</span> <span>R</span>etreat</h1>
-             <div className='body-text'>
-                <div className='body'>
-                  <SinglePackageComponent list={retreatBullets} />
-                  <PackageCta
-                    person={cta.retreat.person}
-                    total={cta.retreat.total}
-                  />
-                </div>
-             </div>
-          </div>
-          <div className='single-package duo'>
-            <h1 className='header'><span>The</span> <span>D</span>uo</h1>
-             <div className='body-text'>
-                <div className='body'>
-                  <SinglePackageComponent list={duoBullets} />
-                  <PackageCta
-                    person={cta.duo.person}
-                    total={cta.duo.total}
-                  />
-                </div>
-             </div>
-          </div>
-        </section>
-        <section className='request'>
-          <h1>Special Requests</h1>
-          <p>We're here to enhance your festival experience. Let us know what we can do for you, or if you have specific or special requests at <a href='email:conciere@flameapp.com' >conciere@flameapp.com.</a> We'll do everything we can to serve you.</p>
-          <div className='borderline'></div>
-        </section>
-        <footer>
-          <SecondFooter
-            firstName={linkTypes.firstName}
-            firstLink={linkTypes.firstLink}
-            secondName={linkTypes.secondName}
-            secondLink={linkTypes.secondLink}
-            thirdLink={linkTypes.thirdLink}
-            fourthLink={linkTypes.fourthLink}
-          />
-        </footer>
-      </main>
+            </footer>
+          </main>
+        }
     </>
   )
 }

@@ -6,6 +6,7 @@
         border-top: 1px solid rgb(0, 0, 0, 0.5);
         box-shadow: 0 0 5px rgb(204, 204, 204);
         @include gradient-bg();
+        z-index: 2;
       }
 .comp-footer{
       position: relative;
@@ -17,7 +18,9 @@
       padding-bottom: 3rem;
       padding-top: 3.25rem;
       border-top: 1px solid rgb(0, 0, 0, 0.5);
-        box-shadow: 0 0 5px rgb(204, 204, 204);
+      box-shadow: 0 0 5px rgb(204, 204, 204);
+      z-index: 2;
+      // background-color: #fff;
       a{
         text-decoration: none;
         color: #000;

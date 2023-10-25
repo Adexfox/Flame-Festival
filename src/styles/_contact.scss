@@ -1,0 +1,213 @@
+@import 'mixin';
+@import 'config';
+.contact-page{
+    width: 100vw;
+    // height: 100dvh;
+    background: linear-gradient(
+        to bottom,
+        $secondary-color 0%,
+        $secondary-color 50%,
+        #F1F5F9 50%,
+        #F1F5F9 50%
+
+    );
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: $primary-font;
+    line-height: 1.8;
+    padding-top: 10dvh;
+    .header{
+        position: relative;
+        width: 60vw;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 3rem 0 0.75rem;
+    }
+    .form-container{
+        position: relative;
+        width: 70vw;
+        background-color: $primary-color;
+        display: flex;
+        .design{
+            width: 40%;
+        }
+        .design{
+            position: relative;
+            padding-right: 1rem;
+            @keyframes contact-bg {
+                0%{
+                background-image: url("/public/images/Ink_1.png");
+                }
+                25%{
+                background-image: url("/public/images/Ink_3.png");
+                }
+                50%{
+                background-image: url("/public/images/Ink_4.png");
+                }
+                75%{
+                background-image: url("/public/images/Ink_5.png");
+                }
+                100%{
+                background-image: url("/public/images/Ink_8.png");
+                }
+                
+
+                
+            }
+            .contact-bg{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                animation: contact-bg 35s;
+                animation-iteration-count: infinite;
+                @include bgCover();
+            }
+            
+        }
+        .form{
+            position: relative;
+            width: 60%;
+            display: grid;
+            margin: 2.5rem 0 3rem;
+            margin-right: 2.75rem;
+            padding-top: 1.75rem;
+            .inputBox{
+                position: relative;
+                input{
+                    height: 2rem;
+                    width: 100%;
+                    // margin: 2rem;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px ridge $accent-color;
+                    padding: 0.625rem 10px;
+                    letter-spacing: 0.0625rem;
+                    margin-bottom: 1.875rem;
+                    font-family: $primary-font;
+                    font-weight: bold;
+                }
+                label{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 0.625rem 0;
+                    font-size: 0.85rem;
+                    color: gray;
+                    pointer-events: none;
+                    transition: 0.3s;
+                    padding-bottom: 4rem;
+                }
+                input:focus ~ label,
+                input:not(:focus):valid ~ label,
+                textarea:focus ~ label,
+                textarea:not(:focus):valid ~ label
+                {
+                    top: -1.125rem;
+                    left: 0;
+                    color: $accent-color;
+                    font-size: 0.65rem;
+                    height: 10px;
+                }
+                p{
+                    color: red;
+                    height: auto;
+                    margin: 0 auto;
+                }
+                
+
+
+            }
+            
+            .contact-cta{
+                @include btn-2();
+                position: relative;
+                margin-top: 3rem;
+                height: 3rem;
+            }
+            .form-notification{
+                position: relative;
+                z-index: 5;
+                height: 2.5rem;
+                width: 100%;
+                margin-bottom: 2rem;
+                display: grid;
+                border-left: 2px solid green;
+                p{
+                    background-color: lightgreen;
+                    height: inherit;
+                    border-radius: 0 4px 4px 0;
+                    text-align: center;
+                    padding-top: 4px;
+                }
+                button{
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                    color: green;
+                    border: none;
+                    padding: 4px 6px;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+            }
+            textarea{
+                height: 4rem;
+                resize: none;
+                width: 100%;
+                outline: none;
+                margin-top: 0.25rem;
+                padding: 0.625rem 10px;
+                letter-spacing: 0.0625rem;
+                border: none;
+                overflow-y: hidden;
+                border-bottom: 1px ridge $accent-color;
+                font-family: $primary-font;
+                font-weight: bold;
+            }
+            .mini{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+            }
+            .one, .two{
+                position: relative;
+                width: 42%;
+            }
+        }
+    }
+    .footer{
+        position: relative;
+        width: 50vw;
+        height: 2rem;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 10%;
+        justify-content: center;
+        padding: 0.25rem;
+        text-decoration: none;
+        a{
+            text-decoration: none;
+            color: $accent-color;
+            height: 2rem;
+            &:hover{
+                color: orange;
+                transform: scale(0.85);
+
+            }
+        }
+
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .form{
+        // background-color: red;
+        padding-right: 2.25rem;
+    }
+    .header p{
+        width: 40vw;
+    }
+}
