@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import useColor from '../../hooks/useColor';
 import LogoComp from '../universal/logoComp';
 import SocialComp from '../universal/socialComp';
-          
+import Popup from '../universal/popup'
 
 
   const Hamburger = () => {
@@ -40,19 +40,21 @@ import SocialComp from '../universal/socialComp';
     top: '0',
     filter:'invert(80%) sepia(67%) saturate(3302%) hue-rotate(176deg) brightness(97%) contrast(101%)'
   }
+  const [buttonPopup, setButtonPopup] = useState(false);
 
   return (
     <>
       <div className={`menu ${showMenu ? "open" : ""}`} onClick={toggleMenu}>
         <div className={`menu-burger ${showMenu ? "open" : ""}`} style={{color: elementColor}}>
           <p className='menu-text' style={{color: elementColor, fontWeight: '600'}} >Menu</p>
-          <div className='ticket'>
-              <button className='ticket-btn' style={ticketStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Get Tickets</button>
-          </div>
            
         </div>
         
-        
+      </div>
+      <div className='ticket'>
+        <Link to="/packages">
+          <button className='ticket-btn' style={ticketStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Get Tickets</button>
+        </Link>
       </div>
       <nav className={`nav ${showMenu ? "open" : ""}`}>
         <ul className={`menu-nav ${showMenu ? "open" : ""}`}>
@@ -71,12 +73,13 @@ import SocialComp from '../universal/socialComp';
                   <LogoComp filter={logoProps.filter} color={logoProps.color} top={logoProps.top}/>
                 </div>
 
-              <a href="/contact" className='menu-nav-newsletter'>Subscribe to newsletter</a>
-              <SocialComp />  
+                <p onClick={ () => setButtonPopup(true)} className='menu-nav-newsletter'>Subscribe to newsletter</p>
+                <SocialComp />  
               </div>
               
         </ul>
       </nav>
+      <Popup trigger={buttonPopup} setTrigger = {setButtonPopup} />
     </>
   )
 }

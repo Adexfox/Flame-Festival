@@ -1,0 +1,46 @@
+@import 'config';
+@import 'mixin';
+.home-video{
+    width: 100dvw;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background: #fff;
+    z-index: 6;
+    .close-btn{
+        position: absolute;
+        top: 4%;
+        right: 2%;
+        background-color: $accent-color;
+        color: white;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    // .flame-video{
+    //     position: fixed;
+    //     top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //     // padding: 56.25% 0 0 0;
+    //     iframe{
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    // }
+
+}
+// @media only screen and (max-width: 768px){
+//     .home-video{
+//         transform: rotate(90deg);
+//         height: 100%;
+//         width: 100%;
+//     }
+// }

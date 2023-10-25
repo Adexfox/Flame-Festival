@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 type Props = {}
@@ -38,8 +39,9 @@ const IslandSection = (props: Props) => {
                 <img src="images/flower-5.png" alt="" />
 
             </div>
-
-            <button className='island-btn' data-aos='fade-up'>Get Tickets</button>
+              <Link to="/packages">
+                <button className='island-btn' data-aos='fade-up'>Get Tickets</button>
+              </Link>
 
 
           </section>

@@ -55,6 +55,8 @@
                     border: 1px solid $primary-color;
                     box-shadow: 0 0 5px #000;
                     @include transition-ease();
+                    // transform: scale(0.98);
+
                 }
 
             }

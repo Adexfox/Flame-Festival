@@ -4,6 +4,7 @@ import { FaTwitter } from 'react-icons/fa';
 import { FaFacebookF } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
 import { GrMail } from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 type Props = {}
 
@@ -11,10 +12,10 @@ const FooterComp = (props) => {
   const { firstLink, secondLink, style } = props;
   return ( 
     <>
-        <IconContext.Provider value={{  style: {marginRight:  '2rem'}, className: 'footer-social'}}>
+        <IconContext.Provider value={{ className: 'footer-social-button'}}>
             <main className='footer-component' style={style}>
                 
-                <div>
+                <div className='footer-social'>
                 <FaFacebookF />
                 <FaTwitter />
                 <RiInstagramFill />
@@ -26,9 +27,9 @@ const FooterComp = (props) => {
                 </div>
 
                 <div className='nav-cta'>
-                    <a href="/">Home</a>
-                    <a href={ firstLink }>Contact</a>
-                    <a href={ secondLink }>FAQ</a>
+                    <Link to="/">Home</Link>
+                    <Link to={ firstLink }>Contact</Link>
+                    <Link to={ secondLink }>FAQ</Link>
                 </div>
 
             </main>

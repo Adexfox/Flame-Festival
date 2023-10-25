@@ -4,6 +4,7 @@ import { FaTwitter } from 'react-icons/fa';
 import { FaFacebookF } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
 import { GrMail } from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 type Props = {}
 
@@ -18,14 +19,14 @@ const SecondFooter = (props) => {
             <div className="comp-footer">
                 <div className="comp-navigation">
                          <div className="nav-2">
-                            <a href="/">Home</a>
-                            <a href={firstLink}>Journey</a>
-                            <a href={secondLink}>{firstName}</a>
+                            <Link to="/">Home</Link>
+                            <Link to={firstLink}>Journey</Link>
+                            <Link to={secondLink}>{firstName}</Link>
                         </div>
                         <div className="nav-1">
-                            <a href={thirdLink}>{secondName}</a>
-                            <a href="/">Tickets</a>
-                            <a href={fourthLink}>Experience</a>
+                            <Link to={thirdLink}>{secondName}</Link>
+                            <Link to="/contact">Contact</Link>
+                            <Link to={fourthLink}>Experience</Link>
                         </div>
                        
                 </div>

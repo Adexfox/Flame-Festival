@@ -1,11 +1,14 @@
 import React from 'react'
+import ContactPage from '../components/contact/contactComp'
 
 interface contactProps {
   
 }
 
 const Contact = ({}: contactProps) => {
-  return <h1>Contact</h1>
+  return <>
+    <ContactPage />
+  </>
 }
 
 export default Contact;
