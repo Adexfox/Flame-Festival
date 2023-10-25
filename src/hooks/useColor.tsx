@@ -6,6 +6,7 @@ const useColor  = (scrollPosition) => {
   const listenScrollEvent = () => {
     if(((window.scrollY > 3740 ) && (window.scrollY < 4530)) || ((window.scrollY > 5025 ) && (window.scrollY < 5765)) || ((window.scrollY > 6399 ) && (window.scrollY < 7009)) || ((window.scrollY > 7486 ) && (window.scrollY < 8060)) || (window.scrollY < section) ){
       setElementColor('white')
+      // if(( window.scrollY < window.innerHeight * 1.05 ) || (( window.scrollY > window.innerHeight * 4.3 ) && ( window.scrollY < window.innerHeight * 5.28)) || (( window.scrollY > window.innerHeight * 5.92 ) && ( window.scrollY < window.innerHeight * 6.83))  || (( window.scrollY > window.innerHeight * 7.68 ) && ( window.scrollY < window.innerHeight * 8.39)) )
     }
     else{
       setElementColor('#017294')

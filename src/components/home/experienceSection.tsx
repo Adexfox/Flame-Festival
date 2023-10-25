@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { HiArrowLongLeft, HiArrowLongRight } from 'react-icons/hi2';
 import { IconContext } from 'react-icons/lib/esm/iconContext';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 type Props = {}
@@ -25,8 +26,10 @@ const ExperienceSection = (props: Props) => {
                         <p>and posibility. A place where the tropical sun shines all day, and our celebrations ignite the night. This is an</p>
                         <p>invitation to unplug, connect with something bigger, and hunt for something bigger.</p>
                         <p>Join us. It's Lit.</p>
-                        
-                        <button className='btn-1'>Get Tickets</button>
+                        <Link to="/packages">
+
+                            <button className='btn-1'>Get Tickets</button>
+                        </Link>
                         <div className="flower-1">
                             <img src="images/flower-1.png" alt="" data-aos='fade-down' data-aos-delay="50"/>
                         </div>
@@ -52,7 +55,9 @@ const ExperienceSection = (props: Props) => {
                         <h3>Refresh</h3>
                         <h1>DREAM. HEARTH. MIND. REST</h1>
                         <p><HiArrowLongLeft size={30} style= {{marginRight: '2rem'}}/> From intimate accommodations to private pavillons, rest under the stars with all of the familiar comforts of <HiArrowLongRight size={30} style= {{marginLeft: '2rem'}}/><br /> home&mdash;and then some.</p>
-                        <button className="btn-2">Get Tickets</button>
+                        <Link to="/packages">
+                            <button className="btn-2">Get Tickets</button>
+                        </Link>
                     </div>
                 </section>
                 <section className="experience-section-4">

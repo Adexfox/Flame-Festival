@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/images/flame.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#017294" />
+  <meta name="description" content="Flame Festival, Unplug from the everyday and ignite your flame in the Miami" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/flame.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +22,193 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>Flame Festival</title>
+  <style>
+    .parent {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffff;
+      height: 100vh;
+    }
+
+
+    .loader {
+      position: relative;
+
+    }
+
+    .core {
+      width: 200px;
+      height: 100px;
+    }
+
+    .core span {
+      width: 20px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      border-radius: 20px;
+    }
+
+
+    .core span:nth-child(1) {
+      left: 25px;
+      background-color: #017294;
+      animation: loader 1.5s ease infinite;
+      box-shadow: 0 0 20px #017294;
+    }
+
+    .core span:nth-child(2) {
+      left: 50px;
+      background-color: #0091BD;
+      animation: loader 1.5s ease infinite 0.15s;
+      box-shadow: 0 0 20px #0091BD;
+    }
+
+    .core span:nth-child(3) {
+      left: 75px;
+      background-color: #00B0E6;
+      animation: loader 1.5s ease infinite 0.3s;
+      box-shadow: 0 0 20px #00B0E6;
+    }
+
+    .core span:nth-child(4) {
+      left: 100px;
+      background-color: #0FC7FF;
+      animation: loader 1.5s ease infinite 0.45s;
+      box-shadow: 0 0 20px #0FC7FF;
+    }
+
+    .core span:nth-child(5) {
+      left: 125px;
+      background-color: #38D1FF;
+      animation: loader 1.5s ease infinite 0.6s;
+      box-shadow: 0 0 20px #38D1FF;
+    }
+
+    .core span:nth-child(6) {
+      left: 150px;
+      background-color: #61DAFF;
+      animation: loader 1.5s ease infinite 0.75s;
+      box-shadow: 0 0 20px #61DAFF;
+    }
+
+    .core span:nth-child(7) {
+      left: 175px;
+      background-color: #8AE4FF;
+      animation: loader 1.5s ease infinite 0.9s;
+      box-shadow: 0 0 20px #8AE4FF;
+    }
+
+    .core span:nth-child(8) {
+      left: 200px;
+      background-color: #B3EDFF;
+      animation: loader 1.5s ease infinite 1.05s;
+      box-shadow: 0 0 20px #B3EDFF;
+    }
+
+    .core span:nth-child(9) {
+      left: 225px;
+      background-color: #DBF7FF;
+      animation: loader 1.5s ease infinite 1.20s;
+      box-shadow: 0 0 20px #DBF7FF;
+
+
+    }
+
+    .core span:nth-child(10) {
+      left: 250px;
+      background-color: #F0FBFF;
+      animation: loader 1.5s ease infinite 1.35s;
+      box-shadow: 0 0 20px #F0FBFF;
+    }
+
+    @keyframes loader {
+
+      0%,
+      50%,
+      100% {
+        transform: scale(1);
+      }
+
+      60% {
+        transform: scale(2);
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .core span {
+        width: 15px;
+        height: 80px;
+        box-shadow: 0 0 5px;
+      }
+
+      .core span:nth-child(1) {
+        left: 0;
+      }
+
+      .core span:nth-child(2) {
+        left: 20px;
+      }
+
+      .core span:nth-child(3) {
+        left: 40px;
+      }
+
+      .core span:nth-child(4) {
+        left: 60px;
+      }
+
+      .core span:nth-child(5) {
+        left: 80px;
+      }
+
+      .core span:nth-child(6) {
+        left: 100px;
+      }
+
+      .core span:nth-child(7) {
+        left: 120px;
+      }
+
+      .core span:nth-child(8) {
+        left: 140px;
+      }
+
+      .core span:nth-child(9) {
+        left: 160px;
+      }
+
+      .core span:nth-child(10) {
+        left: 180px;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body style="margin: 0px">
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="parent">
+      <div class="loader core">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +218,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>

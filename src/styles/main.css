@@ -22,10 +22,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600&family=Krub:wght@200;300;400&family=Love+Light&family=Ms+Madi&family=Open+Sans:wght@700&family=Passions+Conflict&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -147,6 +152,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -382,13 +388,15 @@ html::-webkit-scrollbar {
   color: #017294;
   justify-items: center;
   font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .ticket {
   position: fixed;
   top: 1rem;
   height: 40px;
-  z-index: 1;
+  z-index: 5;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -431,11 +439,12 @@ html::-webkit-scrollbar {
 }
 
 .general-social {
+  color: #017294;
   transition: all 0.5s ease-in-out;
 }
 .general-social:hover {
+  transform: scale(0.8);
   color: #1c1c1c;
-  transform: translateY(-10px);
 }
 
 @media only screen and (max-width: 768px) {
@@ -455,6 +464,9 @@ html::-webkit-scrollbar {
   }
   .menu-nav-logo {
     margin-left: 5rem;
+    width: 6rem;
+    height: 4rem;
+    cursor: pointer;
   }
   .menu-nav-newsletter {
     margin: 2rem 0;
@@ -495,6 +507,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -687,40 +700,6 @@ html::-webkit-scrollbar {
   font-weight: 600;
 }
 
-.video-background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  height: 100vh;
-  width: 100%;
-  z-index: -99;
-}
-
-.video-foreground,
-.video-background iframe {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground {
-    height: 300%;
-    top: -100%;
-  }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground {
-    width: 300%;
-    left: -100%;
-  }
-}
 .home-text {
   position: relative;
   z-index: -99;
@@ -776,6 +755,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -913,6 +893,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1020,6 +1001,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1111,7 +1093,7 @@ html::-webkit-scrollbar {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   position: relative;
-  top: 35%;
+  top: 25%;
   transform: all ease-in-out;
   z-index: 2;
 }
@@ -1220,6 +1202,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1404,6 +1387,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1578,6 +1562,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1872,6 +1857,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1897,6 +1883,7 @@ html::-webkit-scrollbar {
   width: 100%;
   height: 15vh;
   display: grid;
+  position: relative;
   grid-auto-flow: column;
   grid-template-columns: repeat(2, 10%, 80%);
   font-family: "Krub", sans-serif;
@@ -1910,7 +1897,6 @@ html::-webkit-scrollbar {
   display: grid;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
   z-index: 1;
 }
 .footer-box .logo h3 {
@@ -1936,6 +1922,8 @@ html::-webkit-scrollbar {
 .footer-box .subscribe {
   height: 50%;
   width: 70%;
+  position: relative;
+  margin-top: 5%;
   z-index: 1;
 }
 .footer-box .subscribe p {
@@ -1974,6 +1962,122 @@ html::-webkit-scrollbar {
   background-color: #000;
 }
 
+/********************************
+* HIDE UGLY CHATBOT SCROLL BAR *
+********************************/
+.sc-gZMcBi.hvGjDQ.rsc-content::-webkit-scrollbar {
+  display: none;
+}
+
+.sc-gZMcBi.hvGjDQ.rsc-content {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+/***************
+* ICON BUBBLE *
+***************/
+.sc-fjdhpX.icauHa.rsc-float-button {
+  position: fixed;
+  right: 1.25rem;
+  background-color: #017294;
+  background-size: 28px;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-image: url("/public/images/contact-icon.png");
+  width: 42px;
+  border-radius: 6px;
+  height: 42px;
+  bottom: 45px;
+  z-index: 4;
+  cursor: pointer;
+  border-radius: 6px !important;
+}
+.sc-fjdhpX.icauHa.rsc-float-button:hover {
+  background-color: #000;
+}
+.sc-fjdhpX.icauHa.rsc-float-button svg {
+  display: none;
+}
+
+/******************
+* CHAT CONTAINER *
+******************/
+.sc-iwsKbI.idAEAR.rsc-container {
+  right: 1rem !important;
+}
+
+.sc-gZMcBi.hvGjDQ.rsc-content {
+  padding: 10px;
+  background-color: #fff;
+  z-index: 0;
+}
+
+/**********************
+* BOT MESSAGE BUTTON *
+**********************/
+.sc-dnqmqq.efROPc.rsc-ts.rsc-ts-bot {
+  display: grid;
+  margin: 0;
+}
+
+.sc-bZQynM.kqsgGJ.rsc-ts-bubble, .sc-bZQynM.dQQACU.rsc-ts-bubble, .sc-bZQynM.jWIGGm.rsc-ts-bubble {
+  background-color: #eee;
+  position: relative;
+  max-width: 400px;
+  min-width: 70px;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  padding: 8px 5px 8px 15px;
+  border-radius: 20px 20px 20px 0;
+  margin: 5px 25% 5px 5px;
+}
+
+/******************
+* OPTION BUTTION *
+******************/
+.sc-bxivhb.lkjhsT.rsc-os-option-element {
+  background-color: #eee;
+  color: #017294;
+  border: 2px solid #017294;
+  margin: 0 10px 5px 0;
+  border-radius: 10px;
+}
+.sc-bxivhb.lkjhsT.rsc-os-option-element:hover {
+  background-color: #017294;
+  color: #ffffff;
+  border: 2px ridge #ffffff;
+  opacity: 1;
+}
+
+/***********************
+* USER MESSAGE BUBBLE *
+***********************/
+.sc-bZQynM.dVpCuh.rsc-ts-bubble {
+  color: white;
+  background: linear-gradient(to bottom, #0085D1 0%, #017294 100%);
+  margin: 10px 5px;
+  background-attachment: fixed;
+  border-radius: 20px 20px 0 20px;
+}
+
+/********************
+* AVATAR CONTAINER *
+********************/
+.sc-htoDjs.vmYlS.rsc-ts-image-container, .sc-htoDjs.fmWSyf.rsc-ts-image-container {
+  display: none;
+}
+
+/***************
+* SEND BUTTON *
+***************/
+.sc-chPdSV.hiexti.rsc-submit-button svg {
+  fill: #017294;
+  opacity: 1;
+  z-index: 3 !important;
+}
+
 .sticky1 {
   position: fixed;
   bottom: 2.75rem;
@@ -1984,9 +2088,9 @@ html::-webkit-scrollbar {
  ****************/
 @media only screen and (max-width: 768px) {
   .logo {
-    left: 0;
+    left: -2rem;
     top: 0.45rem;
-    margin: 4rem -2rem;
+    margin: 5.5rem -2rem 0;
   }
   .logo h3 {
     font-size: 0.5rem;
@@ -2004,16 +2108,20 @@ html::-webkit-scrollbar {
     margin-left: 3rem;
   }
   .footer-box .subscribe {
-    margin-left: 2rem;
+    margin-left: 1.25rem;
+    margin-top: -1.25rem;
   }
 }
 /*************************
  * * TABLET AND LAPTOP * *
  *************************/
 @media only screen and (min-width: 769px) {
+  .footer-box {
+    margin-bottom: 2.5rem;
+  }
   .footer-box .logo {
     left: 1rem;
-    margin: 4.25rem 1.75rem -1rem;
+    margin: 3.25rem 1.75rem -1rem;
   }
   .footer-box .logo h3 {
     font-size: 0.75rem;
@@ -2046,6 +2154,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2207,6 +2316,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2234,7 +2344,7 @@ html::-webkit-scrollbar {
   height: 10vh;
   top: 0;
   z-index: 2;
-  background-color: #79F2E3;
+  background-color: rgba(56, 209, 255, 0.6);
   border: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -2314,6 +2424,7 @@ html::-webkit-scrollbar {
 }
 .breadcrumbs .crumb a:hover {
   color: orange;
+  transform: scale(0.8);
 }
 
 @media only screen and (max-width: 992px) {
@@ -2362,6 +2473,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2395,7 +2507,7 @@ html::-webkit-scrollbar {
   position: relative;
   height: auto;
   margin-top: 6rem;
-  margin-left: 8vw;
+  margin-left: 6vw;
 }
 .faq-page .questions .header {
   position: relative;
@@ -2428,11 +2540,52 @@ html::-webkit-scrollbar {
   word-wrap: break-word;
   margin-right: 10%;
 }
+@keyframes faq-bg {
+  0% {
+    background-image: url("/public/images/Ink_1.png");
+  }
+  25% {
+    background-image: url("/public/images/Ink_2.png");
+  }
+  50% {
+    background-image: url("/public/images/Ink_4.png");
+  }
+  75% {
+    background-image: url("/public/images/Ink_5.png");
+  }
+  100% {
+    background-image: url("/public/images/Ink_8.png");
+  }
+}
+.faq-page .questions .bg-animation {
+  position: absolute;
+  width: 60%;
+  height: 100vh;
+  right: 6%;
+  top: 25%;
+  max-width: 40vw;
+  max-height: 70vh;
+  animation: faq-bg 35s;
+  animation-iteration-count: infinite;
+  width: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.faq-page .questions .sticky-faq {
+  position: fixed;
+}
 .faq-page footer {
   position: relative;
   margin-top: 4rem;
 }
 
+@media only screen and (max-width: 992px) {
+  .questions .bg-animation {
+    display: none;
+  }
+}
 /**
   * * The primary font is "Cormorant"
   * * The secondary font is "Krub"
@@ -2443,6 +2596,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2642,6 +2796,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -2672,16 +2827,6 @@ html::-webkit-scrollbar {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgb(204, 204, 204);
   padding: 0 5rem;
-}
-.footer-component .footer-social {
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  color: black;
-  size: 4;
-}
-.footer-component .footer-social:hover {
-  color: orange;
-  transform: translateY(-10px);
 }
 .footer-component .zigzag {
   width: 100%;
@@ -2715,13 +2860,34 @@ html::-webkit-scrollbar {
   color: orange;
 }
 
+.footer-social-button {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  color: black;
+  size: 4;
+  margin: 1rem;
+}
+.footer-social-button:hover {
+  color: orange;
+  transform: translateY(-10px);
+}
+
+/**********
+* LAPTOP *
+**********/
 @media only screen and (min-width: 648px) {
   .nav-cta {
     font-size: 0.85rem;
     padding-left: 1.5rem;
   }
 }
+/********************
+* PHONE AND TABLET *
+********************/
 @media only screen and (max-width: 648px) {
+  .footer-social-button {
+    margin: 0;
+  }
   .footer-component {
     height: auto;
     display: grid;
@@ -2734,7 +2900,7 @@ html::-webkit-scrollbar {
     display: grid;
     grid-row-gap: 1.5rem;
     order: 3;
-    margin-left: 2rem;
+    margin: 1.25rem 2rem;
   }
   .footer-component .zigzag {
     margin-left: 30%;
@@ -2758,7 +2924,7 @@ html::-webkit-scrollbar {
   max-width: 64px;
   max-height: 48px;
 }
-.logo-container a {
+.logo-container a, .logo-container p {
   text-decoration: none;
 }
 .logo-container .flames, .logo-container .zag {
@@ -2776,6 +2942,7 @@ html::-webkit-scrollbar {
 .logo-container .flames {
   width: 28px;
   height: 28px;
+  text-decoration: none;
 }
 .logo-container p {
   letter-spacing: 0.28rem;
@@ -2835,6 +3002,7 @@ html::-webkit-scrollbar {
   background: rgb(91, 220, 250);
   background: linear-gradient(45deg, rgb(91, 220, 250) 33%, rgb(162, 250, 208) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5bdcfa",endColorstr="#a2fad0",GradientType=1);
+  z-index: 2;
 }
 
 .comp-footer {
@@ -2848,6 +3016,7 @@ html::-webkit-scrollbar {
   padding-top: 3.25rem;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgb(204, 204, 204);
+  z-index: 2;
   font-size: 1.25rem;
 }
 .comp-footer a {
@@ -2966,6 +3135,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -3114,6 +3284,7 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -3324,6 +3495,7 @@ html::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -3436,5 +3608,725 @@ html::-webkit-scrollbar {
 @media only screen and (max-width: 768px) {
   .logo {
     top: -2vh;
+  }
+}
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(1, 114, 148, 0.7);
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-inner {
+  position: relative;
+  width: 100vw;
+  max-width: 668px;
+  padding: 4rem;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 2;
+  font-family: "Cormorant Garamond", serif;
+  display: grid;
+  justify-items: center;
+}
+.popup-inner .validation-message {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  display: block;
+  font-weight: bold;
+  color: red;
+}
+.popup-inner .succcess-notification {
+  position: relative;
+  background-color: lightgreen;
+  display: inline;
+  padding-left: 0;
+  color: green;
+  border-left: 2px solid green;
+  width: 30%;
+  height: 36px;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+.popup-inner .succcess-notification button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  color: green;
+  font-size: 10px;
+  cursor: pointer;
+  margin-left: 32px;
+}
+.popup-inner .succcess-notification button:hover {
+  color: black;
+}
+.popup-inner .succcess-notification p {
+  text-align: center;
+  padding-right: 16px;
+}
+.popup-inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(247, 6, 6, 0.8);
+  color: #ffffff;
+  border: none;
+}
+.popup-inner .close-btn:hover {
+  background-color: rgb(247, 6, 6);
+}
+.popup-inner .close-btn:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.popup-inner h1 {
+  margin-bottom: 1rem;
+}
+.popup-inner p {
+  margin-bottom: 2rem;
+}
+.popup-inner .cta {
+  position: relative;
+  display: flex;
+  width: 84%;
+  margin: 2rem 0 1.5rem 1rem;
+}
+.popup-inner .cta .email-container {
+  position: relative;
+  width: 72%;
+}
+.popup-inner .cta .email-container input {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  padding: 0.625rem 10px;
+  border-bottom: 1px ridge #017294;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+}
+.popup-inner .cta .email-container span {
+  position: absolute;
+  top: -42%;
+  left: 0;
+  font-size: 0.95rem;
+  pointer-events: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.popup-inner .cta .email-container input:focus {
+  border-bottom: 1px ridge black;
+}
+.popup-inner .cta .email-container input:focus ~ span,
+.popup-inner .cta .email-container input:not(:focus):valid ~ span {
+  top: -42%;
+  font-size: 0.65rem;
+  opacity: 1;
+  color: #017294;
+}
+.popup-inner .cta .popup-btn {
+  position: absolute;
+  right: 0;
+  height: 2.1rem;
+  width: 28%;
+  padding: 0 1.25rem 0;
+  background-color: #017294;
+  color: #ffffff;
+  cursor: pointer;
+  border: 2px solid #017294;
+  border-radius: 0;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1rem;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.popup-inner .cta .popup-btn::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  top: 0;
+  left: -100%;
+  z-index: -99;
+  transition: all 0.5s ease-in-out;
+}
+.popup-inner .cta .popup-btn:hover::before {
+  left: 0;
+}
+.popup-inner .cta .popup-btn:hover {
+  outline: 1px solid #017294;
+  box-shadow: 0 0 5px #017294;
+  background-color: #ffffff;
+  color: #017294;
+}
+@keyframes illustration {
+  0%, 100% {
+    background-image: url(/public/images/Ink_4.png);
+  }
+  50% {
+    background-image: url(/public/images/Ink_5.png);
+  }
+}
+.popup-inner .newsletter-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  left: 3%;
+  top: 5%;
+  max-width: 240px;
+  max-height: 140px;
+  width: 300px;
+  transform: scaleX(-1);
+  z-index: 1;
+  animation: illustration 12s infinite;
+}
+.popup-inner h1, .popup-inner p, .popup-inner .cta {
+  z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .popup-inner {
+    padding: 2rem;
+  }
+  .popup-inner p {
+    text-align: center;
+    align-self: center;
+  }
+  .popup-inner h1 {
+    align-self: center;
+    line-height: 1;
+    margin: 2rem 0;
+  }
+  .popup-inner .succcess-notification {
+    margin: 24px 0 4px;
+  }
+  .popup-inner .cta {
+    width: 95%;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+  .popup-inner .cta .email-container {
+    width: 100%;
+  }
+  .popup-inner .cta .popup-btn {
+    width: 32%;
+  }
+}
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+}
+.contact-page {
+  width: 100vw;
+  background: linear-gradient(to bottom, rgba(56, 209, 255, 0.6) 0%, rgba(56, 209, 255, 0.6) 50%, #F1F5F9 50%, #F1F5F9 50%);
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.8;
+  padding-top: 10dvh;
+}
+.contact-page .header {
+  position: relative;
+  width: 60vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 0 0.75rem;
+}
+.contact-page .form-container {
+  position: relative;
+  width: 70vw;
+  background-color: #ffffff;
+  display: flex;
+}
+.contact-page .form-container .design {
+  width: 40%;
+}
+.contact-page .form-container .design {
+  position: relative;
+  padding-right: 1rem;
+}
+@keyframes contact-bg {
+  0% {
+    background-image: url("/public/images/Ink_1.png");
+  }
+  25% {
+    background-image: url("/public/images/Ink_3.png");
+  }
+  50% {
+    background-image: url("/public/images/Ink_4.png");
+  }
+  75% {
+    background-image: url("/public/images/Ink_5.png");
+  }
+  100% {
+    background-image: url("/public/images/Ink_8.png");
+  }
+}
+.contact-page .form-container .design .contact-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: contact-bg 35s;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact-page .form-container .form {
+  position: relative;
+  width: 60%;
+  display: grid;
+  margin: 2.5rem 0 3rem;
+  margin-right: 2.75rem;
+  padding-top: 1.75rem;
+}
+.contact-page .form-container .form .inputBox {
+  position: relative;
+}
+.contact-page .form-container .form .inputBox input {
+  height: 2rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px ridge #017294;
+  padding: 0.625rem 10px;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 1.875rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+}
+.contact-page .form-container .form .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.625rem 0;
+  font-size: 0.85rem;
+  color: gray;
+  pointer-events: none;
+  transition: 0.3s;
+  padding-bottom: 4rem;
+}
+.contact-page .form-container .form .inputBox input:focus ~ label,
+.contact-page .form-container .form .inputBox input:not(:focus):valid ~ label,
+.contact-page .form-container .form .inputBox textarea:focus ~ label,
+.contact-page .form-container .form .inputBox textarea:not(:focus):valid ~ label {
+  top: -1.125rem;
+  left: 0;
+  color: #017294;
+  font-size: 0.65rem;
+  height: 10px;
+}
+.contact-page .form-container .form .inputBox p {
+  color: red;
+  height: auto;
+  margin: 0 auto;
+}
+.contact-page .form-container .form .contact-cta {
+  height: 2rem;
+  padding: 0 1.25rem 0;
+  background-color: #017294;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #017294;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  margin-top: 3rem;
+  height: 3rem;
+}
+.contact-page .form-container .form .contact-cta::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  top: 0;
+  left: -100%;
+  z-index: -99;
+  transition: all 0.5s ease-in-out;
+}
+.contact-page .form-container .form .contact-cta:hover::before {
+  left: 0;
+}
+.contact-page .form-container .form .contact-cta:hover {
+  outline: 1px solid #017294;
+  box-shadow: 0 0 5px #017294;
+  background-color: #ffffff;
+  color: #017294;
+}
+.contact-page .form-container .form .form-notification {
+  position: relative;
+  z-index: 5;
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: grid;
+  border-left: 2px solid green;
+}
+.contact-page .form-container .form .form-notification p {
+  background-color: lightgreen;
+  height: inherit;
+  border-radius: 0 4px 4px 0;
+  text-align: center;
+  padding-top: 4px;
+}
+.contact-page .form-container .form .form-notification button {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: green;
+  border: none;
+  padding: 4px 6px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.contact-page .form-container .form textarea {
+  height: 4rem;
+  resize: none;
+  width: 100%;
+  outline: none;
+  margin-top: 0.25rem;
+  padding: 0.625rem 10px;
+  letter-spacing: 0.0625rem;
+  border: none;
+  overflow-y: hidden;
+  border-bottom: 1px ridge #017294;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+}
+.contact-page .form-container .form .mini {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-page .form-container .form .one, .contact-page .form-container .form .two {
+  position: relative;
+  width: 42%;
+}
+.contact-page .footer {
+  position: relative;
+  width: 50vw;
+  height: 2rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 10%;
+  justify-content: center;
+  padding: 0.25rem;
+  text-decoration: none;
+}
+.contact-page .footer a {
+  text-decoration: none;
+  color: #017294;
+  height: 2rem;
+}
+.contact-page .footer a:hover {
+  color: orange;
+  transform: scale(0.85);
+}
+
+@media only screen and (min-width: 1200px) {
+  .form {
+    padding-right: 2.25rem;
+  }
+  .header p {
+    width: 40vw;
+  }
+}
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+}
+.home-video {
+  width: 100dvw;
+  height: 100dvh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background: #fff;
+  z-index: 6;
+}
+.home-video .close-btn {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  background-color: #017294;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/**
+  * * The primary font is "Cormorant"
+  * * The secondary font is "Krub"
+  * * Primary Handwriting font alternative is "Ms Madi"
+  * * Secondary Handwriting font alternative is "Mrs Saint Delafield / love light"
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/public/fonts/Better.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(/public/fonts/Darlington.ttf);
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 100vh;
+  z-index: 5;
+}
+
+.loader {
+  position: relative;
+}
+@keyframes loader {
+  0%, 50%, 100% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(2);
+  }
+}
+
+.core {
+  width: 200px;
+  height: 100px;
+}
+.core span {
+  width: 20px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  border-radius: 20px;
+}
+.core span:nth-child(1) {
+  left: 0;
+  background-color: #017294;
+  animation: loader 1.5s ease infinite 0s;
+  box-shadow: 0 0 20px #017294;
+}
+.core span:nth-child(2) {
+  left: 25px;
+  background-color: #0091BD;
+  animation: loader 1.5s ease infinite 0.15s;
+  box-shadow: 0 0 20px #0091BD;
+}
+.core span:nth-child(3) {
+  left: 50px;
+  background-color: #00B0E6;
+  animation: loader 1.5s ease infinite 0.3s;
+  box-shadow: 0 0 20px #00B0E6;
+}
+.core span:nth-child(4) {
+  left: 75px;
+  background-color: #0FC7FF;
+  animation: loader 1.5s ease infinite 0.45s;
+  box-shadow: 0 0 20px #0FC7FF;
+}
+.core span:nth-child(5) {
+  left: 100px;
+  background-color: #38D1FF;
+  animation: loader 1.5s ease infinite 0.6s;
+  box-shadow: 0 0 20px #38D1FF;
+}
+.core span:nth-child(6) {
+  left: 125px;
+  background-color: #61DAFF;
+  animation: loader 1.5s ease infinite 0.75s;
+  box-shadow: 0 0 20px #61DAFF;
+}
+.core span:nth-child(7) {
+  left: 150px;
+  background-color: #8AE4FF;
+  animation: loader 1.5s ease infinite 0.9s;
+  box-shadow: 0 0 20px #8AE4FF;
+}
+.core span:nth-child(8) {
+  left: 175px;
+  background-color: #B3EDFF;
+  animation: loader 1.5s ease infinite 1.05s;
+  box-shadow: 0 0 20px #B3EDFF;
+}
+.core span:nth-child(9) {
+  left: 200px;
+  background-color: #DBF7FF;
+  animation: loader 1.5s ease infinite 1.2s;
+  box-shadow: 0 0 20px #DBF7FF;
+}
+.core span:nth-child(10) {
+  left: 225px;
+  background-color: #F0FBFF;
+  animation: loader 1.5s ease infinite 1.35s;
+  box-shadow: 0 0 20px #F0FBFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .core span {
+    width: 15px;
+    height: 80px;
+    box-shadow: 0 0 5px;
+  }
+  .core span:nth-child(1) {
+    left: 0;
+  }
+  .core span:nth-child(2) {
+    left: 20px;
+  }
+  .core span:nth-child(3) {
+    left: 40px;
+  }
+  .core span:nth-child(4) {
+    left: 60px;
+  }
+  .core span:nth-child(5) {
+    left: 80px;
+  }
+  .core span:nth-child(6) {
+    left: 100px;
+  }
+  .core span:nth-child(7) {
+    left: 120px;
+  }
+  .core span:nth-child(8) {
+    left: 140px;
+  }
+  .core span:nth-child(9) {
+    left: 160px;
+  }
+  .core span:nth-child(10) {
+    left: 180px;
   }
 }/*# sourceMappingURL=main.css.map */

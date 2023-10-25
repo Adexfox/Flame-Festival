@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 type Props = {}
 
 const JourneySection = (props: Props) => {
@@ -15,8 +15,9 @@ const JourneySection = (props: Props) => {
           <h1>THIS JOURNEY BEGINS WITH A DEPATURE <br />FROM THE EVERYDAY</h1>
           <p>Less than an hour from Miami, reaching the island is a breeze via private aircraft alonside a handful of fellow</p>
           <p>travelers. The flight is short, but you never know who you might meet on the way...</p>
-
-          <button className='journey-btn'>Get Tickets</button>
+          <Link to="/packages">
+            <button className='journey-btn'>Get Tickets</button>
+          </Link>
         </section>
         <div className="sixth-cut">
           <img src="images/top-cut.png" alt="" />

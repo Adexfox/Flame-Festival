@@ -4,14 +4,17 @@ import { FaTwitter } from 'react-icons/fa'
 import { FaFacebookF } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
 import { GrMail } from 'react-icons/gr'
-import { BiChat } from 'react-icons/bi'
-
+import Popup from '../universal/popup'
+import Chatbox from '../universal/chatbox'
+import { useState } from 'react'
+// import { BiChat } from 'react-icons/bi'
 
 type Props = {
 
 }
 
 const Footer = (props: Props) => {
+    const [buttonPopup, setButtonPopup] = useState(false);
     return (
       <IconContext.Provider  value={{  style: {marginRight:  '2rem'}, className: 'social'}}>
         <div className='footer-box'>
@@ -23,7 +26,7 @@ const Footer = (props: Props) => {
                 <h3>FLAME</h3>
             </div>
             <div className="subscribe">
-                <p>Subscribe to newsletter</p>
+                <p onClick={ () => setButtonPopup(true)}>Subscribe to newsletter</p>
                 <div>
                     <FaFacebookF />
                     <FaTwitter />
@@ -34,9 +37,16 @@ const Footer = (props: Props) => {
             </div>
            
         </div>
-            <div className='chat sticky1'>
-                <BiChat color='rgb(255, 255, 255, 0.9)' size='1.5rem' className='chat-bubble' />
-            </div>
+        {/* <div className='chat sticky1'>
+            <BiChat color='rgb(255, 255, 255, 0.9)' size='1.5rem' className='chat-bubble' onClick={ () => setChatPopup(true)}/>
+        </div> */}
+        <Popup trigger={buttonPopup} setTrigger = {setButtonPopup} />
+        <Chatbox />
+            
+            
+        
+            
+        
     </IconContext.Provider>
   )
 }

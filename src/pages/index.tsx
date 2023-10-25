@@ -10,7 +10,6 @@ import { Route, Routes } from 'react-router-dom';
              *********/
 import Home from './home';
 import Island from './island';
-import Hunt from './hunt';
 import Program from './program';
 import Journey from './journey';
 import Packages from './packages';
@@ -34,7 +33,6 @@ const ReactRouterSetup = () => {
                     <Route path='/island' element={<Island />} />
                     <Route path='/faq/island' element={<Island />} />
                     <Route path='/packages/island' element={<Island />} />
-                    <Route path='/hunt' element={<Hunt />} />
                     <Route path='/program' element={<Program />} />
                     <Route path='/program/faq' element={<Faq />} />
                     <Route path='/journey' element={<Journey />} />
@@ -48,7 +46,10 @@ const ReactRouterSetup = () => {
                     <Route path='/experience/faq' element={<Faq />} />
                     <Route path='/faq' element={<Faq />} />
                     <Route path='/island/faq' element={<Faq />} />
+                    <Route path='/contact' element={<Contact />} />
+                    <Route path='faq/contact' element={<Contact />} />
                     <Route path='island/contact' element={<Contact />} />
+                    <Route path='packages/contact' element={<Contact />} />
                     <Route path='/faq/journey' element={<Journey />} />
                     <Route path='/faq/packages' element={<Packages />} />
                     <Route path='/faq/journey' element={<Journey />} />

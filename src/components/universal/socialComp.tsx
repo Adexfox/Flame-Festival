@@ -10,7 +10,7 @@ type Props = {}
 const SocialComp = (props: Props) => {
   return (
     <>
-        <IconContext.Provider value={{className:'general-social', style: {marginRight: '1rem', color: '#017294', marginLeft: '2rem'}}}>
+        <IconContext.Provider value={{className:'general-social', style: {marginRight: '1rem', marginLeft: '2rem'}}}>
             <div>
                 <FaFacebookF />
                 <FaTwitter />
